@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset='utf-8'>
+ <title>Оборудование и программное обеспечение для технической защиты информации</title>
+ <meta name="description" content="Оборудование и программное обеспечение для технической защиты информации, аттестация объектов информатизации, разработка программного обеспечения">
+ <meta name="keywords" content="">
+ <meta name="viewport" content="width=device-width">
+ <link rel='stylesheet' href='css/normalize.css'>
+ <link rel='stylesheet' href='css/styles.css'>
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <!--[if lt IE 9]>
+ <script src='js/html5shiv.js'></script>
+ <![endif]-->
+</head>
+<body>
+	
+	<header class="services-header">
+		<div class="wrapper clearfix">
+			<figure>
+				<a href="index.html">
+					<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
+				</a>
+			</figure>
+			<h1>
+				Оборудование и программное обеспечение для технической защиты информации
+			</h1>		
+		
+			<div class="contacts">
+				<p class="phone stac">(8422) 62-02-09</p>				
+				<a class="phone mobile" href="tel:88422620209">(8422) 62-02-09</a> <!-- для мобильных -->
+				<a class="email" href="mailto:mail@tzi73.ru">mail@tzi73.ru</a>				
+			</div>
+
+			<nav>
+				<ul>
+					<li ><a href="index.html">Каталог</a></li>
+					<li class="active"><a href="services.html">Услуги</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>			
+		</div> <!-- end wrapper -->
+	</header>
+	
+	<main class="services-main">
+		<div class="wrapper">
+			<section class="service">
+				<h2 class="brief">
+					Разработка оборудования и программного обеспечения в области технической защиты информации					
+				</h2>
+				<p class="full">
+					- разработка вспомогательного программного обеспечения для аттестации объектов информатизации; <br>
+					- разработка оборудования и специализированного программного обеспечения для специальных проверок и специальных обследований
+				</p>
+			</section>
+			
+			<section class="service">
+				<h2 class="brief">
+					Аттестация объектов информатизации на соответствие требованиям безопасности информации
+				</h2>
+				<p class="full">
+					- контроль эффективности систем защиты информации; <br>
+					- разработка рекомендаций и методическая помощь при подготовке объектов информатизации к аттестации; <br>
+					- аттестация объектов вычислительной техники и выделенных помещений с выдачей "Аттестата соответствия"; <br>
+					- поставка, монтаж оборудования и средств защиты информации; <br>
+					- разработка комплекта организационно-распорядительных и эксплуатационных документов на объект информатизации.
+				</p>
+			</section>
+			
+			<section class="service">
+				<h2 class="brief">
+					Специальная проверка и специальные исследования технических средств
+				</h2>
+				<p class="full">
+					- cпециальная проверка технических средств; <br>
+					- специальные исследования технических средств для органов государственной власти
+				</p>
+			</section>
+			
+			<section class="service">
+				<h2 class="brief">
+					Оказание услуг в области защиты государственной тайны
+				</h2>
+				<p class="full">
+					- консультирование по вопросам практического выполнения требований нормативно-правовых актов РФ, регламентирующих деятельность организаций при осуществлении работ с использованием сведений, составляющих государственную тайну; <br>
+					- ведение секретного делопроизводства организаций,  не имеющих своего режимно-секретного подразделения; <br>
+					- разработка и размножение документов, содержащих сведения, составляющие государственную тайну, на средствах вычислительной техники Центра для организаций, не имеющих аттестованного объекта информатизации; <br>
+					- проведение специальных экспертиз организаций для получения лицензии на право осуществления работ со сведениями, составляющими государственную тайну. 
+				</p>
+			</section>
+		</div>
+	</main>
+	
+	<footer class="services-footer">
+	
+	</footer>
+	
+	<script src="js/jquery-3.0.0.min.js"></script>		
+	<script>
+		$('.full').hide();		
+		$('.brief').click(function(){
+			var $full = $(this).next('.full');
+			if($full.is(':hidden'))	{
+				$full.slideDown();
+				$(this).toggleClass('close');
+			} else {
+				$full.slideUp();
+				$(this).toggleClass('close');
+			}
+		});
+		
+		/*$('.full').hide();
+		$('.service').hover(function(){
+			var $full = $(this).find('.full')			
+			var $brief = $(this).find('.brief')
+			$full.stop().slideDown();
+			$brief.toggleClass('close');
+		},
+			function(){
+				var $full = $(this).find('.full');
+				var $brief = $(this).find('.brief')
+				$full.stop().slideUp();
+				$brief.toggleClass('close');
+			}								 
+		);*/
+	</script>
+	<!-- Yandex.Metrika counter --> 
+		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+	<!-- /Yandex.Metrika counter -->
+</body>
+</html>
+

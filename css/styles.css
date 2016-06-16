@@ -1,4 +1,349 @@
 body {
-  background-color: rgba(125,125,125,0.7);
-  outline: 1px solid black;
+  /*background-color: rgba(125,125,125,0.7);
+  outline: 1px solid black;*/
+}
+a {
+  text-decoration: none;  
+  color: inherit;
+  outline: none;	
+}
+.wrapper {
+	width: 70%;
+	margin: 0 auto;	
+}
+header {
+	background-color: #e6e6e6;	
+	padding: 10px 0 5px 0;
+	margin: 0;
+}
+header figure {
+	display: inline-block;
+	vertical-align: middle;
+	
+	width: 300px;
+	
+	margin: 0;
+}
+header h1 {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+	margin-left: 3%;	
+	margin-top: 0;
+	
+	font-size: 1.1em;	
+}
+* {
+	//outline: 1px solid black;
+}
+.contacts {	
+	width: 25%;
+	min-width: 150px;
+	
+	float: right;
+	margin-top: 15px;
+	
+}
+.clearfix {
+	content: "";
+	clear: both;
+	display: table;
+}
+nav ul li {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;		
+	margin-right: 70px;
+	font-size: 1.3em;	
+}
+.active a {
+	position: relative;
+	//border-bottom: 5px solid white;
+	//opacity: 0.6;		
+}
+.active a:after {	
+	position: absolute;
+	content: '';
+	bottom: -25px;	
+	left: 50%;
+	margin-left: -12px;
+	
+	border: 12px solid transparent;
+	border-top: 12px solid #e6e6e6;
+	
+	animation: triangle 500ms forwards;	
+}
+@keyframes triangle {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+ul, p {
+	padding: 0;
+	margin: 0;
+}
+nav {	
+	float: right;	
+	margin-top: 15px;
+}
+nav a {
+	padding: 10px 10px 5px 10px;			
+	//opacity: 0.5;
+	//outline: 1px solid red;
+}
+nav a:hover {
+	color: rgba(0,0,0,0.6);
+}
+.stac {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+.phone, .email {	
+	padding-left: 35px;
+}
+.phone {
+	margin-bottom: 10px;
+}
+@media (max-width: 399px) {
+	.wrapper {
+		width: auto;		
+	}
+	.mobile {
+		display: block;
+	}
+	.stac {
+		display: none;
+	}	
+	header figure {
+		display: none;
+	}
+	header h1 {
+		width: auto;
+		text-align: center;
+		margin-left: 0;
+	}
+	.contacts {
+		float: none;
+		margin: 0 auto;
+	}
+	nav {
+		width: auto;
+		text-align: center;						
+		float: none;
+	}
+	nav ul li {
+		margin: 0;
+	}
+	.nav-catalog-block, 
+	.production-block {		
+		float: none;
+		margin: 0 auto;
+	}	
+}
+@media (min-width: 400px) and (max-width: 799px) {
+	.wrapper {
+		width: auto;
+	}	
+
+	header figure {
+		width: auto;		
+		display: block;
+		text-align: center;
+	}
+	header h1 {
+		display: block;
+		width: auto;
+		max-width: 560px;
+				
+		text-align: center;
+		margin-left: 0;		
+	}
+	.contacts {
+		float: none;
+		margin: 0 auto;
+	}
+	nav {
+		width: auto;
+		text-align: center;						
+		float: none;
+	}
+	nav ul li {
+		margin: 0 20px;
+	}
+	.active a:after {	
+		bottom: -24px;	
+	}
+	.nav-catalog-block, 
+	.production-block {		
+		float: none;
+		margin: 0 auto;
+	}	
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+	.wrapper {
+		width: 92%;
+	}	
+}
+@media (min-width: 1024px) {
+	.wrapper {
+		width: 80%;
+	}
+}
+
+/************************** services ************************************************/
+.services-main {
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.services-main h2 {
+	position: relative;
+	font-size: 1.1em;
+	//color: rgba(0,0,0,0.7);
+}
+.services-main h2:hover {
+	cursor: pointer;		
+	/*text-decoration: underline;
+	text-decoration-color: rgba(9,68,123,0.6);*/
+	color: rgba(0,0,0,0.7);
+}
+.services-main h2:before,
+.services-main h2:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	top: 50%;
+	left: 0;
+	background-color: blue;
+}
+.services-main h2:before {
+	transform: rotate(45deg);
+}
+.services-main h2:after {
+	transform: rotate(-45deg);
+	left: 8px;
+}
+@keyframes close-animation-triangle {
+	from {
+		background-color: blue;		
+	}
+	to {
+		background-color: dodgerblue;		
+	}
+}
+@keyframes close-animation-font {
+	from {
+		color: rgba(0,0,0,1);		
+	}
+	to {
+		color: rgba(0,0,0,0.6);		
+	}
+}
+.services-main h2.close {
+	animation: close-animation-font 1s forwards;
+}
+.services-main h2.close:before,
+.services-main h2.close:after {
+	animation: close-animation-triangle 1s forwards;
+}
+.services-main h2.close:before,
+.services-main h2.close:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	top: 50%;
+	left: 0;	
+}
+.services-main h2.close:before {
+	transform: rotate(-45deg);
+}
+.services-main h2.close:after {
+	transform: rotate(45deg);
+	left: 8px;
+}
+.services-main .brief, 
+.services-main .full {
+	padding-left: 35px;
+}
+.services-main .full {
+	line-height: 1.7em;
+}
+.service {
+	padding: 5px 0 5px 30px;
+	margin-bottom: 10px;
+	
+	background-color: #e6e6e6;
+	border-radius: 10px;	
+}
+
+/*************** index *************************/
+.nav-catalog-block {
+	width: 200px;
+}
+.catalog-main ul li {
+	list-style: none;		
+}
+.catalog-main ul label { /* label */
+	display: block;
+	
+	padding: 10px;	
+	
+	background-color: #e6e6e6;
+	cursor: pointer;
+	border-bottom: 1px solid rgb(211,211,211);	
+}
+.catalog-main ul li:last-child label{
+	border-bottom: none;
+}
+.catalog-main input[type="radio"] {
+	display: none;
+}
+#all-catalog:checked     ~ .nav-catalog-block label[for="all-catalog"],
+#for-spso:checked        ~ .nav-catalog-block label[for="for-spso"],
+#for-attestation:checked ~ .nav-catalog-block label[for="for-attestation"] {
+	position: relative;
+  background-color: dodgerblue;    
+  color: white;
+  cursor: default;
+}
+#all-catalog:checked     ~ .nav-catalog-block label[for="all-catalog"]:after,
+#for-spso:checked        ~ .nav-catalog-block label[for="for-spso"]:after,
+#for-attestation:checked ~ .nav-catalog-block label[for="for-attestation"]:after {
+	position: absolute;
+	content: '';
+  cursor: default;
+	right: -14px;	
+	top: 6px;
+	
+	width: 29px;
+	height: 29px;
+	
+	background-color: white;
+	transform: rotate(45deg);
+}
+.production-block .production-group {
+	display: none;
+}
+#all-catalog:checked ~ .production-block .production-group:nth-child(1) {
+	display: block;
+}
+#for-spso:checked ~ .production-block .production-group:nth-child(2) {
+	display: block;
+}
+#for-attestation:checked ~ .production-block .production-group:nth-child(3) {
+	display: block;
+}
+.nav-catalog-block {
+	margin-top: 50px;
+	float: left;
+	outline: 1px solid red;
+}
+.production-block {
+	float: left;	
+	margin-top: 50px;
+	margin-left: 50px;
+	outline: 1px solid red;
 }
