@@ -297,7 +297,7 @@ nav a:hover {
 	.nav-catalog-block, 
 	.production-block {		
 		float: none;
-		margin: 20px auto;
+		margin: 40px auto;
 	}	
 }
 
@@ -329,7 +329,7 @@ nav a:hover {
 		float: none;
 	}
 	nav ul li {
-		margin: 0 20px;
+		margin: 0 10px;
 	}
 	.active a:after {	
 		bottom: -24px;	
@@ -337,7 +337,7 @@ nav a:hover {
 	.nav-catalog-block, 
 	.production-block {		
 		float: none;
-		margin: 0 auto;
+		margin: 40px auto;
 	}	
 }
 @media (min-width: 800px) and (max-width: 1023px) {
