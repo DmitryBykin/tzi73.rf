@@ -105,91 +105,7 @@ nav a:hover {
 .phone {
 	margin-bottom: 10px;
 }
-@media (max-width: 399px) {
-	.wrapper {
-		width: auto;		
-	}
-	.mobile {
-		display: block;
-	}
-	.stac {
-		display: none;
-	}	
-	header figure {
-		display: none;
-	}
-	header h1 {
-		width: auto;
-		text-align: center;
-		margin-left: 0;
-	}
-	.contacts {
-		float: none;
-		margin: 0 auto;
-	}
-	nav {
-		width: auto;
-		text-align: center;						
-		float: none;
-	}
-	nav ul li {
-		margin: 0;
-	}
-	.nav-catalog-block, 
-	.production-block {		
-		float: none;
-		margin: 0 auto;
-	}	
-}
-@media (min-width: 400px) and (max-width: 799px) {
-	.wrapper {
-		width: auto;
-	}	
 
-	header figure {
-		width: auto;		
-		display: block;
-		text-align: center;
-	}
-	header h1 {
-		display: block;
-		width: auto;
-		max-width: 560px;
-				
-		text-align: center;
-		margin-left: 0;		
-	}
-	.contacts {
-		float: none;
-		margin: 0 auto;
-	}
-	nav {
-		width: auto;
-		text-align: center;						
-		float: none;
-	}
-	nav ul li {
-		margin: 0 20px;
-	}
-	.active a:after {	
-		bottom: -24px;	
-	}
-	.nav-catalog-block, 
-	.production-block {		
-		float: none;
-		margin: 0 auto;
-	}	
-}
-@media (min-width: 800px) and (max-width: 1023px) {
-	.wrapper {
-		width: 92%;
-	}	
-}
-@media (min-width: 1024px) {
-	.wrapper {
-		width: 80%;
-	}
-}
 
 /************************** services ************************************************/
 .services-main {
@@ -346,4 +262,91 @@ nav a:hover {
 	margin-top: 50px;
 	margin-left: 50px;
 	outline: 1px solid red;
+}
+
+@media (max-width: 399px) {
+	.wrapper {
+		width: auto;		
+	}
+	.mobile {
+		display: block;
+	}
+	.stac {
+		display: none;
+	}	
+	header figure {
+		display: none;
+	}
+	header h1 {
+		width: auto;
+		text-align: center;
+		margin-left: 0;
+	}
+	.contacts {
+		float: none;
+		margin: 0 auto;
+	}
+	nav {
+		width: auto;
+		text-align: center;						
+		float: none;
+	}
+	nav ul li {
+		margin: 0;
+	}
+	.nav-catalog-block, 
+	.production-block {		
+		float: none;
+		margin: 20px auto;
+	}	
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+	.wrapper {
+		width: auto;
+	}	
+
+	header figure {
+		width: auto;		
+		display: block;
+		text-align: center;
+	}
+	header h1 {
+		display: block;
+		width: auto;
+		max-width: 560px;
+				
+		text-align: center;
+		margin-left: 0;		
+	}
+	.contacts {
+		float: none;
+		margin: 0 auto;
+	}
+	nav {
+		width: auto;
+		text-align: center;						
+		float: none;
+	}
+	nav ul li {
+		margin: 0 20px;
+	}
+	.active a:after {	
+		bottom: -24px;	
+	}
+	.nav-catalog-block, 
+	.production-block {		
+		float: none;
+		margin: 0 auto;
+	}	
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+	.wrapper {
+		width: 92%;
+	}	
+}
+@media (min-width: 1024px) {
+	.wrapper {
+		width: 80%;
+	}
 }
