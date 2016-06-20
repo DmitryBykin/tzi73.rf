@@ -135,9 +135,17 @@ nav a:hover {
 	background-color: blue;
 }
 .services-main h2:before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 .services-main h2:after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	left: 8px;
 }
@@ -174,9 +182,17 @@ nav a:hover {
 	left: 0;	
 }
 .services-main h2.close:before {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 .services-main h2.close:after {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	left: 8px;
 }
@@ -238,6 +254,10 @@ nav a:hover {
 	height: 29px;
 	
 	background-color: white;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 .production-block .production-group {
@@ -255,13 +275,13 @@ nav a:hover {
 .nav-catalog-block {
 	margin-top: 50px;
 	float: left;
-	outline: 1px solid red;
+	//outline: 1px solid red;
 }
 .production-block {
 	float: left;	
 	margin-top: 50px;
 	margin-left: 50px;
-	outline: 1px solid red;
+	//outline: 1px solid red;
 }
 
 @media (max-width: 399px) {
@@ -283,8 +303,9 @@ nav a:hover {
 		margin-left: 0;
 	}
 	.contacts {
+		width: 50%;
 		float: none;
-		margin: 0 auto;
+		margin: 0 auto;		
 	}
 	nav {
 		width: auto;
@@ -320,8 +341,10 @@ nav a:hover {
 		margin-left: 0;		
 	}
 	.contacts {
+		width: 50%;
 		float: none;
 		margin: 0 auto;
+		outline: 1px solid red;
 	}
 	nav {
 		width: auto;
