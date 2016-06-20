@@ -37,8 +37,8 @@ header h1 {
 	//outline: 1px solid black;
 }
 .contacts {	
-	width: 25%;
-	min-width: 150px;
+	width: 150px;
+	//min-width: 150px;
 	
 	float: right;
 	margin-top: 15px;
@@ -303,7 +303,7 @@ nav a:hover {
 		margin-left: 0;
 	}
 	.contacts {
-		width: 50%;
+		//width: 50%;
 		float: none;
 		margin: 0 auto;		
 	}
@@ -332,19 +332,16 @@ nav a:hover {
 		display: block;
 		text-align: center;
 	}
-	header h1 {
-		display: block;
+	header h1 {		
 		width: auto;
 		max-width: 560px;
 				
 		text-align: center;
 		margin-left: 0;		
 	}
-	.contacts {
-		width: 50%;
+	.contacts {		
 		float: none;
-		margin: 0 auto;
-		outline: 1px solid red;
+		margin: 0 auto;		
 	}
 	nav {
 		width: auto;
