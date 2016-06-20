@@ -37,12 +37,13 @@ header h1 {
 	//outline: 1px solid black;
 }
 .contacts {	
-	width: 150px;
+	width: 180px;
 	//min-width: 150px;
 	
 	float: right;
-	margin-top: 15px;
-	
+	margin-top: 15px;	
+  
+  outline: 1px solid red;
 }
 .clearfix {
 	content: "";
@@ -319,7 +320,7 @@ nav a:hover {
 	.production-block {		
 		float: none;
 		margin: 40px auto;
-	}	
+	}  
 }
 
 @media (min-width: 400px) and (max-width: 799px) {
@@ -358,7 +359,7 @@ nav a:hover {
 	.production-block {		
 		float: none;
 		margin: 40px auto;
-	}	
+	}	  
 }
 @media (min-width: 800px) and (max-width: 1023px) {
 	.wrapper {
