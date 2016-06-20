@@ -41,9 +41,7 @@ header h1 {
 	//min-width: 150px;
 	
 	float: right;
-	margin-top: 15px;	
-  
-  outline: 1px solid red;
+	margin-top: 15px;	  
 }
 .clearfix {
 	content: "";
