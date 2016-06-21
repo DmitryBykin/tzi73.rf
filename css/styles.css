@@ -185,10 +185,18 @@ nav a:hover {
 	}
 }
 .services-main h2.close {
+	-webkit-animation: close-animation-font 1s forwards;
+	-moz-animation: close-animation-font 1s forwards;
+	-o-animation: close-animation-font 1s forwards;
+	-ms-animation: close-animation-font 1s forwards;
 	animation: close-animation-font 1s forwards;
 }
 .services-main h2.close:before,
 .services-main h2.close:after {
+	-webkit-animation: close-animation-triangle 1s forwards;
+	-moz-animation: close-animation-triangle 1s forwards;
+	-o-animation: close-animation-triangle 1s forwards;
+	-ms-animation: close-animation-triangle 1s forwards;
 	animation: close-animation-triangle 1s forwards;
 }
 .services-main h2.close:before,
