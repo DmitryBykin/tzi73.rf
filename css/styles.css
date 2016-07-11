@@ -58,17 +58,18 @@ nav ul li {
 .active a {
 	position: relative;
 	//border-bottom: 5px solid white;
-	//opacity: 0.6;		
+	//opacity: 0.6;			
+	color: rgba(0,0,0,0.6);
 }
 .active a:after {	
 	position: absolute;
 	content: '';
-	bottom: -25px;	
+	bottom: -24px;	
 	left: 50%;
 	margin-left: -12px;
 	
 	border: 12px solid transparent;
-	border-top: 12px solid #e6e6e6;
+	border-top: 12px solid #e6e6e6;	
 	
 	animation: triangle 500ms forwards;	
 }
