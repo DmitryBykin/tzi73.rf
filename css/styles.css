@@ -324,9 +324,11 @@ nav a:hover {
 
 	padding-right: 50px;
 	
-	box-sizing: border-box;
-	
-	outline: 1px solid red;	
+	box-sizing: border-box;		
+}
+.feedback-form form {
+	width: 250px;
+	margin: 0 auto;
 }
 .feedback-form textarea{	
 	resize: none;
@@ -340,17 +342,25 @@ nav a:hover {
 	margin-bottom: 10px;
 	display: block;
 }
-.feedback-form button {	
+.feedback-form .send-email {	
 	padding: 5px 10px 5px 10px;
 	display: block;	
 	margin: 0 auto;
 	cursor: pointer;
 }
+.feedback-form .request-send-success {
+	margin-top: 10px;
+	
+	text-align: center;
+	
+	color: green;	
+}
 .map {
 	float: right;
 	width: 60%;
-	padding: 0 10px;
-	outline: 1px solid red;	
+	
+	padding: 0 10px;	
+	
 	box-sizing: border-box;
 }
 .map-title, .write-us {
@@ -359,10 +369,10 @@ nav a:hover {
 	
 	text-align: center;
 	margin: 10px auto;
-	background-color: dodgerblue;	
-	border-radius: 5px;
+	background-color: #e6e6e6;	
+	border-radius: 20px;
 	
-	color: white;
+	color: black;
 }
 
 /**************************** end contacts ************************************/
