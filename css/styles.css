@@ -383,6 +383,17 @@ header .email:before {
 	
 	color: black;
 }
+.feedback-form label.error {
+  font-size: 0.8em;
+  color: #F00;
+  font-weight: bold;
+  display: block;
+  margin-top: -10px;
+}
+.feedback-form input.error, .feedback-form textarea.error {
+  background: #FFA9B8;
+  border: 1px solid red;
+}
 
 /**************************** end contacts ************************************/
 @media (max-width: 399px) {

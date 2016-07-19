@@ -12,13 +12,18 @@ sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 form = cgi.FieldStorage()
 email = form.getfirst("e_mail", "не задано")
 name = form.getfirst("name", "не задано")
-message = form.getfirst("letter-content", "не задано")
+message = form.getfirst("letter_content", "не задано")
 email = html.escape(email)
 name = html.escape(name)
 message = html.escape(message)
 
 print("Content-type: text/html\n")
-print("Ваше сообщение отправлено\n")
+if email == "не задано" or message == "не задано" or name == "не задано":
+	print("error",end='')
+	exit()
+else:
+	print("Ваше сообщение отправлено\n")
+
 # отправитель
 emailfrom = 'site@tzi73.ru'
 # получатель
