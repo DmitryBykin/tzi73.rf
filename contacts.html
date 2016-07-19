@@ -11,6 +11,7 @@
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
  <script src="js/jquery-3.0.0.min.js"></script>
+ <script src="js/jquery.validate.min.js"></script>
 	
  <!--[if lt IE 9]>
  <script src='js/html5shiv.js'></script>
@@ -53,14 +54,15 @@
 			</div>			
 			<div class="feedback-form">
 				<p class="write-us">Напишите нам</p>
-				<form action="/cgi-bin/sendmail.py" method="get" id="form">					
-					<label for="name">Ваше имя/организация:</label>
+				<form action="/cgi-bin/sendmail.py" method="post" id="form">					
+					<label>Ваше имя/организация:</label>
 					<input type="text" placeholder="Представьтесь, пожалуйста" name="name" size="30">					 
-					<label for="e-mail">Ваш e-mail:</label>
-					<input type="text" placeholder="Для отправки ответа" name="e-mail" size="30">
-					<label for="letter-content">Текст сообщения:</label>
+					<label>Ваш e-mail:</label>
+					<input type="text" placeholder="Для отправки ответа" name="e_mail" size="30">
+					<label>Текст сообщения:</label>
 					<textarea name="letter-content" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
-					<input type="button" class="send-email" onclick="sendRequest();" value="Отправить">
+					<!--<input type="button" class="send-email" onclick="sendRequest();" value="Отправить">-->
+					<input type="submit" class="send-email" value="Отправить">
 					<div class="request-send-success"></div>
 				</form>
 			</div>
@@ -82,18 +84,32 @@
 	<script>
 		$('#form input[type="text"]').val('');		
 		$('#form textarea').val('');
-		
-		var sendRequest = function(){
-			jQuery.ajax({    // Начала конструкции для работы с Ajax через jQuery
-				type: "GET", // Метод, которым получаем данные из формы
-				url: "/cgi-bin/sendmail.py", // Обработчик формы.
-				data: jQuery("#form").serialize(), // Этот метод, берет форму с id=form и достает оттуда данные
-				success: function(html) {    // функция выполняемая при успешном отправлении данных
-					//jQuery("body").empty();    // очищаем тело документа
-					jQuery(".request-send-success").html("Ваше сообщение отправлено.Если в ближайшее время на указанный Вами e-mail не придет подтврждение, проверьте, пожалуйста еще раз адрес"); // вставляем сообщение об успехе
+		$('#form').validate({
+			rules: {
+				name: {
+					required: true
+				},
+				e_mail: {
+					required: true
 				}
-			});		
-		}
+			} // end rules
+		});
+		
+		$('form').submit(function(evt){			
+			evt.preventDefault();
+			$.ajax({    // Начала конструкции для работы с Ajax через jQuery
+				type: "POST", // Метод, которым получаем данные из формы
+				url: "/cgi-bin/sendmail.py", // Обработчик формы.
+				data: $("#form").serialize(), // Этот метод, берет форму с id=form и достает оттуда данные
+				success: function(html) {    
+					$(".request-send-success").html("Ваше сообщение отправлено.Если в ближайшее время на указанный Вами e-mail не придет подтверждение проверьте, пожалуйста, еще раз адрес"); 
+					
+					$('#form input[type="text"]').val('');		// обнуляем форму
+					$('#form textarea').val('');
+				}
+			});
+			
+		})
 	</script>
 </body>
 </html>

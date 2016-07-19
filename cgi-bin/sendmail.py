@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 form = cgi.FieldStorage()
-email = form.getfirst("e-mail", "не задано")
+email = form.getfirst("e_mail", "не задано")
 name = form.getfirst("name", "не задано")
 message = form.getfirst("letter-content", "не задано")
 email = html.escape(email)
@@ -77,4 +77,3 @@ s.ehlo()
 s.login(user_name, user_passwd)
 s.sendmail(emailfrom, emailto, msg.as_string())
 s.quit()
-

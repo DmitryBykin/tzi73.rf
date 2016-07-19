@@ -99,17 +99,17 @@ nav a:hover {
 .mobile {
 	display: none;
 }
-.phone, .email {	
+header .phone, header .email {	
 	position: relative;
 	padding-left: 35px;	
 }
-.phone {
+header .phone {
 	margin-bottom: 10px;	
 }
-.phone:before, .email:before {
+header .phone:before, header .email:before {
 	background: url('../img/sprites.png') no-repeat;
 }
-.phone:before {
+header .phone:before {
 	position: absolute;
 	content: '';
 	top: 1px;
@@ -118,7 +118,7 @@ nav a:hover {
 	height: 19px;	
 	background-position: 0 0;
 }
-.email:before {
+header .email:before {
 	position: absolute;
 	content: '';
 	top: 1px;
@@ -351,9 +351,18 @@ nav a:hover {
 .feedback-form .request-send-success {
 	margin-top: 10px;
 	
+	font-size: 11px;
+	
 	text-align: center;
 	
 	color: green;	
+}
+.feedback-form .request-send-error {
+	font-size: 12px;
+	
+	text-align: center;
+	
+	color: red;	
 }
 .map {
 	float: right;
