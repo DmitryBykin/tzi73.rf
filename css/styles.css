@@ -1,6 +1,6 @@
 body {
   /*background-color: rgba(125,125,125,0.7);
-  outline: 1px solid black;*/
+  outline: 1px solid black;*/	
 }
 a {
   text-decoration: none;  
@@ -313,10 +313,63 @@ nav a:hover {
 	margin-left: 50px;
 	//outline: 1px solid red;
 }
+/****************************** contacts ************************************/
+.contacts-main {
+	margin-top: 20px;
+}
+.feedback-form {
+	float: left;
+	
+	width: 40%;
 
+	padding-right: 50px;
+	
+	box-sizing: border-box;
+	
+	outline: 1px solid red;	
+}
+.feedback-form textarea{	
+	resize: none;
+}
+.feedback-form label {	
+	//margin-bottom: 5px;
+	display: block;
+}
+.feedback-form input[type="text"],
+.feedback-form textarea {	
+	margin-bottom: 10px;
+	display: block;
+}
+.feedback-form button {	
+	padding: 5px 10px 5px 10px;
+	display: block;	
+	margin: 0 auto;
+	cursor: pointer;
+}
+.map {
+	float: right;
+	width: 60%;
+	padding: 0 10px;
+	outline: 1px solid red;	
+	box-sizing: border-box;
+}
+.map-title, .write-us {
+	width: 200px;
+	padding: 10px 5px 10px 5px;
+	
+	text-align: center;
+	margin: 10px auto;
+	background-color: dodgerblue;	
+	border-radius: 5px;
+	
+	color: white;
+}
+
+/**************************** end contacts ************************************/
 @media (max-width: 399px) {
 	.wrapper {
-		width: auto;		
+		width: 100%;		
+		outline: 1px solid green;
 	}
 	.mobile {
 		display: block;
@@ -350,11 +403,20 @@ nav a:hover {
 		float: none;
 		margin: 40px auto;
 	}  
+	.map {
+		float: none;
+		width: 100%;
+	}
+	.feedback-form {
+		float: none;
+		width: 100%;
+	}	
 }
 
 @media (min-width: 400px) and (max-width: 799px) {
 	.wrapper {
-		width: auto;
+		width: 100%;		
+		//width: auto;
 	}	
 
 	header figure {
@@ -363,11 +425,10 @@ nav a:hover {
 		text-align: center;
 	}
 	header h1 {		
-		width: auto;
-		max-width: 560px;
-				
-		text-align: center;
-		margin-left: 0;		
+		width: 90%;		
+		display: block;		
+		text-align: center;		
+		margin: 0 auto;		
 	}
 	.contacts {		
 		float: none;
@@ -389,6 +450,14 @@ nav a:hover {
 		float: none;
 		margin: 40px auto;
 	}	  
+	.map {
+		float: none;
+		width: 100%;
+	}
+	.feedback-form {
+		float: none;
+		width: 100%;
+	}
 }
 @media (min-width: 800px) and (max-width: 1023px) {
 	.wrapper {

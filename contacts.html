@@ -10,6 +10,8 @@
  <link rel='stylesheet' href='css/styles.css'>
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <script src="js/jquery-3.0.0.min.js"></script>
+	
  <!--[if lt IE 9]>
  <script src='js/html5shiv.js'></script>
  <![endif]-->
@@ -37,23 +39,58 @@
 				<ul>
 					<li><a href="index.html">Каталог</a></li>
 					<li><a href="services.html">Услуги</a></li>
-					<li  class="active"><a href="contacts.html">Контакты</a></li>
+					<li  class="active"><a href="contacts.html">Обратная связь</a></li>
 				</ul>
 			</nav>			
 		</div> <!-- end wrapper -->
 	</header>
 	
 	<main class="contacts-main">
-		Раздел находится в разработке
+		<div class="wrapper clearfix">										
+			<div class="map">
+				<p class="map-title">Как нас найти</p>
+				<div id="yandex-map"></div>								
+			</div>			
+			<div class="feedback-form">
+				<p class="write-us">Напишите нам</p>
+				<form action="/cgi-bin/sendmail.py" method="get" id="form">					
+					<label for="name">Ваше имя:</label>
+					<input type="text" placeholder="Представьтесь, пожалуйста" name="name" size="30">					 
+					<label for="e-mail">Ваш e-mail:</label>
+					<input type="text" placeholder="Для отправки ответа" name="e-mail" size="30">
+					<label for="letter-content">Текст сообщения:</label>
+					<textarea name="letter-content" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
+					<button class="send-email" type="submit" onclick="sendRequest();">Отправить</button>
+				</form>
+			</div>
+		</div>		
 	</main>
 	
 	<footer class="contacts-footer">
 	
 	</footer>
 	
+	<!-- Yandex Map -->
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=daYS9PuY9OuSpyTG8Be8wMJCG2XoPIfw&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
+	<!-- /Yandex Map-->
+	
 	<!-- Yandex.Metrika counter --> 
 		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
 	<!-- /Yandex.Metrika counter -->
+	
+	<script>
+		var sendRequest = function(){
+			jQuery.ajax({    // Начала конструкции для работы с Ajax через jQuery
+				type: "GET", // Метод, которым получаем данные из формы
+				url: "/cgi-bin/sendmail.py", // Обработчик формы.
+				data: jQuery("#form").serialize(), // Этот метод, берет форму с id=form и достает оттуда данные
+				success: function(html) {    // функция выполняемая при успешном отправлении данных
+					jQuery("body").empty();    // очищаем тело документа
+					jQuery("body").append("<h2><center>Ваше сообщение успешно отправлено.</center></h2>"); // вставляем сообщение об успехе
+				}
+			});		
+		}
+	</script>
 </body>
 </html>
 
