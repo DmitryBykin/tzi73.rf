@@ -2,16 +2,15 @@
 <html lang="ru">
 <head>
  <meta charset='utf-8'>
- <title>Обратная связь и схема проезда</title>
- <meta name="description" content="Обратная связь и схема проезда">
+ <title>Схема проезда</title>
+ <meta name="description" content="Cхема проезда">
  <meta name="keywords" content="">
  <meta name="viewport" content="width=device-width">
  <link rel='stylesheet' href='css/normalize.css'>
  <link rel='stylesheet' href='css/styles.css'>
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
- <script src="js/jquery-3.0.0.min.js"></script>
- <script src="js/jquery.validate.min.js"></script>
+ <script src="js/jquery-3.0.0.min.js"></script> 
 	
  <!--[if lt IE 9]>
  <script src='js/html5shiv.js'></script>
@@ -19,83 +18,14 @@
 </head>
 <body>
 	
-	<header class="contacts-header">
-		<div class="wrapper clearfix">
-			<figure>
-				<a href="index.html">
-					<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
-				</a>
-			</figure>
-			<h1>
-				Оборудование и программное обеспечение для технической защиты информации, аттестация объектов информатизации
-			</h1>		
-		
-			<div class="contacts">
-				<p class="phone stac">(8422) 62-02-09</p>				
-				<a class="phone mobile" href="tel:88422620209">(8422) 62-02-09</a> <!-- для мобильных -->
-				<a class="email" href="mailto:mail@tzi73.ru">mail@tzi73.ru</a>				
-			</div>
-
-			<nav>
-				<ul>
-					<li><a href="index.html">Каталог</a></li>
-					<li><a href="services.html">Услуги</a></li>
-					<li  class="active"><a href="contacts.html">Обратная связь</a></li>
-				</ul>
-			</nav>			
-		</div> <!-- end wrapper -->
-	</header>
 	
 	<main class="contacts-main">
 		<div class="wrapper clearfix">										
-			<div class="map">
-				<p class="map-title">Как нас найти</p>				
-				<div id="yandex-map"></div>								
-			</div>			
-				
-				<a class="show-map" href="map.html">Посмотреть схему проезда</a> <!-- Для мобильников -->
-				
-			<div class="feedback-form">
-				<p class="write-us">Напишите нам</p>
-				<form action="/cgi-bin/sendmail.py" method="post" id="form">					
-					<label>Ваше имя/организация:</label>
-					<input type="text" placeholder="Представьтесь, пожалуйста" name="name" size="30" title="Введите имя">		
-                    <label>Ваш e-mail:</label>
-					<input type="text" placeholder="Для отправки ответа" name="e_mail" size="30">
-					<label>Текст сообщения:</label>
-					<textarea name="letter_content" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
-					<!--<input type="button" class="send-email" onclick="sendRequest();" value="Отправить">-->
-					<input type="submit" class="send-email" value="Отправить">
-					<div class="request-send-success"></div>
-				</form>
-			</div>
-		</div>		
+			<div id="yandex-map"></div>
+			<a class="button-back" href="contacts.html">Назад</a>
+		</div>	
 	</main>
 	
-	<footer class="contacts-footer">
-		<div class="wrapper">
-			<div class="flex-container">
-				<figure class="logo-footer">
-					<a href="index.html">
-						<img src="img/logo-70-opacity.png" alt="Логотип ЗАО РАЦ" width="96" height="96">
-					</a>
-				</figure>
-				<p class="company-address">
-					432018, г. Ульяновск, ул. Самарская, д. 175 <br>
-					ЗАО "Региональный аттестационный центр"
-				</p>			
-				<p class="company-phone">
-					(8422) 62-02-09
-				</p>
-				<p class="company-web">
-					<a href="index.html">www.тзи73.рф</a>
-				</p>
-			</div>
-			<p class="years">
-				&copy; 2004-2016
-			</p>	
-		</div>
-	</footer>
 	
 	<!-- Yandex Map -->
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=daYS9PuY9OuSpyTG8Be8wMJCG2XoPIfw&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>

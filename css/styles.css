@@ -27,7 +27,7 @@ header figure {
 header h1 {
 	display: inline-block;
 	vertical-align: middle;
-	width: 30%;
+	width: 40%;
 	margin-left: 3%;	
 	margin-top: 0;
 	
@@ -367,12 +367,16 @@ header .email:before {
 .map {
 	float: right;
 	width: 60%;
+	max-height: 500px;
 	
 	padding: 0 10px;	
 	
 	box-sizing: border-box;
 }
-.map-title, .write-us {
+.show-map {
+		display: none;
+	}
+.map-title, .write-us, .show-map {
 	width: 200px;
 	padding: 10px 5px 10px 5px;
 	
@@ -383,6 +387,10 @@ header .email:before {
 	
 	color: black;
 }
+.show-map {
+	background-color: cornflowerblue;
+}
+
 .feedback-form label.error {
   font-size: 0.8em;
   color: #F00;
@@ -394,12 +402,117 @@ header .email:before {
   background: #FFA9B8;
   border: 1px solid red;
 }
-
+.button-back {
+	display: block;
+	
+	width: 50px;
+	
+	padding: 10px;
+	margin: 10px auto;
+	
+	background-color: cornflowerblue;
+	border-radius: 10px;
+}
 /**************************** end contacts ************************************/
+
+/**************************** footer ******************************************/
+.flex-container {	
+  display: flex;		
+  
+  align-items: center;
+	
+	justify-content: space-around;	
+	
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.contacts-footer, .services-footer {	
+	margin-top: 50px;
+	
+	text-align: center;
+	
+	background-color: #e6e6e6;	
+}
+.logo-footer {
+//	display: inline-block;	
+}
+
+.company-address {	
+	//width: 35%;
+	position: relative;
+	
+	//display: inline-block;
+	//vertical-align: top;	
+	
+	padding: 20px 0 20px 35px;
+	//margin-top: 25px;
+	//outline: 1px solid red;
+}
+.company-address:before {
+	content: '';
+	position: absolute;
+	
+	width: 15px;
+	height: 30px;
+	
+	top: 50%;
+	margin-top: -15px;
+	left: 0;
+	
+	background: url('../img/address.svg') no-repeat;	
+	background-size: 15px 30px;	
+}
+.company-phone {
+	position: relative;	
+	
+	padding: 20px 0 20px 35px;
+}
+.company-phone:before {
+	content: '';
+	position: absolute;
+	
+	width: 15px;
+	height: 30px;
+	
+	top: 50%;
+	margin-top: -15px;
+	left: 0;
+	
+	background: url('../img/phone.svg') no-repeat;	
+	background-size: 15px 30px;	
+}
+.years {	
+	width: 130px;
+	margin: 0 auto;
+	
+	margin-top: 10px;
+	
+	padding-bottom: 20px;
+}
+.company-web {
+	position: relative;
+	
+	padding: 20px 0 20px 40px;
+}
+.company-web:before {
+	content: '';
+	position: absolute;
+	
+	width: 30px;
+	height: 30px;
+	
+	top: 50%;
+	margin-top: -15px;
+	left: 0;
+	
+	background: url('../img/web.svg') no-repeat;	
+	background-size: 30px 30px;	
+}
+
+/***************************** end footer *************************************/
 @media (max-width: 399px) {
 	.wrapper {
-		width: 100%;		
-		outline: 1px solid green;
+		width: 100%;				
 	}
 	.mobile {
 		display: block;
@@ -427,20 +540,34 @@ header .email:before {
 	}
 	nav ul li {
 		margin: 0;
+		margin-bottom: 10px;
 	}
+	nav ul li:last-of-type {
+		margin-bottom: 0;		
+	}
+	
 	.nav-catalog-block, 
 	.production-block {		
 		float: none;
 		margin: 40px auto;
 	}  
 	.map {
-		float: none;
-		width: 100%;
+		display: none;
+	}	
+	.show-map {
+		display: block;
 	}
 	.feedback-form {
 		float: none;
 		width: 100%;
+		padding-right: 0;
 	}	
+	.logo-footer {
+		display: none;
+	}
+	.company-address, .company-phone, .company-web {
+		margin-top: 0;		
+	}
 }
 
 @media (min-width: 400px) and (max-width: 799px) {
@@ -471,6 +598,11 @@ header .email:before {
 	}
 	nav ul li {
 		margin: 0 10px;
+		margin-bottom: 15px;		
+	}	
+	
+	nav ul li:last-of-type {
+		margin-bottom: 0;		
 	}
 	.active a:after {	
 		bottom: -24px;	
@@ -482,20 +614,32 @@ header .email:before {
 	}	  
 	.map {
 		float: none;
-		width: 100%;
+		width: 100%;		
 	}
+	#yandex-map {
+		margin: 0 90px;
+		border: 1px dashed black;
+	}
+	
 	.feedback-form {
 		float: none;
 		width: 100%;
+		padding-right: 0;
+	}
+	.logo-footer {
+		display: none;
+	}
+	.company-address, .company-phone, .company-web {
+		margin-top: 0;
 	}
 }
 @media (min-width: 800px) and (max-width: 1023px) {
 	.wrapper {
 		width: 92%;
-	}	
+	}			
 }
 @media (min-width: 1024px) {
 	.wrapper {
 		width: 80%;
-	}
+	}	
 }
