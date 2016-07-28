@@ -373,6 +373,9 @@ header .email:before {
 	
 	box-sizing: border-box;
 }
+#yandex-map {
+	height: 400px;
+}
 .show-map {
 		display: none;
 	}
@@ -405,7 +408,9 @@ header .email:before {
 .button-back {
 	display: block;
 	
-	width: 50px;
+	width: 70px;
+	
+	text-align: center;
 	
 	padding: 10px;
 	margin: 10px auto;
@@ -509,6 +514,9 @@ header .email:before {
 	background-size: 30px 30px;	
 }
 
+.loading-map-message {
+	
+}
 /***************************** end footer *************************************/
 @media (max-width: 399px) {
 	.wrapper {
@@ -568,6 +576,16 @@ header .email:before {
 	.company-address, .company-phone, .company-web {
 		margin-top: 0;		
 	}
+	#yandex-map {
+		border: 1px dashed black;		
+	}
+	.loading-map-message {
+		animation: blinktitle 500ms;	
+	}
+	@keyframes blinktitle {
+		from {color: green;}
+		to {color: darkblue;}
+ 	}
 }
 
 @media (min-width: 400px) and (max-width: 799px) {
@@ -616,11 +634,13 @@ header .email:before {
 		float: none;
 		width: 100%;		
 	}
-	#yandex-map {
+	#yandex-map {		
 		margin: 0 90px;
-		border: 1px dashed black;
+		border: 1px dashed black;		
 	}
-	
+	.loading-map-message{
+		margin: 0 90px;
+	}	
 	.feedback-form {
 		float: none;
 		width: 100%;

@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
  <meta charset='utf-8'>
- <title>Схема проезда</title>
- <meta name="description" content="Cхема проезда">
+ <title>Обратная связь и схема проезда</title>
+ <meta name="description" content="Обратная связь и схема проезда">
  <meta name="keywords" content="">
  <meta name="viewport" content="width=device-width">
  <link rel='stylesheet' href='css/normalize.css'>
@@ -11,84 +11,59 @@
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
  <script src="js/jquery-3.0.0.min.js"></script> 
-	
- <!--[if lt IE 9]>
- <script src='js/html5shiv.js'></script>
- <![endif]-->
+ <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+ 
+<script type="text/javascript">
+var myMap;
+ 
+// Дождёмся загрузки API и готовности DOM.
+ymaps.ready(init);
+ 
+function init () {
+    // Создание экземпляра карты и его привязка к контейнеру с
+    // заданным id ("map").
+    myMap = new ymaps.Map('yandex-map', {
+        // При инициализации карты обязательно нужно указать
+        // её центр и коэффициент масштабирования.
+        center: [54.260752, 48.286324], // Ульяновск
+        zoom: 16,
+				controls: ['zoomControl', 'typeSelector']		
+    }),
+			myGeoObject = new ymaps.GeoObject({
+            // Описание геометрии.
+            geometry: {
+                type: "Point",
+                coordinates: [54.260752, 48.286324]
+            },
+            // Свойства.
+            properties: {
+                // Контент метки.               
+								//hintCaption: 'ЗАО "РАЦ"',
+                hintContent: 'Самарская, 175',
+								iconCaption: 'ЗАО "РАЦ"'								
+            }
+        }, {
+            // Опции.
+            // Иконка метки будет растягиваться под размер ее содержимого.
+            preset: 'islands#greenDotIconWithCaption',
+						//preset: 'islands#blackStretchyIcon',
+            // Метку можно перемещать.
+            draggable: true
+        });
+		myMap.geoObjects.add(myGeoObject);
+ 		$('.loading-map-message').hide();			 	
+}  // end function init
+</script>
 </head>
+ 
 <body>
-	
-	
 	<main class="contacts-main">
 		<div class="wrapper clearfix">										
-			<div id="yandex-map"></div>
-			<a class="button-back" href="contacts.html">Назад</a>
+			<p class="loading-map-message" style="font-size: 20px; ">Загрузка карты ...</p>
+			<div id="yandex-map" style="height: 300px;"></div>
+			<a class="button-back" href="contacts.html">Назад</a>			
 		</div>	
 	</main>
-	
-	
-	<!-- Yandex Map -->
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=daYS9PuY9OuSpyTG8Be8wMJCG2XoPIfw&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
-	<!-- /Yandex Map-->
-	
-	<!-- Yandex.Metrika counter --> 
-		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
-	<!-- /Yandex.Metrika counter -->
-	
-	<script>
-		$('#form input[type="text"]').val('');		
-		$('#form textarea').val('');
-		
-        $('#form').validate({
-          rules : {
-            name : {
-              required: true
-            },
-            e_mail : {
-              required: true,
-              email: true
-            },
-            letter_content : {
-              required: true,
-            }
-          },
-          messages : {
-            name: {
-              required: 'Введите имя или организацию'
-            },
-            e_mail : {
-              required: 'Введите e-mail',
-              email: 'Некорректный адрес'
-            },
-            letter_content : {
-              required: 'Введите сообщение'
-            }
-          },          
-          errorPlacement: 
-            function(error, element) {                
-                  error.insertAfter(element);
-            } 
-        });        
-		
-		$('#form').submit( function(evt){ //function sendRequest(){						
-            evt.preventDefault();
-			$.ajax({    // Начала конструкции для работы с Ajax через jQuery
-				type: "POST", // Метод, которым получаем данные из формы
-				url: "/cgi-bin/sendmail.py", // Обработчик формы.
-				data: $("#form").serialize(), // Этот метод, берет форму с id=form и достает оттуда данные
-				success: function(html) {                        
-                    if(html == 'error')
-                      return false;
-                    else {
-                      $(".request-send-success").html("Ваше сообщение отправлено.Если в ближайшее время на указанный Вами e-mail не придет подтверждение проверьте, пожалуйста, еще раз адрес"); 
-
-                      $('#form input[type="text"]').val('');		// обнуляем форму
-                      $('#form textarea').val('');
-                    }
-				}
-			});			          
-		});
-	</script>
+ 
 </body>
 </html>
-
