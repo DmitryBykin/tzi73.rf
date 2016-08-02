@@ -2,8 +2,7 @@ html, body {
   /*background-color: rgba(125,125,125,0.7);
   outline: 1px solid black;*/		
 	
-	height: 100%;
-	outline: 1px solid red;
+	height: 100%;	
 }
 .wrap-height-block {
 	min-height: 100%;	
@@ -442,12 +441,13 @@ header .email:before {
 	flex-wrap: wrap;
 	flex-direction: row;
 }
-.catalog-footer, .contacts-footer, .services-footer {	
-	margin-top: -150px; // 50px;
+.catalog-footer, .contacts-footer, .services-footer {	  
+  
+  margin-top: -183px; // 50px;
+  	
+  text-align: center;
 	
-	text-align: center;
-	
-	background-color: #e6e6e6;	
+  background-color: #e6e6e6;	
 }
 .logo-footer {
 //	display: inline-block;	
