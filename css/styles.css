@@ -141,6 +141,7 @@ header .email:before {
 	margin-top: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
+    margin-bottom: 40px;
 }
 .services-main h2 {
 	position: relative;
