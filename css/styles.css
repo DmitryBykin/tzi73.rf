@@ -1,7 +1,17 @@
-body {
+html, body {
   /*background-color: rgba(125,125,125,0.7);
-  outline: 1px solid black;*/	
+  outline: 1px solid black;*/		
+	
+	height: 100%;
+	outline: 1px solid red;
 }
+.wrap-height-block {
+	min-height: 100%;	
+}
+.empty-height-container {
+	height: 180px;
+}
+
 a {
   text-decoration: none;  
   color: inherit;
@@ -421,6 +431,7 @@ header .email:before {
 /**************************** end contacts ************************************/
 
 /**************************** footer ******************************************/
+
 .flex-container {	
   display: flex;		
   
@@ -431,8 +442,8 @@ header .email:before {
 	flex-wrap: wrap;
 	flex-direction: row;
 }
-.contacts-footer, .services-footer {	
-	margin-top: 50px;
+.catalog-footer, .contacts-footer, .services-footer {	
+	margin-top: -150px; // 50px;
 	
 	text-align: center;
 	

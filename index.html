@@ -16,75 +16,101 @@
 </head>
 <body>
 	
-	<header class="catalog-header">
-		<div class="wrapper clearfix">
-			<figure>
-				<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
-			</figure>
-			<h1>
-				Оборудование и программное обеспечение для технической защиты информации, аттестация объектов информатизации
-			</h1>		
-		
-			<div class="contacts">
-				<p class="phone stac">(8422) 62-02-09</p>				
-				<a class="phone mobile" href="tel:88422620209">(8422) 62-02-09</a> <!-- для мобильных -->
-				<a class="email" href="mailto:mail@tzi73.ru">mail@tzi73.ru</a>				
-			</div>
+	<div class="wrap-height-block">
+		<header class="catalog-header">
+			<div class="wrapper clearfix">
+				<figure>
+					<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
+				</figure>
+				<h1>
+					Оборудование и программное обеспечение для технической защиты информации, аттестация объектов информатизации
+				</h1>		
 
-			<nav>
-				<ul>
-					<li class="active"><a href="index.html">Каталог</a></li>
-					<li><a href="services.html">Услуги</a></li>
-					<li><a href="contacts.html">Обратная связь</a></li>
-				</ul>
-			</nav>			
-		</div> <!-- end wrapper -->
-	</header>
-	
-	<main class="catalog-main">
-		<div class="wrapper clearfix">			
+				<div class="contacts">
+					<p class="phone stac">(8422) 62-02-09</p>				
+					<a class="phone mobile" href="tel:88422620209">(8422) 62-02-09</a> <!-- для мобильных -->
+					<a class="email" href="mailto:mail@tzi73.ru">mail@tzi73.ru</a>				
+				</div>
 
-				<input type="radio" id="all-catalog" name="catalog-toggle" checked >
-				<input type="radio" id="for-spso" name="catalog-toggle">
-				<input type="radio" id="for-attestation" name="catalog-toggle">
-
-
-				<div class="nav-catalog-block">
-					<ul class="nav-catalog-list">
-						<li>
-							<label class="nav-catalog-item" for="all-catalog">Весь каталог</label>
-						</li>
-						<li>
-							<label class="nav-catalog-item" for="for-spso">Для СП и СО</label>
-						</li>
-						<li>
-							<label class="nav-catalog-item" for="for-attestation">Для аттестации</label>
-						</li>
+				<nav>
+					<ul>
+						<li class="active"><a href="index.html">Каталог</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="contacts.html">Обратная связь</a></li>
 					</ul>
-				</div>
+				</nav>			
+			</div> <!-- end wrapper -->
+		</header>
 
-				<div class="production-block">
-					<section class="production-group">
-						Весь каталог. <br>
-						Раздел находится в разработке
-					</section>
+		<main class="catalog-main">
+			<div class="wrapper clearfix">			
 
-					<section class="production-group">
-						СП и СО. <br>
-						Раздел находится в разработке
-					</section>
-					
-					<section class="production-group">
-						Аттестация. <br>
-						Раздел находится в разработке
-					</section>
+					<input type="radio" id="all-catalog" name="catalog-toggle" checked >
+					<input type="radio" id="for-spso" name="catalog-toggle">
+					<input type="radio" id="for-attestation" name="catalog-toggle">
 
-				</div>
-		</div>
-	</main>
+
+					<div class="nav-catalog-block">
+						<ul class="nav-catalog-list">
+							<li>
+								<label class="nav-catalog-item" for="all-catalog">Весь каталог</label>
+							</li>
+							<li>
+								<label class="nav-catalog-item" for="for-spso">Для СП и СО</label>
+							</li>
+							<li>
+								<label class="nav-catalog-item" for="for-attestation">Для аттестации</label>
+							</li>
+						</ul>
+					</div>
+
+					<div class="production-block">
+						<section class="production-group">
+							Весь каталог. <br>
+							Раздел находится в разработке
+						</section>
+
+						<section class="production-group">
+							СП и СО. <br>
+							Раздел находится в разработке
+						</section>
+
+						<section class="production-group">
+							Аттестация. <br>
+							Раздел находится в разработке
+						</section>
+
+					</div>
+			</div>
+		</main>
+		
+		<div class="empty-height-container"></div> <!-- чтобы footer не наезжал на текст -->	
+		
+	</div> <!-- end wrap-height-block -->
 	
 	<footer class="catalog-footer">
-	
+		<div class="wrapper">
+				<div class="flex-container">
+					<figure class="logo-footer">
+						<a href="index.html">
+							<img src="img/logo-70-opacity.png" alt="Логотип ЗАО РАЦ" width="96" height="96">
+						</a>
+					</figure>
+					<p class="company-address">
+						432018, г. Ульяновск, ул. Самарская, д. 175 <br>
+						ЗАО "Региональный аттестационный центр"
+					</p>			
+					<p class="company-phone">
+						(8422) 62-02-09
+					</p>
+					<p class="company-web">
+						<a href="index.html">www.тзи73.рф</a>
+					</p>
+				</div>
+				<p class="years">
+					&copy; 2004-2016
+				</p>	
+			</div>
 	</footer>
 	
 	<!-- Yandex.Metrika counter --> 

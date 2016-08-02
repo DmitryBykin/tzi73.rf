@@ -18,59 +18,63 @@
  <![endif]-->
 </head>
 <body>
-	
-	<header class="contacts-header">
-		<div class="wrapper clearfix">
-			<figure>
-				<a href="index.html">
-					<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
-				</a>
-			</figure>
-			<h1>
-				Оборудование и программное обеспечение для технической защиты информации, аттестация объектов информатизации
-			</h1>		
-		
-			<div class="contacts">
-				<p class="phone stac">(8422) 62-02-09</p>				
-				<a class="phone mobile" href="tel:88422620209">(8422) 62-02-09</a> <!-- для мобильных -->
-				<a class="email" href="mailto:mail@tzi73.ru">mail@tzi73.ru</a>				
-			</div>
+	<div class="wrap-height-block">
+		<header class="contacts-header">
+			<div class="wrapper clearfix">
+				<figure>
+					<a href="index.html">
+						<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
+					</a>
+				</figure>
+				<h1>
+					Оборудование и программное обеспечение для технической защиты информации, аттестация объектов информатизации
+				</h1>		
 
-			<nav>
-				<ul>
-					<li><a href="index.html">Каталог</a></li>
-					<li><a href="services.html">Услуги</a></li>
-					<li  class="active"><a href="contacts.html">Обратная связь</a></li>
-				</ul>
-			</nav>			
-		</div> <!-- end wrapper -->
-	</header>
-	
-	<main class="contacts-main">
-		<div class="wrapper clearfix">										
-			<div class="map">
-				<p class="map-title">Как нас найти</p>				
-				<div id="yandex-map"></div>								
-			</div>			
-				
-			<a class="show-map" href="map.html">Посмотреть схему проезда</a> <!-- Для мобильников -->
-				
-			<div class="feedback-form">
-				<p class="write-us">Напишите нам</p>
-				<form action="/cgi-bin/sendmail.py" method="post" id="form">					
-					<label>Ваше имя/организация:</label>
-					<input type="text" placeholder="Представьтесь, пожалуйста" name="name" size="30" title="Введите имя">		
-          <label>Ваш e-mail:</label>
-					<input type="text" placeholder="Для отправки ответа" name="e_mail" size="30">
-					<label>Текст сообщения:</label>
-					<textarea name="letter_content" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
-					<!--<input type="button" class="send-email" onclick="sendRequest();" value="Отправить">-->
-					<input type="submit" class="send-email" value="Отправить">
-					<div class="request-send-success"></div>
-				</form>
-			</div>
-		</div>		
-	</main>
+				<div class="contacts">
+					<p class="phone stac">(8422) 62-02-09</p>				
+					<a class="phone mobile" href="tel:88422620209">(8422) 62-02-09</a> <!-- для мобильных -->
+					<a class="email" href="mailto:mail@tzi73.ru">mail@tzi73.ru</a>				
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Каталог</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li  class="active"><a href="contacts.html">Обратная связь</a></li>
+					</ul>
+				</nav>			
+			</div> <!-- end wrapper -->
+		</header>
+
+		<main class="contacts-main">
+			<div class="wrapper clearfix">										
+				<div class="map">
+					<p class="map-title">Как нас найти</p>				
+					<div id="yandex-map"></div>								
+				</div>			
+
+				<a class="show-map" href="map.html">Посмотреть схему проезда</a> <!-- Для мобильников -->
+
+				<div class="feedback-form">
+					<p class="write-us">Напишите нам</p>
+					<form action="/cgi-bin/sendmail.py" method="post" id="form">					
+						<label>Ваше имя/организация:</label>
+						<input type="text" placeholder="Представьтесь, пожалуйста" name="name" size="30" title="Введите имя">		
+						<label>Ваш e-mail:</label>
+						<input type="text" placeholder="Для отправки ответа" name="e_mail" size="30">
+						<label>Текст сообщения:</label>
+						<textarea name="letter_content" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
+						<!--<input type="button" class="send-email" onclick="sendRequest();" value="Отправить">-->
+						<input type="submit" class="send-email" value="Отправить">
+						<div class="request-send-success"></div>
+					</form>
+				</div>
+			</div>		
+		</main>
+		
+		<div class="empty-height-container"></div> <!-- чтобы footer не наезжал на текст-->
+		
+	</div> <!-- end wrap-height-block -->
 	
 	<footer class="contacts-footer">
 		<div class="wrapper">
