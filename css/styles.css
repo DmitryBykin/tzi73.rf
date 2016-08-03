@@ -326,6 +326,7 @@ header .email:before {
 /****************************** contacts ************************************/
 .contacts-main {
 	margin-top: 20px;
+	margin-bottom: 40px;
 }
 .feedback-form {
 	float: left;
