@@ -1,7 +1,6 @@
 html, body {
   /*background-color: rgba(125,125,125,0.7);
-  outline: 1px solid black;*/		
-	
+  outline: 1px solid black;*/			
 	height: 100%;	
 }
 .wrap-height-block {
@@ -40,7 +39,8 @@ header h1 {
 	margin-left: 3%;	
 	margin-top: 0;
 	
-	font-size: 1.1em;	
+	font-size: 0.9em;
+  line-height: 1.3em;	
 }
 * {
 	//outline: 1px solid black;
@@ -141,7 +141,7 @@ header .email:before {
 	margin-top: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .services-main h2 {
 	position: relative;
@@ -237,6 +237,7 @@ header .email:before {
 .services-main .brief, 
 .services-main .full {
 	padding-left: 35px;
+  padding-right: 35px;
 }
 .services-main .full {
 	line-height: 1.7em;
@@ -348,6 +349,7 @@ header .email:before {
 }
 .production-block .description-side .description {
 	font-style: italic;
+  margin-bottom: 1em;
 }
 .production-block .description-side a {
 	color: blue;
@@ -355,6 +357,25 @@ header .email:before {
 .production-block .description-side .price {
 	margin-top: 10px;
 	text-align: center;	
+}
+.description-download {
+  position: relative;
+}
+.description-download svg {
+  position: absolute;
+  
+  top: -2px;
+  left: 0;
+  
+  width: 20px;
+  height: 20px;  
+  stroke: red;
+}
+.description-download:hover svg {
+  stroke: blue;
+}
+.description-title {
+  padding-left: 25px;
 }
 /****************************** contacts ************************************/
 .contacts-main {

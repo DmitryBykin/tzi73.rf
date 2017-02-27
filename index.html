@@ -12,9 +12,23 @@
  <link rel="icon" href="favicon.ico" type="image/x-icon">
  <!--[if lt IE 9]>
  <script src='js/html5shiv.js'></script>
- <![endif]-->
+ <![endif]--> 
 </head>
 <body>
+  <svg style="display: none;">
+    <symbol viewBox="0 0 64 64" id="download--pdf">      
+     <g>
+     	<polygon fill="none" stroke-width="2" stroke-miterlimit="10" points="63,63 1,63 1,1 51,1 63,13 	"/>
+     </g>
+     <rect x="7" y="31" fill="none" stroke-width="2" stroke-miterlimit="10" width="50" height="32"/>
+     <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="14" y1="39" x2="50" y2="39"/>
+     <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="14" y1="47" x2="50" y2="47"/>
+     <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="14" y1="55" x2="50" y2="55"/>
+     <rect x="15" y="1" fill="none" stroke-width="2" stroke-miterlimit="10" width="34" height="19"/>
+     <rect x="38" y="5" fill="none" stroke-width="2" stroke-miterlimit="10" width="5" height="11"/>
+    </symbol>
+  </svg>  
+  
 	
 	<div class="wrap-height-block">
 		<header class="catalog-header">
@@ -23,7 +37,9 @@
 					<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
 				</figure>
 				<h1>
-					Оборудование и программное обеспечение для технической защиты информации, аттестация объектов информатизации
+					Техническая защита информации<br/>
+          Аттестация объектов информатизации<br/>
+          Разработка оборудования
 				</h1>		
 
 				<div class="contacts">
@@ -77,10 +93,15 @@
 								<div class="description-side">
 									<h2>ЭКБ СП</h2>
 									<p class="description">Программа предназначена для хранения фотографий внешнего вида микросхем, их рентгеновских снимков и datasheet.
-										В базе более 900 элементов.
+										В базе более 1000 элементов.
 									</p>
-									<a href="data/manual.pdf"> Скачать руководство (pdf)</a>
-									<p class="price">Цена: 65 000 руб.</p>
+									<a class="description-download" href="data/manual.pdf" target="_blank">
+                    <svg class="download__svg">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download--pdf">
+                      </use>
+                    </svg>
+                    <span class="description-title">руководство (pdf)</span>
+                  </a>									
 								</div>								
 							</article>
 							
@@ -98,13 +119,18 @@
 									</figure>
 								</div>
 								
-								<div class="description-side">
+                <div class="description-side">
 									<h2>ЭКБ СП</h2>
 									<p class="description">Программа предназначена для хранения фотографий внешнего вида микросхем, их рентгеновских снимков и datasheet.
-										В базе более 900 элементов.
+										В базе более 1000 элементов.
 									</p>
-									<a href="data/manual.pdf"> Скачать руководство (pdf)</a>
-									<p class="price">Цена: 65 000 руб.</p>
+									<a class="description-download" href="data/manual.pdf" target="_blank">
+                    <svg class="download__svg">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download--pdf">
+                      </use>
+                    </svg>
+                    <span class="description-title">руководство (pdf)</span>
+                  </a>									
 								</div>								
 							</article>						
 						</section>
@@ -132,11 +158,11 @@
 						(8422) 62-02-09
 					</p>
 					<p class="company-web">
-						<a href="index.html">www.тзи73.рф</a>
+						<a href="index.html">www.tzi73.ru</a>
 					</p>
 				</div>
 				<p class="years">
-					&copy; 2004-2016
+					&copy; 2004-2017
 				</p>	
 			</div>
 	</footer>
