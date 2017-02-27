@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import cgi
+import sys
+import codecs
+import html
+
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+form = cgi.FieldStorage()
+email = form.getfirst("e-mail", "не задано")
+name = form.getfirst("name", "не задано")
+email = html.escape(email)
+name = html.escape(name)
+
+print("Content-type: text/html\n")
+print("success\n")

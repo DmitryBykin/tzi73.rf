@@ -250,16 +250,13 @@ header .email:before {
 }
 
 /*************** index *************************/
-.nav-catalog-block {
-	width: 200px;
-}
 .catalog-main ul li {
 	list-style: none;		
 }
 .catalog-main ul label { /* label */
 	display: block;
 	
-	padding: 10px;	
+	padding: 10px;		
 	
 	background-color: #e6e6e6;
 	cursor: pointer;
@@ -274,16 +271,16 @@ header .email:before {
 	display: none;
 }
 #all-catalog:checked     ~ .nav-catalog-block label[for="all-catalog"],
-#for-spso:checked        ~ .nav-catalog-block label[for="for-spso"],
-#for-attestation:checked ~ .nav-catalog-block label[for="for-attestation"] {
+#equipment:checked        ~ .nav-catalog-block label[for="equipment"],
+#software:checked ~ .nav-catalog-block label[for="software"] {
 	position: relative;
   background-color: dodgerblue;    
   color: white;
   cursor: default;
 }
 #all-catalog:checked     ~ .nav-catalog-block label[for="all-catalog"]:after,
-#for-spso:checked        ~ .nav-catalog-block label[for="for-spso"]:after,
-#for-attestation:checked ~ .nav-catalog-block label[for="for-attestation"]:after {
+#equipment:checked        ~ .nav-catalog-block label[for="equipment"]:after,
+#software:checked ~ .nav-catalog-block label[for="software"]:after {
 	position: absolute;
 	content: '';
   cursor: default;
@@ -306,22 +303,58 @@ header .email:before {
 #all-catalog:checked ~ .production-block .production-group:nth-child(1) {
 	display: block;
 }
-#for-spso:checked ~ .production-block .production-group:nth-child(2) {
+#equipment:checked ~ .production-block .production-group:nth-child(2) {
 	display: block;
 }
-#for-attestation:checked ~ .production-block .production-group:nth-child(3) {
+#software:checked ~ .production-block .production-group:nth-child(3) {
 	display: block;
 }
 .nav-catalog-block {
+	width: 180px;
 	margin-top: 50px;
 	float: left;
-	//outline: 1px solid red;
+	//outline: 1px solid red;	
 }
 .production-block {
-	float: left;	
+	width: 80%;
+	float: right;	
 	margin-top: 50px;
-	margin-left: 50px;
-	//outline: 1px solid red;
+	//margin-left: 50px;	
+	//outline: 1px solid red;	
+}
+.production-block article {
+	padding: 10px;
+	outline: 1px solid #e6e6e6;
+	box-shadow: 0 0 8px #e6e6e6;
+	display: inline-block;
+}
+.production-block article:hover {
+	box-shadow: 0 0 8px black;
+}
+.production-block figure {
+	margin: 10px;
+}
+.production-block .photo-side {
+	width: 220px;
+	float: left;
+}
+.production-block .description-side {
+	width: 180px;	
+	float: right;
+	font-size: 0.8em;
+}
+.production-block .description-side h2 {
+	text-align: center;
+}
+.production-block .description-side .description {
+	font-style: italic;
+}
+.production-block .description-side a {
+	color: blue;
+}
+.production-block .description-side .price {
+	margin-top: 10px;
+	text-align: center;	
 }
 /****************************** contacts ************************************/
 .contacts-main {
@@ -674,5 +707,6 @@ header .email:before {
 @media (min-width: 1024px) {
 	.wrapper {
 		width: 80%;
+		//outline: 1px solid green;
 	}	
 }

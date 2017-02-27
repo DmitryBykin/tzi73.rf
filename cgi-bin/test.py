@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
+#coding: utf-8
+
 import cgi
-import sys
-import codecs
 import html
+import codecs
+import sys
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
-form = cgi.FieldStorage()
-text1 = form.getfirst("e-mail", "не задано")
-text2 = form.getfirst("name", "не задано")
-text1 = html.escape(text1)
-text2 = html.escape(text2)
 
 print("Content-type: text/html\n")
 print("""<!DOCTYPE HTML>
@@ -20,9 +17,6 @@ print("""<!DOCTYPE HTML>
         </head>
         <body>""")
 
-print("<h1>Обработка данных форм!</h1>")
-print("<p>TEXT_1: {}</p>".format(text1))
-print("<p>TEXT_2: {}</p>".format(text2))
-
+print("<h1>Сообщение отправлено!</h1>")
 print("""</body>
         </html>""")
