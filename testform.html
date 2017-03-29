@@ -4,6 +4,43 @@
 	<meta charset="utf-8">
 	<title>Test send email form</title>
 	<script src="js/jquery-3.0.0.min.js"></script>
+	<style>
+	.card-holder {
+	  position: relative;
+	  width: 320px;
+	  height: 148px;
+		border: 1px solid red;
+	}
+	.card-holder:hover .card.-front {
+	  transform: rotateY(-0.5turn);
+	}
+	.card-holder:hover .card.-back {
+	  transform: rotateY(0turn);
+	}
+	.card.-back {
+		transform: rotateY(0.5turn);
+	}
+	.card.-front {
+		width: 100%;
+		height: 100%;
+		background-color: green;
+	}
+	.-flipped {
+		transform: rotateY(0.5turn);
+	}
+
+	.card {
+	  position: absolute;
+
+	  transition: transform 1s ease;
+	  backface-visibility: hidden;		
+	}
+
+	.container {
+	  perspective: 1000px;
+	}
+
+	</style>
 </head>
 
 <body>
@@ -12,5 +49,41 @@
 		<input type="text" placeholder="Введите сюда ваше имя" name="name"><br>
 		<input type="submit" value="Нажмите, чтобы отправить письмо">
 	</form>
+	<div class="button">	
+		<div class="scale-button">			
+			I am moveable button!
+		</div>
+	</div>
+	<p>
+		NEW TETXTFX TFTXFTFXSTFSt
+	</p>
+
+<div class="container -column">
+  <div class="card-holder">
+    <div class="card -small -back">
+      <a class="card--title" href="#">Flipping card</a>
+      <p class="card--text">
+        hiding backface is the key
+      </p>
+    </div>
+    <div class="card -small -front -orange">
+    </div>
+  </div>
+  <div class="card-holder">
+    <div class="card -small -back -flipped">
+      <a class="card--title" href="#">Flipping card</a>
+      <p class="card--text">
+        hiding backface is the key
+      </p>
+    </div>
+    <div class="card -small -front -green">
+    </div>
+  </div>
+</div>
+
+
+
+	
+	
 </body>
 </html>

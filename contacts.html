@@ -42,7 +42,7 @@
 					<ul>
 						<li><a href="index.html">Каталог</a></li>
 						<li><a href="services.html">Услуги</a></li>
-						<li  class="active"><a href="contacts.html">Обратная связь</a></li>
+						<li  class="active"><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</nav>			
 			</div> <!-- end wrapper -->
@@ -51,26 +51,52 @@
 		<main class="contacts-main">
 			<div class="wrapper clearfix">										
 				<div class="map">
-					<p class="map-title">Как нас найти</p>				
+					<p class="map-title">Схема проезда</p>				
 					<div id="yandex-map"></div>								
 				</div>			
-
-				<a class="show-map" href="map.html">Посмотреть схему проезда</a> <!-- Для мобильников -->
-
-				<div class="feedback-form">
-					<p class="write-us">Напишите нам</p>
-					<form action="/cgi-bin/sendmail.py" method="post" id="form">					
+        
+        <div class="feedback-form">
+        	<p class="write-us">Контакты</p>
+				  <a class="show-map" href="map.html">Посмотреть схему проезда</a> <!-- Для мобильников -->
+          <ul class="feedback-items">
+            <li class="feedback-item">
+              Юридический адрес: <br> 432018, г. Ульяновск, ул. Самарская, д. 175    
+            </li>
+            <li class="feedback-item">
+              Адрес для корреспонденции: <br>432018, г. Ульяновск, ул. Самарская, а/я 255.
+            </li>          
+            <li class="feedback-item">            
+                По общим вопросам: mail@tzi73.ru      
+            </li>
+            <li class="feedback-item">            
+                Бухгалтерия: 14@tzi73.ru      
+            </li>
+            <li class="feedback-item">            
+              Технический отдел: 15@tzi73.ru  
+            </li>
+            <li class="feedback-item">            
+              Лаборатория СП и СО: 19@tzi73.ru
+            </li>
+            <li class="feedback-item">            
+              Лаборатория CИ: 17@tzi73.ru  
+            </li>
+            <li class="feedback-item">            
+              Отдел разработки ПО: 20@tzi73.ru
+            </li>          
+          </ul>
+        </div>
+					<!--
+          <form action="/cgi-bin/sendmail.py" method="post" id="form">					
 						<label>Ваше имя/организация:</label>
 						<input type="text" placeholder="Представьтесь, пожалуйста" name="name" size="30" title="Введите имя">		
 						<label>Ваш e-mail:</label>
 						<input type="text" placeholder="Для отправки ответа" name="e_mail" size="30">
 						<label>Текст сообщения:</label>
 						<textarea name="letter_content" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
-						<!--<input type="button" class="send-email" onclick="sendRequest();" value="Отправить">-->
+						<input type="button" class="send-email" onclick="sendRequest();" value="Отправить" />
 						<input type="submit" class="send-email" value="Отправить">
-						<div class="request-send-success"></div>
-					</form>
-				</div>
+						<div class="request-send-success"></div>            
+					</form> -->
 			</div>		
 		</main>
 		

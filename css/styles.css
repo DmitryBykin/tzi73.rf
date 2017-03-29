@@ -9,7 +9,9 @@ html, body {
 .empty-height-container {
 	height: 180px;
 }
-
+ul li {
+  list-style: none;
+}
 a {
   text-decoration: none;  
   color: inherit;
@@ -482,6 +484,10 @@ header .email:before {
 	
 	background-color: cornflowerblue;
 	border-radius: 10px;
+}
+.feedback-item {
+  line-height: 1.4em;
+  margin-bottom: 0.5em;
 }
 /**************************** end contacts ************************************/
 
