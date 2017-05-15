@@ -82,7 +82,7 @@
 					</div>
 
 					<div class="production-block">
-						<section class="production-group">  <!-- Весь каталог -->
+						<div class="production-group">  <!-- Весь каталог -->
 							
 							<article class="clearfix">
 								<div class="photo-side">
@@ -145,13 +145,13 @@
 								</div>								
 							</article>
               
-						</section>
+						</div>
 
-						<section class="production-group">  <!-- Оборудование -->
+						<div class="production-group">  <!-- Оборудование -->
 							
-						</section>
+						</div>
 
-						<section class="production-group"> <!-- Программное обеспечение -->
+						<div class="production-group"> <!-- Программное обеспечение -->
               <article class="clearfix">
 								<div class="photo-side">
 									<picture>
@@ -212,7 +212,7 @@
                   </p>									
 								</div>								
 							</article>						
-						</section>
+						</div>
 					</div>
 			</div>
 		</main>
@@ -240,8 +240,8 @@
 						<a href="index.html">www.tzi73.ru</a>
 					</p>
 				</div>
-				<p class="years">
-					&copy; 2004-2017
+				<p class="years">                    
+					&copy; 2004-<span class="curyear"></span>
 				</p>	
 			</div>
 	</footer>
@@ -249,6 +249,10 @@
 	<!-- Yandex.Metrika counter --> 
 		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
 	<!-- /Yandex.Metrika counter -->
+  <script>
+    var now = new Date();     
+    document.querySelector(".curyear").innerHTML = now.getFullYear();
+  </script>
 </body>
 </html>
 
