@@ -7,7 +7,7 @@
  <meta name="keywords" content="">
  <meta name="viewport" content="width=device-width">
  <link rel='stylesheet' href='css/normalize.css'>
- <link rel='stylesheet' href='css/styles.css'>
+ <link rel='stylesheet' href='css/styles.min.css'>
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
  <!--[if lt IE 9]>
@@ -18,14 +18,13 @@
 	<div class="wrap-height-block">
 		<header class="services-header">
 			<div class="wrapper clearfix">
-				<figure>
-					<a href="index.html">
-						<img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
-					</a>
-				</figure>
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp">
+          <img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
+        </picture>	
         <h1>
-					Техническая защита информации<br/>
           Аттестация объектов информатизации<br/>
+          Техническая защита информации<br/>
           Разработка оборудования
 				</h1>	
 
@@ -47,17 +46,7 @@
 
 		<main class="services-main">
 			<div class="wrapper"> 
-				<section class="service">
-					<h2 class="brief">
-						Разработка оборудования и программного обеспечения в области технической защиты информации					
-					</h2>
-					<p class="full">
-						- разработка вспомогательного программного обеспечения для аттестации объектов информатизации; <br>
-						- разработка оборудования и специализированного программного обеспечения для специальных проверок и специальных обследований
-					</p>
-				</section>
-
-				<section class="service">
+        <section class="service">
 					<h2 class="brief">
 						Аттестация объектов информатизации на соответствие требованиям безопасности информации
 					</h2>
@@ -69,8 +58,8 @@
 						- разработка комплекта организационно-распорядительных и эксплуатационных документов на объект информатизации.
 					</p>
 				</section>
-
-				<section class="service">
+        
+        <section class="service">
 					<h2 class="brief">
 						Специальная проверка и специальные исследования технических средств
 					</h2>
@@ -79,8 +68,18 @@
 						- специальные исследования технических средств для органов государственной власти
 					</p>
 				</section>
-
+        
 				<section class="service">
+					<h2 class="brief">
+						Разработка оборудования и программного обеспечения в области технической защиты информации					
+					</h2>
+					<p class="full">
+						- разработка вспомогательного программного обеспечения для аттестации объектов информатизации; <br>
+						- разработка оборудования и специализированного программного обеспечения для специальных проверок и специальных обследований
+					</p>
+				</section>
+        
+        <section class="service">
 					<h2 class="brief">
 						Оказание услуг в области защиты государственной тайны
 					</h2>

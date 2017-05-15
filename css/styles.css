@@ -7,7 +7,7 @@ html, body {
 	min-height: 100%;	
 }
 .empty-height-container {
-	height: 180px;
+	height: 230px;
 }
 ul li {
   list-style: none;
@@ -26,7 +26,7 @@ header {
 	padding: 10px 0 5px 0;
 	margin: 0;
 }
-header figure {
+header picture {
 	display: inline-block;
 	vertical-align: middle;
 	
@@ -82,7 +82,13 @@ nav ul li {
 	border: 12px solid transparent;
 	border-top: 12px solid #e6e6e6;	
 	
-	animation: triangle 500ms forwards;	
+	-webkit-animation: triangle 500ms forwards;	
+	
+	        animation: triangle 500ms forwards;	
+}
+@-webkit-keyframes triangle {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
 @keyframes triangle {
 	from {opacity: 0;}
@@ -168,18 +174,20 @@ header .email:before {
 }
 .services-main h2:before {
 	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 .services-main h2:after {
 	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	left: 8px;
+}
+@-webkit-keyframes close-animation-triangle {
+	from {
+		background-color: blue;		
+	}
+	to {
+		background-color: dodgerblue;		
+	}
 }
 @keyframes close-animation-triangle {
 	from {
@@ -187,6 +195,14 @@ header .email:before {
 	}
 	to {
 		background-color: dodgerblue;		
+	}
+}
+@-webkit-keyframes close-animation-font {
+	from {
+		color: rgba(0,0,0,1);		
+	}
+	to {
+		color: rgba(0,0,0,0.6);		
 	}
 }
 @keyframes close-animation-font {
@@ -199,16 +215,12 @@ header .email:before {
 }
 .services-main h2.close {
 	-webkit-animation: close-animation-font 1s forwards;
-	-moz-animation: close-animation-font 1s forwards;
-	-o-animation: close-animation-font 1s forwards;
 	-ms-animation: close-animation-font 1s forwards;
 	animation: close-animation-font 1s forwards;
 }
 .services-main h2.close:before,
 .services-main h2.close:after {
 	-webkit-animation: close-animation-triangle 1s forwards;
-	-moz-animation: close-animation-triangle 1s forwards;
-	-o-animation: close-animation-triangle 1s forwards;
 	-ms-animation: close-animation-triangle 1s forwards;
 	animation: close-animation-triangle 1s forwards;
 }
@@ -223,16 +235,10 @@ header .email:before {
 }
 .services-main h2.close:before {
 	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 .services-main h2.close:after {
 	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	left: 8px;
 }
@@ -295,22 +301,28 @@ header .email:before {
 	
 	background-color: white;
 	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-.production-block .production-group {
-	display: none;
+.production-block .production-group {	
+  display: none;  
 }
 #all-catalog:checked ~ .production-block .production-group:nth-child(1) {
-	display: block;
+	display: -ms-flexbox;
+	display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #equipment:checked ~ .production-block .production-group:nth-child(2) {
-	display: block;
+	display: -ms-flexbox;
+	display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #software:checked ~ .production-block .production-group:nth-child(3) {
-	display: block;
+	display: -ms-flexbox;
+	display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .nav-catalog-block {
 	width: 180px;
@@ -330,11 +342,12 @@ header .email:before {
 	outline: 1px solid #e6e6e6;
 	box-shadow: 0 0 8px #e6e6e6;
 	display: inline-block;
+  margin: 0 10px 10px;
 }
 .production-block article:hover {
 	box-shadow: 0 0 8px black;
 }
-.production-block figure {
+.production-block picture {
 	margin: 10px;
 }
 .production-block .photo-side {
@@ -494,25 +507,33 @@ header .email:before {
 /**************************** footer ******************************************/
 
 .flex-container {	
+  display: -ms-flexbox;	
   display: flex;		
   
-  align-items: center;
+  -ms-flex-align: center;		
+  
+      align-items: center;
 	
-	justify-content: space-around;	
+	-ms-flex-pack: distribute;
 	
-	flex-wrap: wrap;
-	flex-direction: row;
+	    justify-content: space-around;	
+	
+	-ms-flex-wrap: wrap;	
+	
+	    flex-wrap: wrap;
+	-ms-flex-direction: row;
+	    flex-direction: row;
 }
 .catalog-footer, .contacts-footer, .services-footer {	  
   
-  margin-top: -183px; // 50px;
+  margin-top: -183px;
   	
   text-align: center;
 	
   background-color: #e6e6e6;	
 }
 .logo-footer {
-//	display: inline-block;	
+
 }
 
 .company-address {	
@@ -601,7 +622,7 @@ header .email:before {
 	.stac {
 		display: none;
 	}	
-	header figure {
+	header picture {
 		display: none;
 	}
 	header h1 {
@@ -653,8 +674,13 @@ header .email:before {
 		border: 1px dashed black;		
 	}
 	.loading-map-message {
-		animation: blinktitle 500ms;	
+		-webkit-animation: blinktitle 500ms;
+		        animation: blinktitle 500ms;	
 	}
+	@-webkit-keyframes blinktitle {
+		from {color: green;}
+		to {color: darkblue;}
+ 	}
 	@keyframes blinktitle {
 		from {color: green;}
 		to {color: darkblue;}
@@ -663,11 +689,10 @@ header .email:before {
 
 @media (min-width: 400px) and (max-width: 799px) {
 	.wrapper {
-		width: 100%;		
-		//width: auto;
+		width: 100%;			
 	}	
 
-	header figure {
+	header picture {
 		width: auto;		
 		display: block;
 		text-align: center;
@@ -720,20 +745,22 @@ header .email:before {
 		padding-right: 0;
 	}
 	.logo-footer {
-		display: none;
+		display: none;    
 	}
 	.company-address, .company-phone, .company-web {
-		margin-top: 0;
+		margin-top: 0;    
 	}
 }
 @media (min-width: 800px) and (max-width: 1023px) {
 	.wrapper {
-		width: 92%;
+		width: 95%;    
 	}			
 }
 @media (min-width: 1024px) {
 	.wrapper {
-		width: 80%;
-		//outline: 1px solid green;
+		width: 96%;   		
 	}	
+  .contacts {
+    margin-right: 50px;
+  }
 }
