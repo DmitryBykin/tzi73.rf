@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
  <meta charset='utf-8'>
- <title>Как нас найти</title>
- <meta name="description" content="Обратная связь, контакты и схема проезда">
+ <title>Контакты</title>
+ <meta name="description" content="Контакты и схема проезда">
  <meta name="keywords" content="">
  <meta name="viewport" content="width=device-width">
  <link rel='stylesheet' href='css/normalize.css'>
- <link rel='stylesheet' href='css/styles.min.css'>
+ <link rel='stylesheet' href='css/style.min.css'>
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
  <script src="js/jquery-3.0.0.min.js"></script>
@@ -27,8 +27,8 @@
             <img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
           </picture>	
         </a>
-        <h1>
-          Аттестация объектов информатизации<br/>
+        <h1 class="catalog-header__title">
+					Аттестация объектов информатизации<br/>
           Техническая защита информации<br/>
           Разработка оборудования
 				</h1>	
@@ -51,13 +51,13 @@
 
 		<main class="contacts-main">
 			<div class="wrapper clearfix">										
-				<div class="map">
-					<p class="map-title">Схема проезда</p>				
+				<section class="map">
+					<h2 class="map-title">Схема проезда</h2>				
 					<div id="yandex-map"></div>								
-				</div>			
+				</section>			
         
-        <div class="feedback-form">
-        	<p class="write-us">Контакты</p>
+        <section class="feedback-form">
+        	<h2 class="write-us">Контакты</h2>
 				  <a class="show-map" href="map.html">Посмотреть схему проезда</a> <!-- Для мобильников -->
           <ul class="feedback-items">
             <li class="feedback-item">
@@ -85,7 +85,7 @@
               Отдел разработки ПО: 20@tzi73.ru
             </li>          
           </ul>
-        </div>
+        </section>
 					<!--
           <form action="/cgi-bin/sendmail.py" method="post" id="form">					
 						<label>Ваше имя/организация:</label>

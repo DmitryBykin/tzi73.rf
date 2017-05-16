@@ -54,10 +54,10 @@ module.exports = function(grunt) {
     watch: {
       styles: {                
           files: ["less/**/*.less"],
-          tasks: ["less", "postcss", "csso"]  
+          tasks: ["less"]  
         },
       csso: {
-        files: ["css/styles.css"],
+        files: ["css/style.css"],
         tasks: ["csso"]  
       },
       webp: {
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
           report: "gzip"
         },
         files: {
-          "css/styles.min.css": ["css/styles.css"]
+          "css/style.min.css": ["css/style.css"]
         }
       }
     },
@@ -127,7 +127,7 @@ module.exports = function(grunt) {
     autoprefixer: {
         //указывам файл в котором нужно проставить префиксы, он сам его перезапишит
         no_dest: {
-            src: "css/styles.css"
+            src: "css/style.css"
         }
     },
 

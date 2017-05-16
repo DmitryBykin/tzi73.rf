@@ -337,7 +337,18 @@ header .email:before {
 	//margin-left: 50px;	
 	//outline: 1px solid red;	
 }
-
+.production__item {
+  display: inline-block;
+  
+	padding: 10px;
+	margin: 0 10px 10px;
+  
+  outline: 1px solid #e6e6e6;
+	box-shadow: 0 0 8px #e6e6e6;
+}
+.production__item:hover {
+	box-shadow: 0 0 8px black;
+}
 .production-block picture {
 	margin: 10px;
 }
