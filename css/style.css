@@ -3,7 +3,6 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .production__item {
     width: 100%;
@@ -62,6 +61,9 @@
   }
 }
 @media (min-width: 480px) {
+  .production {
+    align-items: center;
+  }
   .production__item {
     flex-direction: row;
     width: 65%;
@@ -745,6 +747,10 @@ header .email:before {
   .company-web {
     margin-top: 0;
   }
+  .feedback-items {
+    max-width: 380px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 800px) and (max-width: 1023px) {
   .wrapper {
@@ -757,5 +763,9 @@ header .email:before {
   }
   .contacts {
     margin-right: 50px;
+  }
+  .feedback-items {
+    max-width: 380px;
+    margin: 0 auto;
   }
 }
