@@ -18,8 +18,8 @@
   },
   "scripts": {
     "test": "editorconfig-cli",    
-    "build": "grunt less && grunt autoprefixer && grunt csso && grunt webp",
-    "start": "npm run build && grunt watch",
+    "build": "grunt less && grunt autoprefixer && grunt csso",
+    "start": "npm run build && grunt serve",
     "webp": "grunt webp",
     "auto": "grunt autoprefixer",
     "uglify": "grunt uglify",
