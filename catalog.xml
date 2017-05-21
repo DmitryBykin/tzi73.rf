@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2017-05-18 17:00">
+    <shop>
+        <name>Каталог ЗАО "РАЦ"</name>
+        <company>ЗАО "РАЦ"</company>
+        <url>http://www.tzi73.ru/</url>
+
+        <currencies>
+            <currency id="RUR" rate="1" plus="0"/>
+        </currencies>
+
+        <categories>
+            <category id="1">Программы</category>            
+            <category id="2">Услуги</category>
+        </categories>
+
+        <local_delivery_cost>300</local_delivery_cost>
+
+        <offers>          
+          <offer id="1" available="true">
+            <url>http://www.tzi73.ru/</url>
+            <price>65000</price>
+            <currencyId>RUR</currencyId>
+            <categoryId>1</categoryId>
+            <picture>http://www.tzi73.ru/img/cheremshan.jpg</picture>
+            <delivery>true</delivery>
+            <local_delivery_cost>300</local_delivery_cost>
+            <name>СУБД СП "Черемшан"</name>            
+            <vendor>RAC</vendor>
+            <vendorCode>RAC</vendorCode>
+            <description>Вспомогательное программное обеспечение для организаций-лицензиатов. 
+            Позволяет облегчить ведение документооборота при проведении специальных проверок. Имеется 
+            возможность подключения сканера штрих-кодов.</description>
+            <country_of_origin>Россия</country_of_origin>
+          </offer>
+          <offer id="2" available="true">
+            <url>http://www.tzi73.ru/</url>
+            <price>11000</price>
+            <currencyId>RUR</currencyId>
+            <categoryId>1</categoryId>
+            <picture>http://www.tzi73.ru/img/search-net.jpg</picture>
+            <delivery>true</delivery>
+            <local_delivery_cost>300</local_delivery_cost>
+            <name>Поиск-NET</name>
+            <vendor>RAC</vendor>
+            <vendorCode>RAC</vendorCode>
+            <description>Программа предназначена для проведения программного контроля сетевых устройств,
+            подключенных к компьютеру. Работает под операционными система семейства Windows. 
+             </description>
+            <country_of_origin>Россия</country_of_origin>
+          </offer>
+          <offer id="3" available="true">
+            <url>http://www.tzi73.ru/</url>
+            <price>35000</price>
+            <currencyId>RUR</currencyId>            
+            <categoryId>1</categoryId>
+            <picture>http://www.tzi73.ru/img/ekb_sp.png</picture>
+            <delivery>true</delivery>
+            <local_delivery_cost>300</local_delivery_cost>
+            <name>ЭКБ СП</name>
+            <vendor>RAC</vendor>
+            <vendorCode>RAC</vendorCode>
+            <description>База эталонных электронных компонентов с описанием (datasheet), фотографиями и рентгеновскими
+              снимками. При использовании геометрических эталонов есть возможность измерения размеров компонентов.
+             </description>
+            <country_of_origin>Россия</country_of_origin>
+          </offer>
+          <offer id="4" available="true">
+            <url>http://www.tzi73.ru/services.html</url>
+            <price>68000</price>
+            <currencyId>RUR</currencyId>
+            <categoryId>2</categoryId>
+            <delivery>false</delivery>            
+            <name>Аттестация объектов информатизации</name>
+            <vendor>RAC</vendor>
+            <vendorCode>RAC</vendorCode>
+            <description>ЗАО РАЦ оказывает полный перечень услуг по аттестации объектов информатизации: подготовка 
+              объекта к аттестации, расчёт, закупка монтаж средств защиты. 
+              Разработка необходимого комплекта документов. Аттестация объекта.
+             </description>
+            <country_of_origin>Россия</country_of_origin>
+          </offer>
+          <offer id="5" available="true">
+            <url>http://www.tzi73.ru/services.html</url>
+            <price>2000</price>
+            <currencyId>RUR</currencyId>
+            <categoryId>2</categoryId>
+            <delivery>false</delivery>            
+            <name>Специальная проверка и специсследования технических средств</name>
+            <vendor>RAC</vendor>
+            <vendorCode>RAC</vendorCode>
+            <description>Проведение специальной проверки и специальных исследований технических средств. 
+             </description>
+            <country_of_origin>Россия</country_of_origin>
+          </offer>
+        </offers>
+
+    </shop>
+</yml_catalog>
