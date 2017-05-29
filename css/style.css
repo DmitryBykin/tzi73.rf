@@ -55,6 +55,9 @@
     padding-left: 25px;
     color: blue;
   }
+  .production__sertificate {
+    color: #00f;
+  }
   .production__price {
     margin-top: 10px;
     text-align: center;
