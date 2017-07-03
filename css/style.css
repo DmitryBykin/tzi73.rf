@@ -1,13 +1,17 @@
 @media (min-width: 320px) {
   .production {
     margin-top: 50px;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .production__item {
     width: 100%;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     padding: 10px;
     margin: 0 10px 10px;
     outline: 1px solid #e6e6e6;
@@ -65,26 +69,33 @@
 }
 @media (min-width: 480px) {
   .production {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .production__item {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     width: 65%;
   }
 }
 @media (min-width: 800px) {
   .production__item {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     width: 40%;
   }
   .production {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
   .production__picture {
     width: 40%;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
   .production__description {
     width: 55%;
@@ -641,8 +652,10 @@ header .email:before {
     margin-bottom: 0;
   }
   .production {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .map {
     display: none;
