@@ -115,6 +115,23 @@
     margin-left: 50px;
   }
 }
+@media (min-width: 320px) {
+  .footer__logos-items {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .footer__logos-items {
+    display: block;
+    margin-top: 1em;
+  }
+  .footer__logos-item {
+    margin-right: 2em;
+  }
+  .footer__logos-item:last-of-type {
+    margin-right: 0;
+  }
+}
 html,
 body {
   /*background-color: rgba(125,125,125,0.7);
