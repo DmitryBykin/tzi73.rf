@@ -1,17 +1,13 @@
 @media (min-width: 320px) {
   .production {
     margin-top: 50px;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .production__item {
     width: 100%;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     padding: 10px;
     margin: 0 10px 10px;
     outline: 1px solid #e6e6e6;
@@ -69,33 +65,26 @@
 }
 @media (min-width: 480px) {
   .production {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
   }
   .production__item {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     width: 65%;
   }
 }
 @media (min-width: 800px) {
   .production__item {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     width: 40%;
   }
   .production {
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
   }
   .production__picture {
     width: 40%;
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
+    align-self: baseline;
   }
   .production__description {
     width: 55%;
@@ -161,7 +150,7 @@ header picture {
   width: 300px;
   margin: 0;
 }
-header h1 {
+header .catalog-header__title {
   display: inline-block;
   vertical-align: middle;
   width: 40%;
@@ -169,6 +158,7 @@ header h1 {
   margin-top: 0;
   font-size: 0.9em;
   line-height: 1.3em;
+  font-weight: bold;
 }
 .contacts {
   width: 180px;
@@ -630,7 +620,7 @@ header .email:before {
   header picture {
     display: none;
   }
-  header h1 {
+  header .catalog-header__title {
     width: auto;
     text-align: center;
     margin-left: 0;
@@ -652,10 +642,8 @@ header .email:before {
     margin-bottom: 0;
   }
   .production {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .map {
     display: none;
@@ -709,7 +697,7 @@ header .email:before {
     display: block;
     text-align: center;
   }
-  header h1 {
+  header .catalog-header__title {
     width: 90%;
     display: block;
     text-align: center;
