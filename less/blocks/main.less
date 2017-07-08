@@ -1,0 +1,60 @@
+@media @mobiles {
+  .main__promo {
+    display: none;
+  }
+  .main__about {
+
+  }
+}
+
+@media @tablets {
+  .main__sections {
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 2em;    
+  }
+  .main__promo {
+    width: 30%;
+        
+    display: block;
+    //border: 1px solid black;
+    background: rgba(0,0,0,0.05);
+    //clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+  }
+  .main__promo .production__item {
+    width: 90%;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .main__promo .production__item {
+    border-bottom: 1px dashed blue;
+  }
+  .main__promo .production__item:last-of-type {
+    border-bottom: none;
+  }
+  .main__about {
+    width: 70%;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+  
+    //border: 1px solid black;
+  }
+  .main__about-title {
+    text-align: center;
+    
+    margin-top: 0.5em;
+  }
+}
+
+@media @desktops {
+  .main__promo {
+    
+  }
+  .main__about {
+    
+  }
+}
