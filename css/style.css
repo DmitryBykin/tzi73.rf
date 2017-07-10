@@ -158,11 +158,8 @@
     box-shadow: none;
     outline: none;
   }
-  .main__promo .production__item {
-    border-bottom: 1px dashed blue;
-  }
-  .main__promo .production__item:last-of-type {
-    border-bottom: none;
+  .main__promo .production__item:not(:last-of-type) {
+    border-bottom: 2px solid #fff;
   }
   .main__about {
     width: 70%;
