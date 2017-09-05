@@ -23,23 +23,26 @@
   }
   .main__about-item {
     position: relative;
-    //padding-left: 30px;
+    padding-left: 25px;
+    text-indent: 0;
   }
   .main__about-item:not(:first-of-type) {
     margin-top: 0.6rem;
   }
   .main__about-item::before {
     position: absolute;
-    content: "";
+    content: "\2713";
 
-    width: 20px;
+    left: 0;
+    color: blue;
+    /*width: 20px;
     height: 17px;
 
     top: calc(50% - 9px);
     left: 0;
 
     background: url("../img/sprites.png") no-repeat;
-    background-position: -48px -1px;
+    background-position: -48px -1px;*/
   }
 }
 
