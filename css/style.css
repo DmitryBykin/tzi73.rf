@@ -220,6 +220,9 @@ body {
   outline: 1px solid black;*/
   height: 100%;
 }
+body {
+  overflow-y: scroll;
+}
 .wrap-height-block {
   min-height: 100%;
 }
