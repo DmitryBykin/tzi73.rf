@@ -5,7 +5,6 @@
     flex-direction: column;
   }
   .production__item {
-    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -117,6 +116,10 @@
   .catalog-header__title {
     margin-left: 50px;
   }
+}
+.footer {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 320px) {
   .footer__logos-items {
@@ -636,6 +639,9 @@ header .email:before {
   background-color: cornflowerblue;
   border-radius: 10px;
 }
+.feedback-items {
+  padding-left: 10px;
+}
 .feedback-item {
   line-height: 1.4em;
   margin-bottom: 0.5em;
@@ -654,9 +660,7 @@ header .email:before {
   -ms-flex-direction: row;
   flex-direction: row;
 }
-.catalog-footer,
-.contacts-footer,
-.services-footer {
+.footer {
   margin-top: -183px;
   text-align: center;
   background-color: #e6e6e6;
