@@ -191,7 +191,7 @@
     margin-top: 2em;
   }
   .main__promo {
-    width: 30%;
+    width: 35%;
     display: block;
     background: rgba(0, 0, 0, 0.05);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
@@ -206,7 +206,7 @@
     border-bottom: 2px solid #fff;
   }
   .main__about {
-    width: 70%;
+    width: 65%;
     padding-left: 1em;
     padding-right: 1em;
     margin-left: 0;
