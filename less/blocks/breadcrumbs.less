@@ -1,0 +1,45 @@
+.breadcrumbs {  
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.breadcrumbs__item--home svg {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  
+  fill: blue;
+  
+  &:hover {
+    fill: red;
+  }
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  
+  &:not(:last-of-type)::after {
+    content: '\2192';    
+    vertical-align: middle;
+    
+    margin-left: 7px;
+    margin-right: 7px;
+    
+    font-size: 0.7rem;
+  }
+  
+  &:not(:last-of-type) .breadcrumbs__item-link {
+    color: blue;
+  }
+  
+  &:hover:not(:first-of-type) .breadcrumbs__item-link {
+    text-decoration: underline;
+    color: red;
+  }
+  &:hover:last-of-type .breadcrumbs__item-link {
+    text-decoration:  none;
+    color: black;
+  }
+  
+}
+
