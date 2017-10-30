@@ -1,6 +1,10 @@
 .breadcrumbs {  
   padding-left: 10px;
-  margin-top: 30px;
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  //background-color: #efefef;
 }
 
 .breadcrumbs__item--home svg {
@@ -28,17 +32,21 @@
     font-size: 0.7rem;
   }
   
-  &:not(:last-of-type) .breadcrumbs__item-link {
+  &:not(:last-of-type) .breadcrumbs__item-link { // у всех элементов кроме первого и последнего цвет blue
     color: blue;
   }
-  
-  &:hover:not(:first-of-type) .breadcrumbs__item-link {
+      
+  &:hover:not(:first-of-type) .breadcrumbs__item-link { // при ховере - цвет красный
     text-decoration: underline;
     color: red;
   }
-  &:hover:last-of-type .breadcrumbs__item-link {
+  
+  &:last-of-type .breadcrumbs__item-link { // последний элемент немного светлее остальных
+    color: rgba(0,0,0,0.6);
+  }
+  &:hover:last-of-type .breadcrumbs__item-link {  // у последнего элемента убираем подчеркивание
     text-decoration:  none;
-    color: black;
+    color: rgba(0,0,0,0.6);
   }
   
 }

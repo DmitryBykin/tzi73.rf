@@ -17,7 +17,7 @@
 </head>
 <body>
 	<div class="wrap-height-block">
-		<header class="contacts-header">
+		<header class="header">
 			<div class="wrapper clearfix">
         <a href="/index.html">
           <picture>
@@ -25,7 +25,7 @@
             <img src='img/logo.png' width="300" height="97" alt="Логотип ЗАО РАЦ">
           </picture>
         </a>
-        <ul class="catalog-header__title">
+        <ul class="header__title">
           <li>
           Аттестация объектов информатизации
           </li>
@@ -173,7 +173,7 @@ function getTileContainer(layer) {
         return null;
     }
 
-    // Определить, все ли тайлы загружены. Возвращает Promise.
+    // Определить, все ли файлы загружены. Возвращает Promise.
     function waitForTilesLoad(layer) {
         return new ymaps.vow.Promise(function (resolve, reject) {
             var tc = getTileContainer(layer), readyAll = true;
@@ -191,7 +191,6 @@ function getTileContainer(layer) {
             }
         });
     }
-	console.log('dfdfdfd');
 	</script>
 
 	<!-- /Yandex Map-->

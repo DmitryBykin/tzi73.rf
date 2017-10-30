@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .production {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -9,9 +9,10 @@
     flex-direction: column;
     padding: 10px;
     margin: 0 10px 10px;
-    outline: 1px solid #e6e6e6;
     box-shadow: 0 0 8px #e6e6e6;
+    border: 1px solid #e6e6e6;
     box-sizing: border-box;
+    border-radius: 10px;
   }
   .production__item:hover {
     box-shadow: 0 0 8px black;
@@ -98,7 +99,7 @@
   }
 }
 @media (min-width: 320px) {
-  .catalog-header__title {
+  .header__title {
     display: block;
     width: 320px;
     margin: 10px auto;
@@ -106,14 +107,14 @@
   }
 }
 @media (min-width: 800px) {
-  .catalog-header__title {
+  .header__title {
     display: inline-block;
     margin-left: 20px;
     text-align: left;
   }
 }
 @media (min-width: 1200px) {
-  .catalog-header__title {
+  .header__title {
     margin-left: 50px;
   }
 }
@@ -255,7 +256,7 @@ header picture {
   width: 300px;
   margin: 0;
 }
-header .catalog-header__title {
+header .header__title {
   display: inline-block;
   vertical-align: middle;
   width: 40%;
@@ -286,7 +287,7 @@ nav ul li {
   position: relative;
   color: rgba(0, 0, 0, 0.6);
 }
-.active a:after {
+.active a::after {
   position: absolute;
   content: '';
   bottom: -24px;
@@ -296,6 +297,23 @@ nav ul li {
   border-top: 12px solid #e6e6e6;
   -webkit-animation: triangle 500ms forwards;
   animation: triangle 500ms forwards;
+  /*position: absolute;
+  content: '';
+  //z-index: -1;
+  
+  bottom: -10px;
+  left: 50%;
+  margin-left: -12px;
+  
+  width: 16px;
+  height: 16px;
+  
+  background-color: #e6e6e6;
+  border-right: 3px solid blue;
+  border-bottom: 3px solid blue;
+  transform: rotate(45deg);
+  
+  box-shadow: 2px 2px 0 0 blue;*/
 }
 @-webkit-keyframes triangle {
   from {
@@ -730,7 +748,7 @@ header .email:before {
   header picture {
     display: none;
   }
-  header .catalog-header__title {
+  header .header__title {
     width: 100%;
     text-align: center;
     margin-left: 0;
@@ -807,7 +825,7 @@ header .email:before {
     display: block;
     text-align: center;
   }
-  header .catalog-header__title {
+  header .header__title {
     width: 90%;
     display: block;
     text-align: center;
@@ -885,7 +903,9 @@ header .email:before {
 }
 .breadcrumbs {
   padding-left: 10px;
-  margin-top: 30px;
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .breadcrumbs__item--home svg {
   vertical-align: middle;
@@ -913,7 +933,10 @@ header .email:before {
   text-decoration: underline;
   color: red;
 }
+.breadcrumbs__item:last-of-type .breadcrumbs__item-link {
+  color: rgba(0, 0, 0, 0.6);
+}
 .breadcrumbs__item:hover:last-of-type .breadcrumbs__item-link {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.6);
 }

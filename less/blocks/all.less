@@ -39,7 +39,7 @@ header picture {
 
 	margin: 0;
 }
-header .catalog-header__title {
+header .header__title {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40%;
@@ -78,7 +78,7 @@ nav ul li {
 	//opacity: 0.6;
 	color: rgba(0,0,0,0.6);
 }
-.active a:after {
+.active a::after {
 	position: absolute;
 	content: '';
 	bottom: -24px;
@@ -87,10 +87,28 @@ nav ul li {
 
 	border: 12px solid transparent;
 	border-top: 12px solid #e6e6e6;
+  //border-top: 12px solid blue;
 
 	-webkit-animation: triangle 500ms forwards;
 
 	        animation: triangle 500ms forwards;
+  /*position: absolute;
+  content: '';
+  //z-index: -1;
+  
+  bottom: -10px;
+  left: 50%;
+  margin-left: -12px;
+  
+  width: 16px;
+  height: 16px;
+  
+  background-color: #e6e6e6;
+  border-right: 3px solid blue;
+  border-bottom: 3px solid blue;
+  transform: rotate(45deg);
+  
+  box-shadow: 2px 2px 0 0 blue;*/
 }
 @-webkit-keyframes triangle {
 	from {opacity: 0;}
@@ -579,7 +597,7 @@ header .email:before {
 	header picture {
 		display: none;
 	}
-	header .catalog-header__title {
+	header .header__title {
 		width: 100%;
 		text-align: center;
 		margin-left: 0;
@@ -650,7 +668,7 @@ header .email:before {
 		display: block;
 		text-align: center;
 	}
-	header .catalog-header__title {
+	header .header__title {
 		width: 90%;
 		display: block;
 		text-align: center;
