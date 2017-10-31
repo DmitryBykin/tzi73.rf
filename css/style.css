@@ -1,12 +1,16 @@
 @media (min-width: 320px) {
   .production {
     margin-top: 20px;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .production__item {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     padding: 10px;
     margin: 0 10px 10px;
     box-shadow: 0 0 8px #e6e6e6;
@@ -65,10 +69,12 @@
 }
 @media (min-width: 480px) {
   .production {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .production__item {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     width: 65%;
   }
   .production__link {
@@ -77,17 +83,22 @@
 }
 @media (min-width: 800px) {
   .production__item {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     width: 40%;
   }
   .production {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
   .production__picture {
     width: 40%;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
   .production__description {
     width: 55%;
@@ -187,15 +198,18 @@
 }
 @media (min-width: 800px) {
   .main__sections {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     margin-top: 2em;
   }
   .main__promo {
     width: 35%;
     display: block;
     background: rgba(0, 0, 0, 0.05);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
   }
   .main__promo .production__item {
     width: 90%;
@@ -205,6 +219,7 @@
   }
   .main__promo .production__item:not(:last-of-type) {
     border-bottom: 2px solid #fff;
+    border-radius: 0;
   }
   .main__about {
     width: 65%;
@@ -770,8 +785,10 @@ header .email:before {
     margin-bottom: 0;
   }
   .production {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .map {
     display: none;
