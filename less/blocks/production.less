@@ -52,9 +52,24 @@
   }
 
   .production__features {
+    position: relative;
+    
     font-style: italic;
     margin-bottom: 1em;
     
+    .main__promo &::after {
+      position: absolute;
+      content: '';
+      
+      left: 0;
+      bottom: 0;
+      right: 0;
+      
+      height: 3.5em;
+      
+      background: linear-gradient(to top, @shadow-color, transparent) no-repeat;
+      
+    }    
   }
 
   .production__download {

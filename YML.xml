@@ -18,7 +18,7 @@
         <offers>          
           <offer id="1" available="true">
             <url>http://www.tzi73.ru/</url>
-            <price>65000</price>
+            <price>180000</price>
             <currencyId>RUR</currencyId>
             <categoryId>1</categoryId>
             <picture>http://www.tzi73.ru/img/cheremshan.jpg</picture>
@@ -34,7 +34,7 @@
           </offer>
           <offer id="2" available="true">
             <url>http://www.tzi73.ru/</url>
-            <price>11000</price>
+            <price>45000</price>
             <currencyId>RUR</currencyId>
             <categoryId>1</categoryId>
             <picture>http://www.tzi73.ru/img/search-net.jpg</picture>
@@ -50,7 +50,7 @@
           </offer>
           <offer id="3" available="true">
             <url>http://www.tzi73.ru/</url>
-            <price>35000</price>
+            <price>125000</price>
             <currencyId>RUR</currencyId>            
             <categoryId>1</categoryId>
             <picture>http://www.tzi73.ru/img/ekb_sp.png</picture>
