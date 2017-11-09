@@ -1,4 +1,5 @@
 /* promo блок*/
+/* header block */
 @media (min-width: 320px) {
   .production {
     margin-top: 20px;
@@ -110,6 +111,10 @@
   }
 }
 @media (min-width: 320px) {
+  .header {
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #b7b7b7;
+  }
   .header__title {
     display: block;
     width: 320px;
@@ -258,8 +263,7 @@ a {
   margin: 0 auto;
 }
 header {
-  background-color: #e6e6e6;
-  padding: 10px 0 5px 0;
+  padding: 10px 0 8px 0;
   margin: 0;
 }
 header picture {
@@ -299,33 +303,33 @@ nav ul li {
   position: relative;
   color: rgba(0, 0, 0, 0.6);
 }
-.active a::after {
-  position: absolute;
-  content: '';
-  bottom: -24px;
-  left: 50%;
-  margin-left: -12px;
-  border: 12px solid transparent;
-  border-top: 12px solid #e6e6e6;
-  -webkit-animation: triangle 500ms forwards;
-  animation: triangle 500ms forwards;
-  /*position: absolute;
-  content: '';
-  //z-index: -1;
-  
-  bottom: -10px;
-  left: 50%;
-  margin-left: -12px;
-  
-  width: 16px;
-  height: 16px;
-  
-  background-color: #e6e6e6;
-  border-right: 3px solid blue;
-  border-bottom: 3px solid blue;
-  transform: rotate(45deg);
-  
-  box-shadow: 2px 2px 0 0 blue;*/
+@media (min-width: 800px) {
+  .active a::after {
+    /*position: absolute;
+  	content: '';
+  	bottom: -24px;
+  	left: 50%;
+  	margin-left: -12px;
+
+  	border: 12px solid transparent;
+  	border-top: 12px solid @header-triangle-color;
+    //border-top: 12px solid blue;
+
+  	-webkit-animation: triangle 500ms forwards;
+
+  	        animation: triangle 500ms forwards;*/
+    position: absolute;
+    content: '';
+    bottom: -9px;
+    left: 50%;
+    margin-left: -12px;
+    width: 16px;
+    height: 16px;
+    background-color: #e6e6e6;
+    border-right: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;
+    transform: rotate(45deg);
+  }
 }
 @-webkit-keyframes triangle {
   from {
@@ -353,7 +357,7 @@ nav {
   margin-top: 15px;
 }
 nav a {
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 8px 10px;
 }
 nav a:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -856,10 +860,10 @@ header .email:before {
     margin: 0 10px;
     margin-bottom: 15px;
   }
-  nav ul li:last-of-type {
+  nav ul li::last-of-type {
     margin-bottom: 0;
   }
-  .active a:after {
+  .active a::after {
     bottom: -24px;
   }
   .nav-catalog-block,
