@@ -1,7 +1,31 @@
+header {	
+	padding-top: 10px;
+	margin: 0;
+}
+header picture {
+	display: inline-block;
+	vertical-align: middle;
+
+	width: 300px;
+
+	margin: 0;
+}
+header .header__title {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+	margin-left: 3%;
+	margin-top: 0;
+
+	font-size: 0.9em;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
 @media @mobiles {
   .header {
     background-color: @header-bg-color;
-    border-bottom: 1px solid @header-triangle-color;
+    //border-bottom: 1px solid @header-triangle-color;
   }
   .header__title {
     display: block;
@@ -17,6 +41,7 @@
   .header {
     //border-bottom: 3px solid blue;
     //box-shadow: 0 0 2px 2px blue;  
+		border-bottom: 1px solid @header-triangle-color;
   }
   
   .header__title {

@@ -26,32 +26,8 @@ a {
 	width: 70%;
 	margin: 0 auto;
 }
-header {	
-	padding: 10px 0 8px 0;
-	margin: 0;
-}
-header picture {
-	display: inline-block;
-	vertical-align: middle;
 
-	width: 300px;
 
-	margin: 0;
-}
-header .header__title {
-	display: inline-block;
-	vertical-align: middle;
-	width: 40%;
-	margin-left: 3%;
-	margin-top: 0;
-
-	font-size: 0.9em;
-  line-height: 1.3em;
-  font-weight: bold;
-}
-* {
-	//outline: 1px solid black;
-}
 .contacts {
 	width: 180px;
 	//min-width: 150px;
@@ -64,76 +40,12 @@ header .header__title {
 	clear: both;
 	display: table;
 }
-nav ul li {
-	display: inline-block;
-	vertical-align: top;
-	list-style: none;
-	margin-right: 70px;
-	font-size: 1.3em;
-}
-.active a {
-	position: relative;
-	//border-bottom: 5px solid white;
-	//opacity: 0.6;
-	color: rgba(0,0,0,0.6);
-}
-@media @tablets {
-  .active a::after {
-  	/*position: absolute;
-  	content: '';
-  	bottom: -24px;
-  	left: 50%;
-  	margin-left: -12px;
 
-  	border: 12px solid transparent;
-  	border-top: 12px solid @header-triangle-color;
-    //border-top: 12px solid blue;
-
-  	-webkit-animation: triangle 500ms forwards;
-
-  	        animation: triangle 500ms forwards;*/
-    position: absolute;
-    content: '';
-    //z-index: -1;
-    
-    bottom: -10px;
-    left: 50%;
-    margin-left: -12px;
-    
-    width: 16px;
-    height: 16px;
-    
-    background-color: @header-bg-color;
-    border-right: 1px solid @header-triangle-color;
-    border-bottom: 1px solid @header-triangle-color;
-    transform: rotate(45deg);
-    
-    //box-shadow: 2px 2px 0 0 blue;
-  }
-  
-}
-@-webkit-keyframes triangle {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
-@keyframes triangle {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
 ul, p {
 	padding: 0;
 	margin: 0;
 }
-nav {
-	float: right;
-	margin-top: 15px;
-}
-nav a {
-	padding: 10px 10px 8px 10px;
-}
-nav a:hover {
-	color: rgba(0,0,0,0.6);
-}
+
 .stac {
 	display: block;
 }
@@ -612,13 +524,13 @@ header .email:before {
 		text-align: center;
 		float: none;
 	}
-	nav ul li {
+	/*nav ul li {
 		margin: 0;
 		margin-bottom: 10px;
 	}
 	nav ul li:last-of-type {
 		margin-bottom: 0;
-	}
+	}*/
 
 	.production {
 		display: flex;
@@ -683,14 +595,14 @@ header .email:before {
 		text-align: center;
 		float: none;
 	}
-	nav ul li {
+	/*nav ul li {
 		margin: 0 10px;
 		margin-bottom: 15px;
 	}
 
 	nav ul li::last-of-type {
 		margin-bottom: 0;
-	}
+	}*/
 	.active a::after {
 		bottom: -24px;
 	}
