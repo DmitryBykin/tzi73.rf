@@ -1,41 +1,41 @@
-@media @mobiles {  
+@media @mobiles {
   .production {
     margin-top: 20px;
-    display: flex;    
-    flex-direction: column;
-  }
-  .production__item {  
-    //width: 100%;
-    
     display: flex;
     flex-direction: column;
-    
+  }
+  .production__item {
+    //width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
   	padding: 10px;
   	margin: 0 10px 10px;
-    
+
     //outline: 1px solid #e6e6e6;
   	box-shadow: 0 0 8px #e6e6e6;
     border: 1px solid #e6e6e6;
 
     box-sizing: border-box;
     border-radius: 10px;
-    
+
     &:hover {
-      box-shadow: 0 0 8px black;  
-    }      
+      box-shadow: 0 0 8px black;
+    }
   }
 
   .production__picture {
     //width: 40%;
-    width: 100%;    
-      
+    width: 100%;
+
   	margin: 10px;
-    
+
     text-align: center;
-    
+
     & img {
       max-width: 100%;
-      height: auto;      
+      height: auto;
     }
   }
 
@@ -53,36 +53,36 @@
 
   .production__features {
     position: relative;
-    
+
     font-style: italic;
     margin-bottom: 1em;
-    
+
     .main__promo &::after {
       position: absolute;
       content: '';
-      
+
       left: 0;
       bottom: 0;
       right: 0;
-      
+
       height: 3.5em;
-      
+
       background: linear-gradient(to top, @shadow-color, transparent) no-repeat;
-      
-    }    
+
+    }
   }
 
   .production__download {
     position: relative;
     & svg {
       position: absolute;
-      
+
       top: -2px;
       left: 0;
-      
+
       width: 20px;
-      height: 20px;  
-      stroke: red;  
+      height: 20px;
+      stroke: red;
     }
     &:hover svg {
       stroke: blue;        
@@ -99,7 +99,7 @@
   }
   .production__price {
   	margin-top: 10px;
-  	text-align: center;	
+  	text-align: center;
   }
 }
 
@@ -123,15 +123,15 @@
   }
   .production {
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     align-items: stretch;
   }
-    
+
   .production__picture {
-    width: 40%;   
-    align-self: baseline; 
+    width: 40%;
+    align-self: baseline;
   }
-  
+
   .production__description {
     width: 55%;
   }
