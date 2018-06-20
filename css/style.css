@@ -214,6 +214,7 @@ header .header__title {
   .main__about-title {
     text-align: center;
     font-size: 2rem;
+    font-weight: bold;
   }
   .main__about-description {
     text-indent: 2rem;
@@ -367,7 +368,7 @@ body {
 }
 body {
   overflow-y: scroll;
-  font-family: 'sans-serif';
+  font-family: 'Open Sans', 'sans-serif', Arial;
 }
 .wrap-height-block {
   min-height: 100%;
