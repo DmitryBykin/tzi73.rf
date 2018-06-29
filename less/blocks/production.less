@@ -49,6 +49,7 @@
 
   .production__title {
     text-align: center;
+    text-shadow: 1px 1px 3px #aaa;
   }
 
   .production__features {
@@ -85,7 +86,7 @@
       stroke: red;
     }
     &:hover svg {
-      stroke: blue;        
+      stroke: blue;
     }
   }
 
@@ -101,6 +102,85 @@
   	margin-top: 10px;
   	text-align: center;
   }
+
+  .production__options {
+    padding-top: 10px;
+
+    &-title {
+      display: block;
+      padding-left: 15px;
+      position: relative;
+      cursor: pointer;
+      //font-weight: bold;
+      color: blue;
+    }
+
+    @keyframes open-before {
+      from {
+        transform: rotate(45deg);
+      }
+      to {
+        transform: rotate(90deg);
+      }
+    }
+    @keyframes open-after {
+      from {
+        transform: rotate(-45deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+    }
+    &-title::after,
+    &-title::before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 3px;
+      background-color: green;
+      top: 45%;
+      left: 0;
+    }
+    &-title::before {
+      //transform: rotate(90deg);
+      animation: open-before 0.3s forwards;
+    }
+    &-title::after {
+      //transform: rotate(90deg);
+      animation: open-after 0.3s forwards;
+    }
+
+
+    &-title.close::before,
+    &-title.close::after {
+      background-color: red;
+    }
+    @keyframes close-before {
+      from {
+        transform: rotate(90deg); // was 90
+      }
+      to {
+        transform: rotate(45deg);
+      }
+    }
+    @keyframes close-after {
+      from {
+        transform: rotate(0deg); // was 0
+      }
+      to {
+        transform: rotate(-45deg);
+      }
+    }
+    &-title.close::before {
+      //transform: rotate(45deg);
+      animation: close-before 0.3s forwards;
+    }
+    &-title.close::after {
+      //transform: rotate(-45deg);
+      animation: close-after 0.3s forwards;
+    }
+  }
+
 }
 
 @media @middle-tablets {
