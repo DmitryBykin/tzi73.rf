@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2017-05-29 13:41">
+<yml_catalog date="2018-07-19 14:21">
     <shop>
         <name>Каталог ЗАО "РАЦ"</name>
         <company>ЗАО "РАЦ"</company>
@@ -11,11 +11,11 @@
         </currencies>
 
         <categories>
-            <category id="1">Программы</category>            
-            <category id="2">Услуги</category>
+            <category id="1">Программы</category>
+            <category id="2">Оборудование</category>
         </categories>
 
-        <offers>          
+        <offers>
           <offer id="1" available="true">
             <url>http://www.tzi73.ru/</url>
             <price>180000</price>
@@ -24,11 +24,11 @@
             <picture>http://www.tzi73.ru/img/cheremshan.jpg</picture>
             <delivery>true</delivery>
             <local_delivery_cost>300</local_delivery_cost>
-            <name>СУБД СП "Черемшан"</name>            
+            <name>СУБД СП "Черемшан"</name>
             <vendor>RAC</vendor>
             <vendorCode>RAC</vendorCode>
-            <description>Вспомогательное программное обеспечение для организаций-лицензиатов. 
-            Позволяет облегчить ведение документооборота при проведении специальных проверок. Имеется 
+            <description>Вспомогательное программное обеспечение для организаций-лицензиатов.
+            Позволяет облегчить ведение документооборота при проведении специальных проверок. Имеется
             возможность подключения сканера штрих-кодов.</description>
             <country_of_origin>Россия</country_of_origin>
           </offer>
@@ -44,16 +44,16 @@
             <vendor>RAC</vendor>
             <vendorCode>RAC</vendorCode>
             <description>Программа предназначена для проведения программного контроля сетевых устройств,
-            подключенных к компьютеру. Работает под операционными система семейства Windows. 
+            подключенных к компьютеру. Работает под операционными система семейства Windows.
              </description>
             <country_of_origin>Россия</country_of_origin>
           </offer>
           <offer id="3" available="true">
             <url>http://www.tzi73.ru/</url>
             <price>125000</price>
-            <currencyId>RUR</currencyId>            
+            <currencyId>RUR</currencyId>
             <categoryId>1</categoryId>
-            <picture>http://www.tzi73.ru/img/ekb_sp.png</picture>
+            <picture>http://www.tzi73.ru/img/ekb_sp_200x174.jpg</picture>
             <delivery>true</delivery>
             <local_delivery_cost>300</local_delivery_cost>
             <name>ЭКБ СП</name>
@@ -66,33 +66,21 @@
           </offer>
           <offer id="4" available="true">
             <url>http://www.tzi73.ru/services.html</url>
-            <price>68000</price>
+            <price>980000</price>
             <currencyId>RUR</currencyId>
             <categoryId>2</categoryId>
-            <delivery>false</delivery>            
-            <name>Аттестация объектов информатизации</name>
+            <picture>http://www.tzi73.ru/img/mirage.png</picture>
+            <delivery>true</delivery>
+            <name>Имитатор базовой станции GSM "Мираж"</name>
             <vendor>RAC</vendor>
             <vendorCode>RAC</vendorCode>
-            <description>ЗАО РАЦ оказывает полный перечень услуг по аттестации объектов информатизации: подготовка 
-              объекта к аттестации, расчёт, закупка монтаж средств защиты. 
-              Разработка необходимого комплекта документов. Аттестация объекта.
-             </description>
-            <country_of_origin>Россия</country_of_origin>
-          </offer>
-          <offer id="5" available="true">
-            <url>http://www.tzi73.ru/services.html</url>
-            <price>2000</price>
-            <currencyId>RUR</currencyId>
-            <categoryId>2</categoryId>
-            <delivery>false</delivery>            
-            <name>Специальная проверка и специсследования технических средств</name>
-            <vendor>RAC</vendor>
-            <vendorCode>RAC</vendorCode>
-            <description>Проведение специальных проверок и специальных исследований технических средств. 
+            <description>
+              Имитатор базовой станции GSM «Мираж» предназначен для поиска и идентификации электронных
+              устройств негласного получения информации, использующих
+              каналы передачи стандарта цифровой мобильной сотовой связи GSM.
              </description>
             <country_of_origin>Россия</country_of_origin>
           </offer>
         </offers>
-
     </shop>
 </yml_catalog>
