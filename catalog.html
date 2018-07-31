@@ -16,6 +16,14 @@
 </head>
 <body>
   <svg style="display: none;">
+    <symbol viewBox="0 0 510 510" id="production-icon--ruble">
+    	<g>
+    		<g>
+    			<path d="M34.786,428.963h81.158v69.572c0,3.385,1.083,6.156,3.262,8.322c2.173,2.18,4.951,3.27,8.335,3.27h60.502    c3.14,0,5.857-1.09,8.152-3.27c2.295-2.166,3.439-4.938,3.439-8.322v-69.572h182.964c3.377,0,6.156-1.076,8.334-3.256    c2.18-2.178,3.262-4.951,3.262-8.336v-46.377c0-3.365-1.082-6.156-3.262-8.322c-2.172-2.18-4.957-3.27-8.334-3.27H199.628v-42.754    h123.184c48.305,0,87.73-14.719,118.293-44.199c30.551-29.449,45.834-67.49,45.834-114.125c0-46.604-15.283-84.646-45.834-114.125    C410.548,14.749,371.116,0,322.812,0H127.535c-3.385,0-6.157,1.089-8.335,3.256c-2.173,2.179-3.262,4.969-3.262,8.335v227.896    H34.786c-3.384,0-6.157,1.145-8.335,3.439c-2.172,2.295-3.262,5.012-3.262,8.151v53.978c0,3.385,1.083,6.158,3.262,8.336    c2.179,2.18,4.945,3.256,8.335,3.256h81.158v42.754H34.786c-3.384,0-6.157,1.09-8.335,3.27c-2.172,2.166-3.262,4.951-3.262,8.322    v46.377c0,3.385,1.083,6.158,3.262,8.336C28.629,427.887,31.401,428.963,34.786,428.963z M199.628,77.179h115.938    c25.6,0,46.248,7.485,61.953,22.46c15.697,14.976,23.549,34.547,23.549,58.691c0,24.156-7.852,43.733-23.549,58.691    c-15.705,14.988-36.354,22.473-61.953,22.473H199.628V77.179z"/>
+    		</g>
+    	</g>
+    </symbol>
+
     <symbol viewBox="0 0 64 64" id="download--pdf">
      <g>
      	<polygon fill="none" stroke-width="2" stroke-miterlimit="10" points="63,63 1,63 1,1 51,1 63,13 	"/>
@@ -126,9 +134,15 @@
                       <span style="color: green;">&#10003;</span> управляемый подавитель сигналов "Мозаика-НВ" (+160 тыс.руб)
                 </p>
               </div>
-              <p class="production__price">
-                Стоимость: 980 000 руб.
-              </p>
+              <div class="production__price">
+                <div class="production__price-content">
+                  980 000
+                  <svg class="production__svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#production-icon--ruble">
+                    </use>
+                  </svg>
+                </div>
+              </div>
             </div>
           </article>
 
@@ -142,18 +156,26 @@
 							<h2 class="production__title">ЭКБ СП</h2>
 							<p class="production__features">База разработана в соответствии с требованиями ФСБ России.
                 Предназначена для хранения фотографий внешнего вида микросхем, их рентгеновских снимков и datasheet.
-								Количество записей в базе: 1 161 (по состоянию на 20.06.2018).
+								Количество записей в базе: 1 161 (по состоянию на 26.07.2018).
 							</p>
-							<a class="production__download" href="data/manual.pdf" target="_blank">
-                <svg class="download__svg">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download--pdf">
-                  </use>
-                </svg>
-                <span class="production__manual">руководство (pdf)</span>
-              </a>
-              <p class="production__price">
-                Стоимость: 125 000 руб.
+              <p>
+                <a class="production__download" href="data/manual.pdf" target="_blank">
+                  <svg class="download__svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download--pdf">
+                    </use>
+                  </svg>
+                  <span class="production__manual">руководство (pdf)</span>
+                </a>
               </p>
+              <div class="production__price">
+                <div class="production__price-content">
+                  125 000
+                  <svg class="production__svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#production-icon--ruble">
+                    </use>
+                  </svg>
+                </div>
+              </div>
 						</div>
 					</article>
 
@@ -169,9 +191,15 @@
               Предназначена для облегчения ведения документооборота
               при проведении специальных проверок технических средств.
               Имеется возможность формирования отчетных документов.</p>
-							<p class="production__price">
-                Стоимость: 180 000 руб.
-              </p>
+              <div class="production__price">
+                <div class="production__price-content">
+                  180 000
+                  <svg class="production__svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#production-icon--ruble">
+                    </use>
+                  </svg>
+                </div>
+              </div>
 						</div>
 					</article>
 
@@ -186,9 +214,43 @@
 							<p class="production__features">Программа разработана в соответствии с требованиями ФСБ России.
               Назначение - поиск информации о сетевых устройствах.
               Есть возможность сохранения отчетов для использования с базой СУБД СП "Черемшан"</p>
-							<p class="production__price">
-                Стоимость: 45 000 руб.
-              </p>
+              <div class="production__price">
+                <div class="production__price-content">
+                  45 000
+                  <svg class="production__svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#production-icon--ruble">
+                    </use>
+                  </svg>
+                </div>
+              </div>
+						</div>
+					</article>
+
+          <article class="production__item">
+						<picture class="production__picture">
+              <source srcset="img/no-photo.webp" type="image/webp">
+							<img src="img/no-photo.png" alt="Фото ГС-6">
+						</picture>
+
+						<div class="production__description">
+							<h2 class="production__title">Генератор сигналов "ГС-6" (9 кГц - 6 ГГц)</h2>
+							<p class="production__features">Генератор совместно с измерительным оборудованием
+              может использоваться для автоматизированного измерения затухания сигналов электромагнитного поля</p>
+              <ul>
+                <li>Частотный диапазон: 9 кГц - 6 ГГц;</li>
+                <li>Максимальная мощность: + 20 дБм;</li>
+                <li>Выходы: 2 шт, N-Type (антенны в поставку не входят);</li>
+                <li>Примеры программ для управления генератором</li>
+              </ul>
+              <div class="production__price">
+                <div class="production__price-content">
+                  230 000
+                  <svg class="production__svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#production-icon--ruble">
+                    </use>
+                  </svg>
+                </div>
+              </div>
 						</div>
 					</article>
 
