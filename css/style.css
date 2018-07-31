@@ -94,7 +94,7 @@
   }
   .production__price-content {
     position: relative;
-    display: inline-block;
+    display: inline;
     background-color: #e7e7f5;
     font-weight: normal;
     line-height: 18px;
