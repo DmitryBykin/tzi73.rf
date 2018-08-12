@@ -40,8 +40,15 @@
   }
 
   .production__title {
-    text-align: center;
-    text-shadow: 1px 1px 3px #aaa;
+    text-align: center;    
+    color: #27338d;
+    
+    &:hover a {      
+      background: linear-gradient(currentColor, currentColor) no-repeat;
+      background-size: 100% 1px;
+      background-position: 0 1.15em;      
+      text-shadow: .12em 0 white, -.12em 0 white;
+    }    
   }
 
   .production__features {
