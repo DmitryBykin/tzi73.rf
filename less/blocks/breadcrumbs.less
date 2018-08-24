@@ -1,9 +1,9 @@
-.breadcrumbs {  
+.breadcrumbs {
   padding-left: 10px;
   margin-top: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-  
+
   //background-color: #efefef;
 }
 
@@ -11,9 +11,9 @@
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  
+
   fill: blue;
-  
+
   &:hover {
     fill: red;
   }
@@ -21,26 +21,28 @@
 
 .breadcrumbs__item {
   display: inline-block;
-  
+
   &:not(:last-of-type)::after {
-    content: '\2192';    
+    content: '\2192';
     vertical-align: middle;
-    
+
     margin-left: 7px;
     margin-right: 7px;
-    
+
+    padding-bottom: 5px;
+
     font-size: 0.7rem;
   }
-  
+
   &:not(:last-of-type) .breadcrumbs__item-link { // у всех элементов кроме первого и последнего цвет blue
     color: blue;
   }
-      
+
   &:hover:not(:first-of-type) .breadcrumbs__item-link { // при ховере - цвет красный
     text-decoration: underline;
     color: red;
   }
-  
+
   &:last-of-type .breadcrumbs__item-link { // последний элемент немного светлее остальных
     color: rgba(0,0,0,0.6);
   }
@@ -48,6 +50,5 @@
     text-decoration:  none;
     color: rgba(0,0,0,0.6);
   }
-  
-}
 
+}

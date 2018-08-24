@@ -22,13 +22,40 @@
     }
   }
   .production__picture {
-    margin: 10px;
-
     text-align: center;
 
     & img {
       max-width: 100%;
       height: auto;
+    }
+  }
+  .production__thumb-items {
+    display: flex;
+    //flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 10px;
+    padding-top: 10px;
+
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+  }
+  .production__thumb-item {
+    width: 30%;
+    /*width: 40%;
+    margin: 5px 5%;*/
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+  .production__thumb-picture:hover {
+    & img {
+      box-shadow: 0 0 5px black;
     }
   }
   .production__description {

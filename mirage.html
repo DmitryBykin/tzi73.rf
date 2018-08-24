@@ -17,11 +17,9 @@
 <body>
   <svg style="display: none;">
     <symbol viewBox="0 0 510 510" id="production-icon--ruble">
-    	<g>
     		<g>
     			<path d="M34.786,428.963h81.158v69.572c0,3.385,1.083,6.156,3.262,8.322c2.173,2.18,4.951,3.27,8.335,3.27h60.502    c3.14,0,5.857-1.09,8.152-3.27c2.295-2.166,3.439-4.938,3.439-8.322v-69.572h182.964c3.377,0,6.156-1.076,8.334-3.256    c2.18-2.178,3.262-4.951,3.262-8.336v-46.377c0-3.365-1.082-6.156-3.262-8.322c-2.172-2.18-4.957-3.27-8.334-3.27H199.628v-42.754    h123.184c48.305,0,87.73-14.719,118.293-44.199c30.551-29.449,45.834-67.49,45.834-114.125c0-46.604-15.283-84.646-45.834-114.125    C410.548,14.749,371.116,0,322.812,0H127.535c-3.385,0-6.157,1.089-8.335,3.256c-2.173,2.179-3.262,4.969-3.262,8.335v227.896    H34.786c-3.384,0-6.157,1.145-8.335,3.439c-2.172,2.295-3.262,5.012-3.262,8.151v53.978c0,3.385,1.083,6.158,3.262,8.336    c2.179,2.18,4.945,3.256,8.335,3.256h81.158v42.754H34.786c-3.384,0-6.157,1.09-8.335,3.27c-2.172,2.166-3.262,4.951-3.262,8.322    v46.377c0,3.385,1.083,6.158,3.262,8.336C28.629,427.887,31.401,428.963,34.786,428.963z M199.628,77.179h115.938    c25.6,0,46.248,7.485,61.953,22.46c15.697,14.976,23.549,34.547,23.549,58.691c0,24.156-7.852,43.733-23.549,58.691    c-15.705,14.988-36.354,22.473-61.953,22.473H199.628V77.179z" stroke-width="1"/>
     		</g>
-    	</g>
     </symbol>
 
     <symbol viewBox="0 0 64 64" id="download--pdf">
@@ -112,12 +110,69 @@
 				<div class="production"> <!-- Каталог продукции -->
 
           <article class="production__full-item">
-            <div class="production__full-galery">
-              <picture class="production__picture">
-                <source srcset="img/mirage.webp" type="image/webp">
-                <img src="img/mirage.png" alt="Фото имитатора базовой станции GSM 'Мираж'">
-              </picture>
+            <div class="slider ">
+              <ul class="slider__items">
+                <li class="slider__item  slider__item--active">
+                  <picture>
+                    <source srcset="img/mirage_1.webp" type="image/webp">
+                    <img src="img/mirage_1.png" alt="Slide1">
+                  </picture>
+                </li>
+                <li class="slider__item">
+                  <picture>
+                    <source srcset="img/mirage_2.webp" type="image/webp">
+                    <img src="img/mirage_2.png" alt="Slide2">
+                  </picture>
+                </li>
+                <li class="slider__item">
+                  <picture>
+                    <source srcset="img/mirage_3.webp" type="image/webp">
+                    <img src="img/mirage_3.png" alt="Slide3">
+                  </picture>
+                </li>
+              </ul>
+              <ul class="slider__control-items">
+                <li class="slider__control-item  slider__control--active">
+                </li>
+                <li class="slider__control-item">
+                </li>
+                <li class="slider__control-item">
+                </li>
+              </ul>
+              <button class="slider__btn  slider__btn--prev"></button>
+              <button class="slider__btn  slider__btn--next"></button>
             </div>
+            <!--
+              <div class="production__full-galery">
+                  <picture class="production__picture" role="target">
+                    <source srcset="img/mirage_1.webp"  type="image/webp">
+                    <img src="img/mirage_1.png" alt="Фото имитатора базовой станции GSM 'Мираж'">
+                  </picture>
+
+                  <ul class="production__thumb-items">
+                    <li class="production__thumb-item">
+                      <picture class="production__thumb-picture">
+                        <source srcset="img/mirage_1.webp" role="triggerWebp" type="image/webp">
+                        <img src="img/mirage_1.png" role="triggerImg" alt="Скриншот 1">
+                      </picture>
+                    </li>
+                    <li class="production__thumb-item">
+                      <picture class="production__thumb-picture">
+                        <source srcset="img/mirage_2.webp" role="triggerWebp" type="image/webp">
+                        <img src="img/mirage_2.png" role="triggerImg" alt="Скриншот 2">
+                      </picture>
+                    </li>
+                    <li class="production__thumb-item">
+                      <picture class="production__thumb-picture">
+                        <source srcset="img/mirage_3.webp" role="triggerWebp" type="image/webp">
+                        <img src="img/mirage_3.png" role="triggerImg" alt="Скриншот 3">
+                      </picture>
+                    </li>
+                  </ul>
+
+            </div>
+          -->
+
             <div class="production__full-description">
               <h2 class="production__title">Имитатор базовой станции GSM "Мираж"</h2>
               <p class="production__features">
@@ -163,8 +218,8 @@
 
             </div>
 
-            <section class="production__full-docs">
-              <div class="production__full-docs-block">
+            <div class="production__full-docs">
+              <section class="production__full-docs-block">
                 <h2 class="production__full-docs-title">Документация</h2>
                 <ul class="production__full-docs-items">
                   <li>
@@ -177,12 +232,37 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </section>
 
-              <div class="production__full-price-block">
-                <div class="production__full-price-title">
+<!--
+              <section class="production__full-docs-block">
+                <h2 class="production__full-docs-title">Скриншоты</h2>
+                <ul class="production__thumb-items">
+                  <li class="production__thumb-item">
+                    <picture class="production__thumb-picture">
+                      <source srcset="img/mirage_1.webp" role="triggerWebp" type="image/webp">
+                      <img src="img/mirage_1.png" role="triggerImg" alt="Скриншот 1">
+                    </picture>
+                  </li>
+                  <li class="production__thumb-item">
+                    <picture class="production__thumb-picture">
+                      <source srcset="img/mirage_2.webp" role="triggerWebp" type="image/webp">
+                      <img src="img/mirage_2.png" role="triggerImg" alt="Скриншот 2">
+                    </picture>
+                  </li>
+                  <li class="production__thumb-item">
+                    <picture class="production__thumb-picture">
+                      <source srcset="img/mirage_3.webp" role="triggerWebp" type="image/webp">
+                      <img src="img/mirage_3.png" role="triggerImg" alt="Скриншот 3">
+                    </picture>
+                  </li>
+                </ul>
+              </section>
+-->
+              <section class="production__full-price-block">
+                <h2 class="production__full-price-title">
                   Стоимость
-                </div>
+                </h2>
                 <div class="production__full-price-content">
                   980 тыс.
                   <svg class="production__svg">
@@ -190,9 +270,9 @@
                     </use>
                   </svg>
                 </div>
-              </div>
+              </section>
 
-            </section>
+            </div>
           </article>
 
 				</div> <!-- end production -->
@@ -226,25 +306,45 @@
 	<!-- Yandex.Metrika counter -->
 		<script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
-  <script>
-    var now = new Date();
-    document.querySelector(".curyear").innerHTML = now.getFullYear();
-  </script>
-  <script src="js/jquery-3.0.0.min.js"></script>
-	<script>
-		$('.production__options--full').hide();
-		$('.production__options--brief').click(function(){
-			var $full = $(this).next('.production__options--full');
-			if($full.is(':hidden'))	{
-				$full.slideDown();
-				$(this).toggleClass('close');
-        $(this).text("Закрыть опции:");
-			} else {
-				$full.slideUp();
-				$(this).toggleClass('close');
-        $(this).text("Открыть опции");
-			}
-		});
+
+    <script type="text/javascript">  <!-- слайдер -->
+      var slides = document.querySelectorAll('.slider__items .slider__item');
+      var controls = document.querySelectorAll('.slider__control-items .slider__control-item');
+      var currentSlide = 0;
+      //var slideInterval = setInterval(nextSlide);
+      nextSlide();
+      var prev = document.querySelector('.slider__btn--prev');
+      var next = document.querySelector('.slider__btn--next');
+
+      next.onclick = function() {
+        //clearInterval(slideInterval);  // сбрасываем счётчик
+        //slideInterval = setInterval(nextSlide, 2000);
+        nextSlide();
+      }
+
+      prev.onclick = function() {
+        //clearInterval(slideInterval);  // сбрасываем счётчик
+        //slideInterval = setInterval(nextSlide, 2000);
+        prevSlide();
+      }
+
+      function prevSlide() {
+        goToSlide(currentSlide - 1);
+      }
+
+      function nextSlide() {
+        goToSlide(currentSlide + 1);
+      }
+
+      function goToSlide(n) {
+       slides[currentSlide].className = 'slider__item';
+       controls[currentSlide].className = 'slider__control-item';
+
+       currentSlide = (n + slides.length) % slides.length;
+
+       slides[currentSlide].className = 'slider__item  slider__item--active';
+       controls[currentSlide].className = 'slider__control-item  slider__control--active';
+      }
     </script>
 </body>
 </html>

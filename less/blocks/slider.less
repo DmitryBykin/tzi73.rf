@@ -1,0 +1,215 @@
+@transitionTime: 2s;
+
+@media @mobiles {
+  .slider {
+    position: relative;
+    border: 1px solid red;
+    margin-top: 1.5rem;
+
+    margin-left: 20px;    // делаем небольшие отступы для слайдов
+    margin-right: 20px;
+
+    &--hidden {
+      position: absolute;
+      clip: rect(0,0,0,0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+    }
+  }
+/*
+  .slider__items {
+    position: relative;
+    padding-top: @slideRatio;      // высота в блока в процентах от ширины
+                                   // сами слайды сделаны абсолютами
+    overflow: hidden;
+  }
+*/
+  .slider__item {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0; // 1 - для слайда со сдвигом картинок
+    z-index: 1;
+
+    transition: opacity @transitionTime;
+    //animation: movingOldSlide  1000ms ease-in-out forwards;
+  }
+  @keyframes movingOldSlide {
+    from {
+      opacity: 1;
+      left: 0;
+    }
+    to {
+      opacity: 0;
+      left: -100%;
+    }
+  }
+
+  @keyframes movingNewSlide {
+    from {
+      opacity: 0;
+      left: 100%;
+    }
+    to {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+  .slider__item--active {
+    opacity: 1;
+    z-index: 2;
+    //animation: movingNewSlide  1000ms ease-in-out forwards;
+  }
+
+  .slider__item img {
+    width: 100%;
+  }
+
+  .slider__btn {       // блоки для будущих кнопок
+    position: absolute;
+
+    top: 50%;
+
+    margin-top: -25px; // поднимаем кнопку немного вверх
+
+    width: 54px;
+    height: 54px;
+
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border: 0;
+
+    z-index: 2;
+
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0,0,0,0.3);
+    }
+    &:active {
+      background-color: rgba(0,0,0,0.2);
+    }
+  }
+  .slider__btn--prev.slider__btn {
+    left: 3%;  // кнопку Назад (prev) отодвигаем от левого края
+  }
+  .slider__btn--next.slider__btn {
+    right: 3%; // кнопку Вперед (prev) отодвигаем от правого края
+  }
+
+  .slider__btn--prev,        // общие свойства для всех элементов, которые формируют кнопки
+  .slider__btn--next {       // стрелочки состоят из двух элементов, повернутых симметрично
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+
+      height: 8px;
+      width: 25px;
+
+      margin-top: -4px;             // = height/2
+
+      background-color: white;
+      z-index: 2;
+      border-radius: 4px;
+    }
+    /*&:hover::before,
+    &:hover::after {
+      background-color: @menu-desktop-color; // при наведении на стрелки делаем их таким же цветом, как при наведении на пункты меню
+    } */
+    &::before {
+      //top: 50%;
+      margin-top: 2px;
+    }
+    &::after {
+      //top: 50%;
+      margin-top: -10px;
+    }
+  }
+  .slider__btn--prev {
+    &::before,
+    &::after {
+      left: 12px;       // при повороте стрелочки немного "уплывают", сдвигом возвращаем на место
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .slider__btn--next {
+    &::before,
+    &::after {
+      right: 12px;    // при повороте стрелочки немного "уплывают", сдвигом возвращаем на место
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+  .slider__control-items {
+    position: absolute;
+
+    bottom: 3%;
+
+    width: 100%;
+
+    text-align: center;
+
+    z-index: 2;
+  }
+  .slider__control-item {
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    margin: 1px;
+
+    border-radius: 50%;
+
+    transition: background-color @transitionTime;
+
+    background-color: rgba(255,255,255,0.2);
+  }
+  .slider__control--active {
+    background-color: rgba(255,255,255,1);
+  }
+
+}
+
+@media @tablets {
+
+  .slider {
+    width: 25%;
+    margin-left: auto;   // центрируем контейнер со
+    margin-right: auto;  // слайдами
+
+    max-height: @slideRatio;
+    //padding-top: @slideRatio;      // высота в блока в процентах от ширины
+                                   // сами слайды сделаны абсолютами
+    //overflow: hidden;
+  }
+
+}
+
+@media @desktops {
+
+  .slider {
+    //max-width: @max-width; // ограничиваем размер контейнера для слайдов
+
+    //margin-top: 130px;
+    //margin-bottom: 0;
+  }
+
+}

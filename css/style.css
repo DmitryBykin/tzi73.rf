@@ -44,12 +44,34 @@
     box-shadow: 0 0 8px black;
   }
   .production__picture {
-    margin: 10px;
     text-align: center;
   }
   .production__picture img {
     max-width: 100%;
     height: auto;
+  }
+  .production__thumb-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+  }
+  .production__thumb-item {
+    width: 30%;
+    /*width: 40%;
+    margin: 5px 5%;*/
+  }
+  .production__thumb-item img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .production__thumb-picture:hover img {
+    box-shadow: 0 0 5px black;
   }
   .production__description {
     width: 100%;
@@ -1113,6 +1135,7 @@ header .email:before {
   vertical-align: middle;
   margin-left: 7px;
   margin-right: 7px;
+  padding-bottom: 5px;
   font-size: 0.7rem;
 }
 .breadcrumbs__item:not(:last-of-type) .breadcrumbs__item-link {
@@ -1166,4 +1189,164 @@ header .email:before {
 }
 .bases__table-link-text {
   padding-left: 25px;
+}
+@media (min-width: 320px) {
+  .slider {
+    position: relative;
+    border: 1px solid red;
+    margin-top: 1.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .slider--hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  /*
+  .slider__items {
+    position: relative;
+    padding-top: @slideRatio;      // высота в блока в процентах от ширины
+                                   // сами слайды сделаны абсолютами
+    overflow: hidden;
+  }
+*/
+  .slider__item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 2s;
+  }
+  @keyframes movingOldSlide {
+    from {
+      opacity: 1;
+      left: 0;
+    }
+    to {
+      opacity: 0;
+      left: -100%;
+    }
+  }
+  @keyframes movingNewSlide {
+    from {
+      opacity: 0;
+      left: 100%;
+    }
+    to {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  .slider__item--active {
+    opacity: 1;
+    z-index: 2;
+  }
+  .slider__item img {
+    width: 100%;
+  }
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 54px;
+    height: 54px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .slider__btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .slider__btn:active {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .slider__btn--prev.slider__btn {
+    left: 3%;
+  }
+  .slider__btn--next.slider__btn {
+    right: 3%;
+  }
+  .slider__btn--prev,
+  .slider__btn--next {
+    /*&:hover::before,
+    &:hover::after {
+      background-color: @menu-desktop-color; // при наведении на стрелки делаем их таким же цветом, как при наведении на пункты меню
+    } */
+  }
+  .slider__btn--prev::before,
+  .slider__btn--next::before,
+  .slider__btn--prev::after,
+  .slider__btn--next::after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 25px;
+    margin-top: -4px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 4px;
+  }
+  .slider__btn--prev::before,
+  .slider__btn--next::before {
+    margin-top: 2px;
+  }
+  .slider__btn--prev::after,
+  .slider__btn--next::after {
+    margin-top: -10px;
+  }
+  .slider__btn--prev::before,
+  .slider__btn--prev::after {
+    left: 12px;
+  }
+  .slider__btn--prev::before {
+    transform: rotate(45deg);
+  }
+  .slider__btn--prev::after {
+    transform: rotate(-45deg);
+  }
+  .slider__btn--next::before,
+  .slider__btn--next::after {
+    right: 12px;
+  }
+  .slider__btn--next::before {
+    transform: rotate(-45deg);
+  }
+  .slider__btn--next::after {
+    transform: rotate(45deg);
+  }
+  .slider__control-items {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+  .slider__control-item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    border-radius: 50%;
+    transition: background-color 2s;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .slider__control--active {
+    background-color: #ffffff;
+  }
+}
+@media (min-width: 800px) {
+  .slider {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 51.98%;
+  }
 }
