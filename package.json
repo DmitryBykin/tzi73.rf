@@ -6,7 +6,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.5.3",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-autoprefixer": "~1.0.1",
     "grunt-browser-sync": "2.2.0",
     "grunt-contrib-less": "1.4.0",
@@ -17,13 +17,13 @@
     "multiparty": "latest"
   },
   "scripts": {
-    "test": "editorconfig-cli",    
+    "test": "editorconfig-cli",
     "build": "grunt less && grunt autoprefixer && grunt csso",
     "start": "npm run build && grunt serve",
     "webp": "grunt webp",
     "auto": "grunt autoprefixer",
     "uglify": "grunt uglify",
-    "watch": "grunt watch"    
+    "watch": "grunt watch"
   },
   "editorconfig-cli": [
     "*.html",
@@ -37,6 +37,8 @@
     "node": "6.7"
   },
   "dependencies": {
-    "grunt-csso": "^2.2.0"
+    "cwebp-bin": "^4.0.0",
+    "grunt-csso": "^2.2.0",
+    "webp-bin": "^0.1.4"
   }
 }

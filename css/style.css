@@ -1210,7 +1210,7 @@ header .email:before {
   .slider {
     position: relative;
     margin-top: 1.5rem;
-    padding-top: 75%;
+    margin-bottom: 1.5rem;
   }
   .slider--hidden {
     position: absolute;

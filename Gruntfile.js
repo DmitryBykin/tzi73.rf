@@ -52,13 +52,13 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      styles: {                
+      styles: {
           files: ["less/**/*.less"],
-          tasks: ["less"]  
+          tasks: ["less"]
         },
       csso: {
         files: ["css/style.css"],
-        tasks: ["csso"]  
+        tasks: ["csso"]
       },
       webp: {
         files: ["img/**/*.{png,gif,jpg}"],
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
       //style: {
       //  files: ["img/**/*.{png,gif,jpg}"],
       //  tasks: ["webp"]
-      //}      
+      //}
       //,
       //js: {
       //  files: ["js/**/*.js"],
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
     webp: {
       files: {
         expand: true,
-        src: 'img/*.{png,gif,jpg}'
+        src: 'img/*.{png,jpg}'
         //dest: 'images/*'
         //cwd: 'source-images/*.png'
       },
@@ -143,6 +143,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask("serve", ["browserSync", "watch"]);   
+  grunt.registerTask("serve", ["browserSync", "watch"]);
   //grunt.registerTask('default', 'webp');
 };
