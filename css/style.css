@@ -1,5 +1,6 @@
 /* promo блок*/
 /* header block */
+/* Блок с разработками*/
 @font-face {
   font-family: 'Open Sans';
   src: local('Open Sans'), url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
@@ -1191,12 +1192,14 @@ header .email:before {
   padding-left: 25px;
 }
 @media (min-width: 320px) {
-  .slider {
-    position: relative;
-    border: 1px solid red;
-    margin-top: 1.5rem;
+  .slider__wrapper {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .slider {
+    position: relative;
+    margin-top: 1.5rem;
+    padding-top: 75%;
   }
   .slider--hidden {
     position: absolute;
@@ -1205,14 +1208,6 @@ header .email:before {
     height: 1px;
     margin: -1px;
   }
-  /*
-  .slider__items {
-    position: relative;
-    padding-top: @slideRatio;      // высота в блока в процентах от ширины
-                                   // сами слайды сделаны абсолютами
-    overflow: hidden;
-  }
-*/
   .slider__item {
     position: absolute;
     left: 0;
@@ -1221,7 +1216,7 @@ header .email:before {
     height: 100%;
     opacity: 0;
     z-index: 1;
-    transition: opacity 2s;
+    transition: opacity 0.3s;
   }
   @keyframes movingOldSlide {
     from {
@@ -1253,20 +1248,17 @@ header .email:before {
   .slider__btn {
     position: absolute;
     top: 50%;
-    margin-top: -25px;
-    width: 54px;
-    height: 54px;
-    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: -17px;
+    width: 34px;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
     border: 0;
     z-index: 2;
     cursor: pointer;
   }
   .slider__btn:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .slider__btn:active {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 255, 0.1);
   }
   .slider__btn--prev.slider__btn {
     left: 3%;
@@ -1287,24 +1279,23 @@ header .email:before {
   .slider__btn--next::after {
     position: absolute;
     content: '';
-    height: 8px;
-    width: 25px;
-    margin-top: -4px;
-    background-color: white;
+    height: 2px;
+    width: 14px;
+    margin-top: -2px;
+    background-color: #27338d;
     z-index: 2;
-    border-radius: 4px;
   }
   .slider__btn--prev::before,
   .slider__btn--next::before {
-    margin-top: 2px;
+    margin-top: 4px;
   }
   .slider__btn--prev::after,
   .slider__btn--next::after {
-    margin-top: -10px;
+    margin-top: -5px;
   }
   .slider__btn--prev::before,
   .slider__btn--prev::after {
-    left: 12px;
+    left: 10px;
   }
   .slider__btn--prev::before {
     transform: rotate(45deg);
@@ -1314,7 +1305,7 @@ header .email:before {
   }
   .slider__btn--next::before,
   .slider__btn--next::after {
-    right: 12px;
+    right: 10px;
   }
   .slider__btn--next::before {
     transform: rotate(-45deg);
@@ -1324,29 +1315,27 @@ header .email:before {
   }
   .slider__control-items {
     position: absolute;
-    bottom: 3%;
+    bottom: -10%;
     width: 100%;
     text-align: center;
     z-index: 2;
   }
   .slider__control-item {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     margin: 1px;
     border-radius: 50%;
-    transition: background-color 2s;
-    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+    background-color: #27338d;
+    border: 1px solid #27338d;
   }
   .slider__control--active {
-    background-color: #ffffff;
+    background-color: transparent;
   }
 }
 @media (min-width: 800px) {
-  .slider {
+  .slider__wrapper {
     width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 51.98%;
   }
 }

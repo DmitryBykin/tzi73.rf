@@ -110,37 +110,40 @@
 				<div class="production"> <!-- Каталог продукции -->
 
           <article class="production__full-item">
-            <div class="slider ">
-              <ul class="slider__items">
-                <li class="slider__item  slider__item--active">
-                  <picture>
-                    <source srcset="img/mirage_1.webp" type="image/webp">
-                    <img src="img/mirage_1.png" alt="Slide1">
-                  </picture>
-                </li>
-                <li class="slider__item">
-                  <picture>
-                    <source srcset="img/mirage_2.webp" type="image/webp">
-                    <img src="img/mirage_2.png" alt="Slide2">
-                  </picture>
-                </li>
-                <li class="slider__item">
-                  <picture>
-                    <source srcset="img/mirage_3.webp" type="image/webp">
-                    <img src="img/mirage_3.png" alt="Slide3">
-                  </picture>
-                </li>
-              </ul>
-              <ul class="slider__control-items">
-                <li class="slider__control-item  slider__control--active">
-                </li>
-                <li class="slider__control-item">
-                </li>
-                <li class="slider__control-item">
-                </li>
-              </ul>
-              <button class="slider__btn  slider__btn--prev"></button>
-              <button class="slider__btn  slider__btn--next"></button>
+
+            <div class="slider__wrapper">
+              <div class="slider ">
+                <ul class="slider__items">
+                  <li class="slider__item  slider__item--active">
+                    <picture>
+                      <source srcset="img/mirage_1.webp" type="image/webp">
+                      <img src="img/mirage_1.png" alt="Slide1">
+                    </picture>
+                  </li>
+                  <li class="slider__item">
+                    <picture>
+                      <source srcset="img/mirage_2.webp" type="image/webp">
+                      <img src="img/mirage_2.png" alt="Slide2">
+                    </picture>
+                  </li>
+                  <li class="slider__item">
+                    <picture>
+                      <source srcset="img/mirage_3.webp" type="image/webp">
+                      <img src="img/mirage_3.png" alt="Slide3">
+                    </picture>
+                  </li>
+                </ul>
+                <ul class="slider__control-items">
+                  <li class="slider__control-item  slider__control--active">
+                  </li>
+                  <li class="slider__control-item">
+                  </li>
+                  <li class="slider__control-item">
+                  </li>
+                </ul>
+                <button class="slider__btn  slider__btn--prev"></button>
+                <button class="slider__btn  slider__btn--next"></button>
+              </div>
             </div>
             <!--
               <div class="production__full-galery">
@@ -312,7 +315,7 @@
       var controls = document.querySelectorAll('.slider__control-items .slider__control-item');
       var currentSlide = 0;
       //var slideInterval = setInterval(nextSlide);
-      nextSlide();
+      goToSlide(currentSlide);
       var prev = document.querySelector('.slider__btn--prev');
       var next = document.querySelector('.slider__btn--next');
 
