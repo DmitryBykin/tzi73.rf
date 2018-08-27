@@ -3,7 +3,17 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+
+    &--hidden {
+      position: absolute;
+      clip: rect(0,0,0,0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+    }
+
   }
+
   .production__item {
     display: flex;
     flex-direction: column;
@@ -23,6 +33,7 @@
   }
   .production__picture {
     text-align: center;
+    margin-top: 20px;
 
     & img {
       max-width: 100%;
@@ -72,6 +83,9 @@
       background-size: 100% 1px;
       background-position: 0 1.15em;
       text-shadow: .12em 0 white, -.12em 0 white;
+    }
+    &-no-shadow:hover a {
+      text-shadow: none;
     }
   }
   .production__features {

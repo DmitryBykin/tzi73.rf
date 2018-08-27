@@ -107,7 +107,7 @@
           <article class="production__item">
              <picture class="production__picture">
                <source srcset="img/mirage.webp" type="image/webp">
-               <img src="img/mirage.png" alt="Фото имитатора базовой станции GSM 'Мираж'">
+               <img src="img/mirage.gif" alt="Фото имитатора базовой станции GSM 'Мираж'">
              </picture>
 
             <div class="production__description">
@@ -230,7 +230,20 @@
 						</div>
 					</article>
 
+          <article class="production__item">
+            <picture class="production__picture">
+              <source srcset="img/cover.webp" type="image/webp">
+              <img src="img/cover.gif" alt="Фото крышки специальной">
+            </picture>
 
+            <div class="production__description">
+              <h2 class="production__title"><a href="cover.html">Металлическая специальная экранирующая крышка АРМ</a></h2>
+              <p class="production__features">Предотвращает несанкционированный доступ к интерфейсным разъёмам и внутрь системного блока.
+              Соответствует требованиям ФСТЭК от 20.10.16, введенным в действие с 01.12.2017.</p>
+
+              <a class="production__link" href="cover.html">Подробнее ...</a>
+            </div>
+          </article>
 
 				</div> <!-- end production -->
 			</div> <!-- end wrapper -->
@@ -267,21 +280,6 @@
     var now = new Date();
     document.querySelector(".curyear").innerHTML = now.getFullYear();
   </script>
-  <script src="js/jquery-3.0.0.min.js"></script>
-	<script>
-		$('.production__options--full').hide();
-		$('.production__options--brief').click(function(){
-			var $full = $(this).next('.production__options--full');
-			if($full.is(':hidden'))	{
-				$full.slideDown();
-				$(this).toggleClass('close');
-        $(this).text("Закрыть опции:");
-			} else {
-				$full.slideUp();
-				$(this).toggleClass('close');
-        $(this).text("Открыть опции");
-			}
-		});
-    </script>
+    
 </body>
 </html>
