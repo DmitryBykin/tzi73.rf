@@ -1207,10 +1207,14 @@ header .email:before {
     margin-left: 20px;
     margin-right: 20px;
   }
+  .slider__wrapper--big {
+    display: none;
+  }
   .slider {
     position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
   }
   .slider--hidden {
     position: absolute;
@@ -1348,5 +1352,77 @@ header .email:before {
 @media (min-width: 800px) {
   .slider__wrapper {
     width: 25%;
+  }
+  .slider__wrapper--big {
+    position: fixed;
+    display: block;
+    width: 50%;
+    top: 50px;
+    left: 25%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    z-index: 50;
+    background-color: white;
+  }
+  .slider__btn--close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .slider__btn--close,
+  .slider__btn--close:active,
+  .slider__btn--close:focus {
+    outline: 0;
+    border: 0;
+  }
+  .slider__btn--close::before,
+  .slider__btn--close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+  }
+  .slider__btn--close::before {
+    transform: rotate(45deg);
+  }
+  .slider__btn--close::after {
+    transform: rotate(-45deg);
+  }
+  .slider__btn--close:hover::before,
+  .slider__btn--close:hover::after {
+    opacity: 1;
+  }
+}
+@media (min-width: 800px) {
+  .overlay {
+    position: relative;
+  }
+  .overlay:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    z-index: 4;
+    animation: overlay 0.5s ease-in-out forwards;
+  }
+}
+@keyframes overlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
   }
 }

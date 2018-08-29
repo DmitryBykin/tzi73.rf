@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
  <meta charset="utf-8">
- <title>Разработки</title>
- <meta name="description" content="Металлическая специальная экранирующая крышка АРМ">
+ <title>Металлическая специальная экранирующая крышка АРМ</title>
+ <meta name="description" content="Разработана для выполнения требований ФСТЭК России от 20.10.2016, защита портов АРМ от НСД">
  <meta name="keywords" content="">
  <meta name="viewport" content="width=device-width">
  <link rel="stylesheet" href="css/normalize.css">
@@ -111,7 +111,7 @@
 
           <article class="production__full-item">
 
-            <div class="slider__wrapper">
+            <div class="slider__wrapper  slider__wrapper--small">
               <div class="slider " style="padding-top: 66.71%;">
                 <ul class="slider__items">
                   <li class="slider__item  slider__item--active">
@@ -180,7 +180,7 @@
               <h2 class="production__title">Металлическая специальная экранирующая крышка АРМ</h2>
               <p class="production__features">
                 Предотвращает несанкционированный доступ к интерфейсным разъёмам и внутрь системного блока.
-                Соответствует требованиям ФСТЭК от 20.10.16, введенным в действие с 01.12.2017.
+                Соответствует требованиям ФСТЭК России от 20.10.16, введенным в действие с 01.12.2017.
               </p>
 
               <ul class="production__features-items">
@@ -244,7 +244,7 @@
                   Стоимость
                 </h2>
                 <div class="production__full-price-content">
-                  2 тыс.
+                  2,5 тыс.
                   <svg class="production__svg">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#production-icon--ruble">
                     </use>
@@ -283,48 +283,50 @@
 			</div>
 	</footer>
 
+  <div class="slider__wrapper  slider__wrapper--big  slider--hidden">
+    <div class="slider " style="padding-top: 66.71%;">
+      <ul class="slider__items">
+        <li class="slider__item  slider__item--active">
+          <picture>
+            <source srcset="img/cover_1.webp" type="image/webp">
+            <img src="img/cover_1.gif" alt="Фото крышки 1">
+          </picture>
+        </li>
+        <li class="slider__item">
+          <picture>
+            <source srcset="img/cover_2.webp" type="image/webp">
+            <img src="img/cover_2.gif" alt="Фото крышки 2">
+          </picture>
+        </li>
+        <li class="slider__item">
+          <picture>
+            <source srcset="img/mirage_3.webp" type="image/webp">
+            <img src="img/cover_3.jpg" alt="Фото крышки 3">
+          </picture>
+        </li>
+      </ul>
+      <ul class="slider__control-items">
+        <li class="slider__control-item  slider__control--active">
+        </li>
+        <li class="slider__control-item">
+        </li>
+        <li class="slider__control-item">
+        </li>
+      </ul>
+      <button class="slider__btn  slider__btn--prev"></button>
+      <button class="slider__btn  slider__btn--next"></button>
+    </div>
+    <button class="slider__btn--close"></button>
+  </div>
+
 	<!-- Yandex.Metrika counter -->
 		<script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
 
-    <script>  <!-- слайдер -->
-      var slides = document.querySelectorAll('.slider__items .slider__item');
-      var controls = document.querySelectorAll('.slider__control-items .slider__control-item');
-      var currentSlide = 0;
-      //var slideInterval = setInterval(nextSlide);
-      goToSlide(currentSlide);
-      var prev = document.querySelector('.slider__btn--prev');
-      var next = document.querySelector('.slider__btn--next');
-
-      next.onclick = function() {
-        //clearInterval(slideInterval);  // сбрасываем счётчик
-        //slideInterval = setInterval(nextSlide, 2000);
-        nextSlide();
-      }
-
-      prev.onclick = function() {
-        //clearInterval(slideInterval);  // сбрасываем счётчик
-        //slideInterval = setInterval(nextSlide, 2000);
-        prevSlide();
-      }
-
-      function prevSlide() {
-        goToSlide(currentSlide - 1);
-      }
-
-      function nextSlide() {
-        goToSlide(currentSlide + 1);
-      }
-
-      function goToSlide(n) {
-       slides[currentSlide].className = 'slider__item';
-       controls[currentSlide].className = 'slider__control-item';
-
-       currentSlide = (n + slides.length) % slides.length;
-
-       slides[currentSlide].className = 'slider__item  slider__item--active';
-       controls[currentSlide].className = 'slider__control-item  slider__control--active';
-      }
-    </script>
+      <script src="js/slider.js" charset="utf-8"></script>
+      <script>
+        var now = new Date();
+        document.querySelector(".curyear").innerHTML = now.getFullYear();
+      </script>
 </body>
 </html>
