@@ -78,6 +78,10 @@ prevBig.onclick = function(event) {
   prevSlide();
 }
 
+sliderBig.onclick = function() {
+  nextSlide();
+}
+
 document.addEventListener('keypress', function(e) {
    if(e.keyCode == 27) closeBigSlider();
 });

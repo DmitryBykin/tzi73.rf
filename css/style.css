@@ -1356,9 +1356,10 @@ header .email:before {
   .slider__wrapper--big {
     position: fixed;
     display: block;
-    width: 50%;
-    top: 50px;
+    width: auto;
+    top: 12%;
     left: 25%;
+    right: 25%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     z-index: 50;
@@ -1413,7 +1414,6 @@ header .email:before {
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: 0.7;
     z-index: 4;
     animation: overlay 0.5s ease-in-out forwards;
   }
@@ -1423,6 +1423,6 @@ header .email:before {
     opacity: 0;
   }
   to {
-    opacity: 0.7;
+    opacity: 0.9;
   }
 }
