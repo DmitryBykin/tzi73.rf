@@ -8,13 +8,17 @@
     display: none;           // прячем блок для мобильных устройств
   }
 
+ .slider__wrapper--big .slider {
+   cursor: pointer;
+ }
+
   .slider {
     position: relative;
 
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 
-    cursor: pointer;
+    cursor:  url(../img/zoom_in.png), url(../img/zoom_in.cur), auto;
     //padding-top: @slideRatio;
 
     &--hidden {
@@ -23,7 +27,7 @@
       width: 1px;
       height: 1px;
       margin: -1px;
-    }
+    }    
   }
 
   .slider__item {

@@ -1213,11 +1213,14 @@ header .email:before {
   .slider__wrapper--big {
     display: none;
   }
+  .slider__wrapper--big .slider {
+    cursor: pointer;
+  }
   .slider {
     position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    cursor: pointer;
+    cursor: url(../img/zoom_in.png), url(../img/zoom_in.cur), auto;
   }
   .slider--hidden {
     position: absolute;
