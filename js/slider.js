@@ -82,6 +82,6 @@ sliderBig.onclick = function() {
   nextSlide();
 }
 
-document.addEventListener('keypress', function(e) {
-   if(e.keyCode == 27) closeBigSlider();
+document.addEventListener('keydown', function(e) {
+   if(e.keyCode === 27) closeBigSlider();
 });
