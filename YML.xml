@@ -4,7 +4,7 @@
     <shop>
         <name>Каталог ЗАО "РАЦ"</name>
         <company>ЗАО "РАЦ"</company>
-        <url>http://www.tzi73.ru/</url>
+        <url>https://tzi73.ru/</url>
 
         <currencies>
             <currency id="RUR" rate="1" plus="0"/>
@@ -17,11 +17,11 @@
 
         <offers>
           <offer id="1" available="true">
-            <url>http://www.tzi73.ru/</url>
+            <url>https://tzi73.ru/</url>
             <price>180000</price>
             <currencyId>RUR</currencyId>
             <categoryId>1</categoryId>
-            <picture>http://www.tzi73.ru/img/cheremshan.jpg</picture>
+            <picture>https://tzi73.ru/img/cheremshan.jpg</picture>
             <delivery>true</delivery>
             <local_delivery_cost>300</local_delivery_cost>
             <name>СУБД СП "Черемшан"</name>
@@ -33,11 +33,11 @@
             <country_of_origin>Россия</country_of_origin>
           </offer>
           <offer id="2" available="true">
-            <url>http://www.tzi73.ru/</url>
+            <url>https://tzi73.ru/</url>
             <price>45000</price>
             <currencyId>RUR</currencyId>
             <categoryId>1</categoryId>
-            <picture>http://www.tzi73.ru/img/search-net.jpg</picture>
+            <picture>https://tzi73.ru/img/search-net.jpg</picture>
             <delivery>true</delivery>
             <local_delivery_cost>300</local_delivery_cost>
             <name>Поиск-NET</name>
@@ -49,11 +49,11 @@
             <country_of_origin>Россия</country_of_origin>
           </offer>
           <offer id="3" available="true">
-            <url>http://www.tzi73.ru/</url>
+            <url>https://tzi73.ru/</url>
             <price>125000</price>
             <currencyId>RUR</currencyId>
             <categoryId>1</categoryId>
-            <picture>http://www.tzi73.ru/img/ekb_sp_200x174.jpg</picture>
+            <picture>https://tzi73.ru/img/ekb_sp_200x174.jpg</picture>
             <delivery>true</delivery>
             <local_delivery_cost>300</local_delivery_cost>
             <name>ЭКБ СП</name>
@@ -65,11 +65,11 @@
             <country_of_origin>Россия</country_of_origin>
           </offer>
           <offer id="4" available="true">
-            <url>http://www.tzi73.ru/services.html</url>
+            <url>https://tzi73.ru/services.html</url>
             <price>980000</price>
             <currencyId>RUR</currencyId>
             <categoryId>2</categoryId>
-            <picture>http://www.tzi73.ru/img/mirage.png</picture>
+            <picture>https://tzi73.ru/img/mirage.png</picture>
             <delivery>true</delivery>
             <name>Имитатор базовой станции GSM "Мираж"</name>
             <vendor>RAC</vendor>

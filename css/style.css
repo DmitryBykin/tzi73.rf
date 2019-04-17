@@ -28,8 +28,10 @@
 @media (min-width: 320px) {
   .production {
     margin-top: 20px;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .production--hidden {
     position: absolute;
@@ -42,8 +44,10 @@
     margin-top: 15px;
   }
   .production__item {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     padding: 10px;
     margin: 0 10px 10px;
     box-shadow: 0 0 8px #e6e6e6;
@@ -63,10 +67,14 @@
     height: auto;
   }
   .production__thumb-items {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 10px;
     padding-top: 10px;
     border-top: 1px dotted black;
@@ -167,8 +175,10 @@
     color: blue;
   }
   .production__full-item {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     border: 1px dotted #b7b7b7;
     border-radius: 5px;
     margin: 10px;
@@ -211,9 +221,12 @@
     margin-bottom: 15px;
   }
   .production__full-docs {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   .production__full-price-block {
     text-align: center;
@@ -251,32 +264,40 @@
 }
 @media (min-width: 480px) {
   .production {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .production__item {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     width: 65%;
   }
 }
 @media (min-width: 800px) {
   .production__item {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     width: 40%;
   }
   .production {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
   .production__picture {
     width: 40%;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
   .production__description {
     width: 55%;
   }
   .production__full-item {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
   }
   .production__full-galery {
     width: 25%;
@@ -418,8 +439,10 @@ header .header__title {
 }
 @media (min-width: 800px) {
   .main__sections {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     margin-top: 2em;
   }
   .main__promo {
@@ -427,7 +450,8 @@ header .header__title {
     max-width: 400px;
     display: block;
     background-color: #e6e6e6;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
   }
   .main__promo .production__item {
     width: 90%;
@@ -525,7 +549,8 @@ header .header__title {
     background-color: #e6e6e6;
     border-right: 1px solid #b7b7b7;
     border-bottom: 1px solid #b7b7b7;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
 html,
@@ -995,8 +1020,10 @@ header .email:before {
 		margin-bottom: 0;
 	}*/
   .production {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .map {
     display: none;
@@ -1239,6 +1266,16 @@ header .email:before {
     z-index: 1;
     transition: opacity 0.3s;
   }
+  @-webkit-keyframes movingOldSlide {
+    from {
+      opacity: 1;
+      left: 0;
+    }
+    to {
+      opacity: 0;
+      left: -100%;
+    }
+  }
   @keyframes movingOldSlide {
     from {
       opacity: 1;
@@ -1247,6 +1284,16 @@ header .email:before {
     to {
       opacity: 0;
       left: -100%;
+    }
+  }
+  @-webkit-keyframes movingNewSlide {
+    from {
+      opacity: 0;
+      left: 100%;
+    }
+    to {
+      opacity: 1;
+      left: 0;
     }
   }
   @keyframes movingNewSlide {
@@ -1319,20 +1366,24 @@ header .email:before {
     left: 10px;
   }
   .slider__btn--prev::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .slider__btn--prev::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .slider__btn--next::before,
   .slider__btn--next::after {
     right: 10px;
   }
   .slider__btn--next::before {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .slider__btn--next::after {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .slider__control-items {
     position: absolute;
@@ -1399,10 +1450,12 @@ header .email:before {
     background-color: white;
   }
   .slider__btn--close::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .slider__btn--close::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .slider__btn--close:hover::before,
   .slider__btn--close:hover::after {
@@ -1423,7 +1476,16 @@ header .email:before {
     width: 100%;
     background: #000;
     z-index: 4;
-    animation: overlay 0.5s ease-in-out forwards;
+    -webkit-animation: overlay 0.5s ease-in-out forwards;
+            animation: overlay 0.5s ease-in-out forwards;
+  }
+}
+@-webkit-keyframes overlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
   }
 }
 @keyframes overlay {

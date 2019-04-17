@@ -9,16 +9,16 @@
  <link rel='stylesheet' href='css/normalize.css'>
  <link rel='stylesheet' href='css/style.min.css'>
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
- <link rel="icon" href="favicon.ico" type="image/x-icon">
- <script src="js/jquery-3.0.0.min.js"></script> 
+ <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+ <script src="js/jquery-3.0.0.min.js"></script>
  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
- 
+
 <script type="text/javascript">
 var myMap;
- 
+
 // Дождёмся загрузки API и готовности DOM.
 ymaps.ready(init);
- 
+
 function init () {
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
@@ -27,7 +27,7 @@ function init () {
         // её центр и коэффициент масштабирования.
         center: [54.260752, 48.286324], // Ульяновск
         zoom: 16,
-				controls: ['zoomControl', 'typeSelector']		
+				controls: ['zoomControl', 'typeSelector']
     }),
 			myGeoObject = new ymaps.GeoObject({
             // Описание геометрии.
@@ -37,10 +37,10 @@ function init () {
             },
             // Свойства.
             properties: {
-                // Контент метки.               
+                // Контент метки.
 								//hintCaption: 'ЗАО "РАЦ"',
                 hintContent: 'Самарская, 175',
-								iconCaption: 'ЗАО "РАЦ"'								
+								iconCaption: 'ЗАО "РАЦ"'
             }
         }, {
             // Опции.
@@ -51,19 +51,19 @@ function init () {
             draggable: true
         });
 		myMap.geoObjects.add(myGeoObject);
- 		$('.loading-map-message').hide();			 	
+ 		$('.loading-map-message').hide();
 }  // end function init
 </script>
 </head>
- 
+
 <body>
 	<main class="contacts-main">
-		<div class="wrapper clearfix">										
+		<div class="wrapper clearfix">
 			<p class="loading-map-message" style="font-size: 20px; ">Загрузка карты ...</p>
 			<div id="yandex-map" style="height: 300px;"></div>
 			<a class="button-back" href="contacts.html">Назад</a>
-		</div>	
+		</div>
 	</main>
- 
+
 </body>
 </html>
