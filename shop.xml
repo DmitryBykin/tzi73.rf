@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yml_catalog date="2019-04-29 15:29">
+    <shop>
+        <name>ЗАО РАЦ</name>
+        <company>ЗАО "Региональный аттестационный центр"</company>
+        <url>https://tzi73.ru/</url>
+
+        <currencies>
+            <currency id="RUR" rate="1"/>
+            <currency id="USD" rate="65"/>
+        </currencies>
+
+        <categories>
+            <category id="1">Пассивные меры защиты информации</category>
+        </categories>
+
+        <delivery-options>
+            <option cost="500" days="0" order-before="15"/>
+            <option cost="300" days="1-3"/>
+        </delivery-options>
+
+        <offers>
+            <offer id="1" available="true" bid="1">
+                <url>https://tzi73.ru/cover_midi.html</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://tzi73.ru/img/cover_1_midi.gif</picture>
+                <picture>https://tzi73.ru/img/cover_2_midi.gif</picture>
+                <picture>https://tzi73.ru/img/cover_3_midi.gif</picture>
+                <store>true</store>
+                <delivery>true</delivery>
+                <name>Металлическая специальная экранирующая крышка АРМ (Midi Tower) </name>
+                <vendor>ЗАО РАЦ</vendor>
+                <model>Металлическая специальная экранирующая крышка АРМ (Midi Tower)</model>
+                <description> Может использоваться в государственных информационных системах (ГИС),
+                  информационных системах персональных данных (ИСПДн) и в критических информационных
+                  инфраструктурах (КИИ) для предотвращения несанкционированного доступа к портам ПЭВМ,
+                  расположенным на задней панели. Используется для выполнения требований ФСТЭК России
+                   от 20.10.16, введенным в действие с 01.12.2017
+                    (в части экранировки и защиты незадействованных портов от несанкционированного доступа)
+                   </description>
+                <sales_notes></sales_notes>
+                <barcode>978020137962</barcode>
+                <age>0</age>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="назначение">заменяет металлические экранирующие заглушки портов задней панели</param>
+                <param name="ширина">для системных блоков с шириной от 160 до 225 мм (ширина регулируется)</param>
+                <param name="высота между винтами" unit="мм">максимальное расстояние между крепёжными винтами крышки по вертикали - 350 мм</param>
+                <param name="состав">пластилин, устройства для опечатывания, крепёж</param>
+            </offer>
+            <offer id="2" available="true" bid="2">
+                <url>https://tzi73.ru/cover_mini.html</url>
+                <price>1500</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://tzi73.ru/img/cover_1.gif</picture>
+                <picture>https://tzi73.ru/img/cover_2.gif</picture>
+                <picture>https://tzi73.ru/img/cover_3.gif</picture>
+                <store>true</store>
+                <delivery>true</delivery>
+                <name>Металлическая специальная экранирующая крышка АРМ (Mini Tower) </name>
+                <vendor>ЗАО РАЦ</vendor>
+                <model>Металлическая специальная экранирующая крышка АРМ (Mini Tower)</model>
+                <description> Может использоваться в государственных информационных системах (ГИС),
+                  информационных системах персональных данных (ИСПДн) и в критических информационных
+                  инфраструктурах (КИИ) для предотвращения несанкционированного доступа к портам ПЭВМ,
+                  расположенным на задней панели. Используется для выполнения требований ФСТЭК России
+                   от 20.10.16, введенным в действие с 01.12.2017
+                    (в части экранировки и защиты незадействованных портов от несанкционированного доступа)
+                   </description>
+                <sales_notes></sales_notes>
+                <barcode>978020137963</barcode>
+                <age>0</age>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="назначение">заменяет металлические экранирующие заглушки портов задней панели</param>
+                <param name="ширина">для системных блоков с шириной от 160 до 195 мм (ширина регулируется)</param>
+                <param name="высота между винтами" unit="мм">максимальное расстояние между крепёжными винтами крышки по вертикали - 305 мм</param>
+                <param name="состав">пластилин, устройства для опечатывания, крепёж</param>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>
