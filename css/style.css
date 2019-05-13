@@ -1122,6 +1122,7 @@ header .email:before {
   }
   .contacts {
     margin-right: 50px;
+    margin-top: 0;
   }
   .feedback-items {
     max-width: 380px;
@@ -1433,5 +1434,48 @@ header .email:before {
   }
   to {
     opacity: 0.9;
+  }
+}
+@media (min-width: 320px) {
+  .social {
+    display: block;
+    margin-top: 5px;
+  }
+  .social__item {
+    display: inline-block;
+  }
+  .social__item svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 27px;
+  }
+  .social__item svg:hover {
+    opacity: 0.7;
+  }
+  .social__item {
+    position: relative;
+    width: 27px;
+    height: 28px;
+  }
+  .social__item:active svg {
+    top: 1px;
+  }
+  .social__item--vk {
+    fill: #27338d;
+  }
+  #social__item--fb {
+    fill: blue;
+  }
+  #social__item--tw {
+    fill: #75b3d6;
+  }
+  #social__item--inst {
+    fill: #080911;
+  }
+  #social__item-footer--vk,
+  #social__item-footer--inst {
+    fill: #ffffff;
   }
 }
