@@ -22,7 +22,7 @@
         <offers>
             <offer id="1" available="true" bid="1">
                 <url>https://tzi73.ru/cover_midi.html</url>
-                <price>1600</price>
+                <price>1450</price>
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <picture>https://tzi73.ru/img/cover_1_midi.gif</picture>
@@ -51,7 +51,7 @@
             </offer>
             <offer id="2" available="true" bid="2">
                 <url>https://tzi73.ru/cover_mini.html</url>
-                <price>1500</price>
+                <price>1350</price>
                 <currencyId>RUR</currencyId>
                 <categoryId>1</categoryId>
                 <picture>https://tzi73.ru/img/cover_1.gif</picture>
