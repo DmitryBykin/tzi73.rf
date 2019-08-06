@@ -5,6 +5,12 @@
   }
   .social__item {
     display: inline-block;
+    position: relative;
+
+    width: @social-item-size;
+    height: @social-item-size + 1;
+
+    margin-right: 7px;
   }
   .social__item svg {
     position: absolute;
@@ -18,12 +24,6 @@
     &:hover {
       opacity: 0.7;
     }
-  }
-  .social__item {
-    position: relative;
-
-    width: @social-item-size;
-    height: @social-item-size + 1;
   }
   .social__item:active svg {
     top: 1px;
@@ -39,7 +39,7 @@
     fill: #75b3d6;
   }
   #social__item--inst {
-    fill: #080911;
+    fill: #080911;    
   }
   #social__item-footer--vk,
   #social__item-footer--inst {
