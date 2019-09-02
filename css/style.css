@@ -1446,7 +1446,9 @@ header .email:before {
     position: relative;
     width: 27px;
     height: 28px;
-    margin-right: 7px;
+  }
+  .social__item:not(:last-child) {
+    margin-right: 10px;
   }
   .social__item svg {
     position: absolute;

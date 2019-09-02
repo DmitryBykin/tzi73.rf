@@ -10,7 +10,9 @@
     width: @social-item-size;
     height: @social-item-size + 1;
 
-    margin-right: 7px;
+    &:not(:last-child) {
+      margin-right: 10px;  
+    }
   }
   .social__item svg {
     position: absolute;
@@ -39,7 +41,7 @@
     fill: #75b3d6;
   }
   #social__item--inst {
-    fill: #080911;    
+    fill: #080911;
   }
   #social__item-footer--vk,
   #social__item-footer--inst {
