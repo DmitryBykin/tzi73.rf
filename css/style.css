@@ -1,6 +1,7 @@
 /* promo блок*/
 /* header block */
 /* Блок с разработками*/
+/* Кнопки */
 @font-face {
   font-family: 'Open Sans';
   src: local('Open Sans'), url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
@@ -44,7 +45,7 @@
   .production__item {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px 10px;
     margin: 0 10px 10px;
     box-shadow: 0 0 8px #e6e6e6;
     border: 1px solid #e6e6e6;
@@ -88,6 +89,8 @@
   .production__description {
     width: 100%;
     font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
   }
   .production__title {
     text-align: center;
@@ -105,7 +108,7 @@
   .production__features {
     position: relative;
     font-style: italic;
-    margin-bottom: 1em;
+    margin-bottom: 1.4em;
   }
   .main__promo .production__features::after {
     position: absolute;
@@ -246,7 +249,20 @@
     stroke: red;
   }
   .production__link {
-    color: blue;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #27338d;
+    opacity: 0.8;
+    align-self: flex-end;
+    border: 2px solid #27338d;
+    transition: all 0.5s;
+  }
+  .production__link:hover {
+    color: #27338d;
+    background-color: white;
+    border: 2px solid #27338d;
   }
 }
 @media (min-width: 480px) {
