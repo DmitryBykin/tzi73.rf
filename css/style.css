@@ -291,14 +291,14 @@
   .production__item {
     -ms-flex-direction: row;
         flex-direction: row;
-    width: 65%;
+    width: 75%;
   }
 }
 @media (min-width: 800px) {
   .production__item {
     -ms-flex-direction: row;
         flex-direction: row;
-    width: 40%;
+    width: 47%;
   }
   .production {
     -ms-flex-direction: row;
@@ -340,7 +340,7 @@
 }
 @media (min-width: 1200px) {
   .production__item {
-    width: 30%;
+    width: 31%;
   }
 }
 header {
