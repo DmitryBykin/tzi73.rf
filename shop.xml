@@ -78,6 +78,34 @@
                 <param name="высота между винтами" unit="мм">максимальное расстояние между крепёжными винтами крышки по вертикали - 305 мм</param>
                 <param name="состав">пластилин, устройства для опечатывания, крепёж</param>
             </offer>
+            <offer id="3" available="true" bid="3">
+                <url>https://tzi73.ru/cover_depo.html</url>
+                <price>1350</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://tzi73.ru/img/cover_depo_1.gif</picture>
+                <picture>https://tzi73.ru/img/cover_depo_2.gif</picture>
+                <picture>https://tzi73.ru/img/cover_depo_3.gif</picture>
+                <store>true</store>
+                <delivery>true</delivery>
+                <name>Металлическая специальная экранирующая крышка АРМ (Slim Depo DF313) </name>
+                <vendor>ЗАО РАЦ</vendor>
+                <model>Металлическая специальная экранирующая крышка АРМ (Slim Depo DF313)</model>
+                <description> Может использоваться в государственных информационных системах (ГИС),
+                  информационных системах персональных данных (ИСПДн) и в критических информационных
+                  инфраструктурах (КИИ) для предотвращения несанкционированного доступа к портам ПЭВМ,
+                  расположенным на задней панели. Используется для выполнения требований ФСТЭК России
+                   от 20.10.16, введенным в действие с 01.12.2017
+                    (в части экранировки и защиты незадействованных портов от несанкционированного доступа)
+                   </description>
+                <sales_notes></sales_notes>
+                <barcode>978020137964</barcode>
+                <age>0</age>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="назначение">заменяет металлические экранирующие заглушки портов задней панели</param>
+                <param name="корпус">специально разработана для системных блоков Depo DF313</param>
+                <param name="состав">пластилин, устройства для опечатывания, крепёж</param>
+            </offer>
         </offers>
     </shop>
 </yml_catalog>
