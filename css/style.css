@@ -287,8 +287,6 @@
   .production {
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
   }
   .production__item {
     -ms-flex-direction: row;
