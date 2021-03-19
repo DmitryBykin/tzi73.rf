@@ -1,21 +1,97 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://tzi73.ru/projects.html</loc>
-      <lastmod>2020-02-18</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>https://tzi73.ru/catalog.html</loc>
-      <lastmod>2020-02-18</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://tzi73.ru/contacts.html</loc>
-      <lastmod>2020-02-18</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.6</priority>
-   </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://tzi73.ru/</loc>
+  <lastmod>2021-03-19T07:37:36+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/index.html</loc>
+  <lastmod>2021-03-19T07:37:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/projects.html</loc>
+  <lastmod>2021-03-19T07:12:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/catalog.html</loc>
+  <lastmod>2021-03-19T07:12:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/services.html</loc>
+  <lastmod>2021-03-19T07:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/contacts.html</loc>
+  <lastmod>2021-03-19T07:12:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/cover_mini.html</loc>
+  <lastmod>2021-03-19T07:12:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/cover_midi.html</loc>
+  <lastmod>2021-03-19T07:12:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/cover_depo.html</loc>
+  <lastmod>2021-03-19T07:12:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/cover_hp.html</loc>
+  <lastmod>2021-03-19T07:12:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/mirage.html</loc>
+  <lastmod>2021-03-19T07:12:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/ekbsp.html</loc>
+  <lastmod>2021-03-19T07:12:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/astra.html</loc>
+  <lastmod>2021-03-19T07:12:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/astra_adition.html</loc>
+  <lastmod>2021-03-19T07:12:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/astra_ce.html</loc>
+  <lastmod>2021-03-19T07:12:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/sonata_r2.html</loc>
+  <lastmod>2021-03-19T07:12:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tzi73.ru/map.html</loc>
+  <lastmod>2021-03-19T07:12:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
