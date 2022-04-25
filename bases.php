@@ -81,7 +81,7 @@
             10.0/11.0
           </td>
           <td class="bases__table-item" id="date">
-           17.03.2022 
+           <?php echo date("d.m.Y", filemtime("data/Bases10.zip")); ?> 
           </td>
           <td class="bases__table-item">
             <a class="bases__table-item--link" href="data/Bases10.zip">
@@ -89,7 +89,7 @@
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download--bases">
                 </use>
               </svg>
-              <span class="bases__table-link-text">Bases10.zip (528 Мб)</span>
+              <span class="bases__table-link-text">Bases10.zip (<?php echo round(filesize("data/Bases10.zip")/1024/1024,0)?> Мб)</span>
             </a>
           </td>
         </tr>
@@ -99,14 +99,15 @@
             11.0 (Astra Linux)
           </td>
           <td class="bases__table-item">
-            16.03.2022          </td>
+            <?php echo date("d.m.Y", filemtime("data/bases.tar.gz")); ?>
+          </td>
           <td class="bases__table-item">
             <a class="bases__table-item--link" href="data/bases.tar.gz">
               <svg>
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download--bases">
                 </use>
               </svg>
-              <span class="bases__table-link-text">bases.tar.gz (240 Мб)</span>
+              <span class="bases__table-link-text">bases.tar.gz (<?php echo round(filesize("data/bases.tar.gz")/1024/1024,0)?> Мб)</span>
             </a>
           </td>
         </tr>
