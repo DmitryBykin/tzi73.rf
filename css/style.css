@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: 'Open Sans';
-  src: local('Open Sans'), url('../fonts/opensansbold.woff2') format('woff2'), url('../fonts/opensansbold.woff') format('woff');
+  src: url('../fonts/opensansbold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
@@ -1206,7 +1206,7 @@ header .email:before {
   background: #ededed;
   font-size: 14px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 .bases__table-item {
   padding: 10px 15px;
@@ -1227,6 +1227,12 @@ header .email:before {
 }
 .bases__table-link-text {
   padding-left: 25px;
+}
+.bases__table-row {
+  border-bottom: 1px solid #e0e0e0;
+}
+.bases__table-row:last-child {
+  border-bottom: none;
 }
 @media (min-width: 320px) {
   .slider__wrapper {

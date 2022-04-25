@@ -59,7 +59,7 @@
       </thead>
 
       <tbody>
-        <tr class="bases__table-row">
+        <!-- <tr class="bases__table-row">
           <td class="bases__table-item">
             6.0
           </td>
@@ -75,7 +75,7 @@
               <span class="bases__table-link-text">Bases.rar (220 Мб)</span>
             </a>
           </td>
-        </tr>
+        </tr> -->
         <tr class="bases__table-row">
           <td class="bases__table-item">
             10.0/11.0
