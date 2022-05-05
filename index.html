@@ -252,13 +252,15 @@
     document.querySelector(".curyear").innerHTML = now.getFullYear();
   </script>
 
-  <script>
-    var el1 = document.getElementById("1").classList.add("production--hidden");
-    var el2 = document.getElementById("2").classList.add("production--hidden");;
-    let arr=[1,2,3,4]
+  <script>    
+    document.getElementById("1").classList.add("production--hidden");
+    document.getElementById("2").classList.add("production--hidden");
+    
+    let arr=[1,2,3,4];
     shuffle(arr);
-    var curel = document.getElementById(arr[0]).classList.remove("production--hidden");
-    var curel = document.getElementById(arr[1]).classList.remove("production--hidden");
+    
+    document.getElementById(arr[0]).classList.remove("production--hidden");
+    document.getElementById(arr[1]).classList.remove("production--hidden");
 
     function shuffle(array) {
       array.sort(() => Math.random() - 0.5);
