@@ -115,7 +115,7 @@
 
           <div class="main__promo">
 
-            <article class="production__item">
+            <article class="production__item" id="1">
               <picture class="production__picture">
                 <source srcset="img/cover.webp" type="image/webp">
                 <img src="img/cover.gif" alt="Фото крышки специальной">
@@ -129,7 +129,7 @@
               </div>
             </article>
 
-            <article class="production__item">
+            <article class="production__item" id="2">
               <picture class="production__picture">
                 <source srcset="img/cover_midi.webp" type="image/webp">
                 <img src="img/cover_midi.gif" alt="Фото крышки специальной">
@@ -141,57 +141,35 @@
                   Соответствует требованиям ФСТЭК России от 20.10.16, введенным в действие с 01.12.2017</p>
                 <a class="production__link" href="cover_midi.html">Подробнее...</a>
               </div>
-            </article>
+            </article>         
 
-          <!--
-            <article class="production__item">
-  						<picture class="production__picture">
-                <source srcset="img/mirage.webp" type="image/webp">
-  							<img src="img/mirage.gif" alt="Фото имитатора базовой станции GSM 'Мираж'">
-  						</picture>
-
-  						<div class="production__description">
-  							<h2 class="production__title  production__title-no-shadow"><a href="mirage.html">Имитатор базовой станции GSM "Мираж"</a></h2>
-  							<p class="production__features">Имитатор базовой станции GSM «Мираж» предназначен для поиска и идентификации
-                электронных устройств негласного получения информации,
-                использующих каналы передачи стандарта цифровой
-                мобильной сотовой связи GSM...
-  							</p>
-  							<a class="production__link" href="mirage.html">Подробнее ...</a>
-  						</div>
-  					</article>
-
-            <article class="production__item">
+            <article class="production__item  production--hidden" id="3">
               <picture class="production__picture">
-                <source srcset="img/no-photo.webp" type="image/webp">
-                <img src="img/no-photo.png" alt="Фото ГС-6">
+                <source srcset="img/cover_depo_1.webp" type="image/webp">
+                <img src="img/cover_depo_1.gif" alt="Фото крышки специальной">
               </picture>
 
               <div class="production__description">
-                <h2 class="production__title">Генератор сигналов "ГС-6" (9 кГц - 6 ГГц)</h2>
-                <p class="production__features">Генератор совместно с измерительным оборудованием
-                может использоваться для автоматизированного измерения затухания сигналов электромагнитного поля</p>
-                <a class="production__link" href="catalog.html">Перейти в каталог...</a>
+                <h2 class="production__title  production__title-no-shadow"><a href="cover_depo.html">Металлическая специальная экранирующая крышка АРМ (Slim Depo DF313)</a></h2>
+                <p class="production__features">Предотвращает несанкционированный доступ к интерфейсным разъёмам и внутрь системного блока.
+                  Соответствует требованиям ФСТЭК России от 20.10.16, введенным в действие с 01.12.2017</p>
+                <a class="production__link" href="cover_depo.html">Подробнее...</a>
               </div>
-            </article>
+            </article>                     
 
+            <article class="production__item  production--hidden" id="4">
+              <picture class="production__picture">
+                <source srcset="img/cover_hp_1.webp" type="image/webp">
+                <img src="img/cover_hp_1.gif" alt="Фото крышки специальной">
+              </picture>
 
-            <article class="production__item">
-  						<picture class="production__picture">
-                <source srcset="img/ekb_sp_200x174.webp" type="image/webp">
-  							<img src="img/ekb_sp_200x174.png" alt="Фото ЭКБ СП">
-  						</picture>
-
-
-  						<div class="production__description">
-  							<h2 class="production__title">ЭКБ СП</h2>
-  							<p class="production__features">База разработана в соответствии с требованиями ФСБ России.
-                  Предназначена для хранения фотографий внешнего вида микросхем, их рентгеновских снимков и datasheet...
-  							</p>
-  							<a class="production__link" href="catalog.html" target="_blank">Перейти в каталог...</a>
-  						</div>
-  					</article>
-          -->
+              <div class="production__description">
+                <h2 class="production__title  production__title-no-shadow"><a href="cover_hp.html">Металлическая специальная экранирующая крышка АРМ (Slim HP)</a></h2>
+                <p class="production__features">Предотвращает несанкционированный доступ к интерфейсным разъёмам и внутрь системного блока.
+                  Соответствует требованиям ФСТЭК России от 20.10.16, введенным в действие с 01.12.2017</p>
+                <a class="production__link" href="cover_hp.html">Подробнее...</a>
+              </div>
+            </article>                     
 
           </div> <!-- end main__promo -->
 
@@ -272,6 +250,19 @@
   <script>
     var now = new Date();
     document.querySelector(".curyear").innerHTML = now.getFullYear();
+  </script>
+
+  <script type="text/javascript">
+    var el1 = document.getElementById("1").classList.add("production--hidden");
+    var el2 = document.getElementById("2").classList.add("production--hidden");;
+    let arr=[1,2,3,4]
+    shuffle(arr);
+    var curel = document.getElementById(arr[0]).classList.remove("production--hidden");
+    var curel = document.getElementById(arr[1]).classList.remove("production--hidden");
+
+    function shuffle(array) {
+      array.sort(() => Math.random() - 0.5);
+    }
   </script>
 </body>
 </html>
