@@ -247,60 +247,6 @@ function getTileContainer(layer) {
     var now = new Date();
     document.querySelector(".curyear").innerHTML = now.getFullYear();
   </script>
-
-	<script>
-		$('#form input[type="text"]').val('');
-		$('#form textarea').val('');
-
-        $('#form').validate({
-          rules : {
-            name : {
-              required: true
-            },
-            e_mail : {
-              required: true,
-              email: true
-            },
-            letter_content : {
-              required: true,
-            }
-          },
-          messages : {
-            name: {
-              required: 'Введите имя или организацию'
-            },
-            e_mail : {
-              required: 'Введите e-mail',
-              email: 'Некорректный адрес'
-            },
-            letter_content : {
-              required: 'Введите сообщение'
-            }
-          },
-          errorPlacement:
-            function(error, element) {
-                  error.insertAfter(element);
-            }
-        });
-
-		$('#form').submit( function(evt){ //function sendRequest(){
-            evt.preventDefault();
-			$.ajax({    // Начала конструкции для работы с Ajax через jQuery
-				type: "POST", // Метод, которым получаем данные из формы
-				url: "/cgi-bin/sendmail.py", // Обработчик формы.
-				data: $("#form").serialize(), // Этот метод, берет форму с id=form и достает оттуда данные
-				success: function(html) {
-                    if(html == 'error')
-                      return false;
-                    else {
-                      $(".request-send-success").html("Ваше сообщение отправлено.Если в ближайшее время на указанный Вами e-mail не придет подтверждение проверьте, пожалуйста, еще раз адрес");
-
-                      $('#form input[type="text"]').val('');		// обнуляем форму
-                      $('#form textarea').val('');
-                    }
-				}
-			});
-		});
-	</script>
+	
 </body>
 </html>
