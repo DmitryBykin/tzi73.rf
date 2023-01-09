@@ -1149,6 +1149,49 @@ header .email:before {
     margin: 0 auto;
   }
 }
+/************************** education ************************************************/
+.education-main {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+.education-main h2 {
+  /*	position: relative;*/
+  font-size: 1.1em;
+}
+/*.education-main h2:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-color: rgba(9,68,123,0.6);
+	color: rgba(0,0,0,0.7);
+}*/
+.education-main .brief,
+.education-main .full {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.education-main .full {
+  line-height: 1.7em;
+}
+.education {
+  padding: 5px 0 5px 30px;
+  margin-bottom: 10px;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+.education__link {
+  text-decoration: underline;
+  color: blue;
+}
+.education-main .description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.education-main section {
+  padding-top: 25px;
+}
 .breadcrumbs {
   padding-left: 10px;
   margin-top: 15px;
@@ -1504,5 +1547,303 @@ header .email:before {
   #social__item-footer--vk,
   #social__item-footer--inst {
     fill: #ffffff;
+  }
+}
+@media (min-width: 320px) {
+  .education {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .education--hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  .education .education__full-docs-item:not(:first-of-type) {
+    margin-top: 15px;
+  }
+  .education__item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    margin: 0 10px 10px;
+    box-shadow: 0 0 8px #e6e6e6;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .education__item:hover {
+    box-shadow: 0 0 8px black;
+  }
+  .education__picture {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .education__picture img {
+    max-width: 100%;
+    height: auto;
+  }
+  .education__thumb-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+  }
+  .education__thumb-item {
+    width: 30%;
+    /*width: 40%;
+    margin: 5px 5%;*/
+  }
+  .education__thumb-item img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .education__thumb-picture:hover img {
+    box-shadow: 0 0 5px black;
+  }
+  .education__description {
+    width: 100%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+  }
+  .education__title {
+    text-align: center;
+    color: #27338d;
+  }
+  .education__title:hover a {
+    background: linear-gradient(currentColor, currentColor) no-repeat;
+    background-size: 100% 1px;
+    background-position: 0 1.15em;
+    text-shadow: 0.12em 0 white, -0.12em 0 white;
+  }
+  .education__title-no-shadow:hover a {
+    text-shadow: none;
+  }
+  .education__features {
+    position: relative;
+    font-style: italic;
+    margin-bottom: 1.4em;
+  }
+  .main__promo .education__features::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 3.5em;
+    background: linear-gradient(to top, #e6e6e6, transparent) no-repeat;
+  }
+  .education__docs-items {
+    position: relative;
+  }
+  .education__download {
+    position: relative;
+    margin-top: 8px;
+    display: block;
+  }
+  .education__download svg {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    stroke: red;
+  }
+  .education__download:hover svg {
+    stroke: blue;
+  }
+  .education__price {
+    margin-top: 10px;
+    text-align: right;
+  }
+  .education__price-content {
+    position: relative;
+    display: inline;
+    background-color: #e7e7f5;
+    font-weight: normal;
+    line-height: 18px;
+    color: black;
+    padding: 3px 20px 3px 8px;
+    border-radius: 5px;
+  }
+  .education__price-content svg {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 8px;
+    top: 6px;
+    fill: #7d7676;
+  }
+  .education__manual {
+    padding-left: 25px;
+    margin-top: 20px;
+    color: blue;
+  }
+  .education__options {
+    padding-top: 10px;
+  }
+  .education__options-title {
+    display: block;
+    padding-left: 15px;
+    position: relative;
+    cursor: pointer;
+    color: blue;
+  }
+  .education__full-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted #b7b7b7;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .education__full-galery {
+    text-align: center;
+    padding: 10px;
+  }
+  .education__full-description {
+    padding: 10px;
+  }
+  .education__full-docs-block {
+    margin-bottom: 10px;
+  }
+  .education__full-docs-title {
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    background-color: #f5f5f5;
+  }
+  .education__full-docs-items {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 13px;
+  }
+  .education__features-items-title {
+    color: #27338d;
+    font-weight: bold;
+  }
+  .education__features-items {
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+  .education__options-items-title {
+    color: #27338d;
+    font-weight: bold;
+  }
+  .education__options-items {
+    margin-bottom: 15px;
+  }
+  .education__full-docs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .education__full-price-block {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f5f5f5;
+    border-radius: 0 0 5px 5px;
+  }
+  .education__full-price-title {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+  }
+  .education__full-price-content {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 18px;
+    color: #27338d;
+    padding: 3px 20px 3px 8px;
+  }
+  .education__full-price-content svg {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 4px;
+    top: 6px;
+    fill: #27338d;
+    stroke: red;
+  }
+  .education__link {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #27338d;
+    opacity: 0.8;
+    align-self: flex-end;
+    border: 2px solid #27338d;
+    transition: all 0.5s;
+  }
+  .education__link:hover {
+    color: #27338d;
+    background-color: white;
+    border: 2px solid #27338d;
+  }
+}
+@media (min-width: 480px) {
+  .education {
+    align-items: center;
+  }
+  .education__item {
+    flex-direction: row;
+    width: 75%;
+  }
+}
+@media (min-width: 800px) {
+  .education__item {
+    flex-direction: row;
+    width: 47%;
+  }
+  .education {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .education__picture {
+    width: 40%;
+    align-self: baseline;
+  }
+  .education__description {
+    width: 55%;
+  }
+  .education__full-item {
+    flex-direction: row;
+  }
+  .education__full-galery {
+    width: 25%;
+  }
+  .education__full-description {
+    width: 60%;
+  }
+  .education__full-docs {
+    width: 15%;
+  }
+  .education__full-docs-block {
+    border-radius: 0 5px 0 0;
+    overflow: hidden;
+  }
+  .education__full-price-block {
+    border-radius: 0 0 5px 0;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  .education__item {
+    width: 31%;
   }
 }

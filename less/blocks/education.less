@@ -1,0 +1,367 @@
+@media @mobiles {
+  .education {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &--hidden {
+      position: absolute;
+      clip: rect(0,0,0,0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+    }
+    .education__full-docs-item:not(:first-of-type) {
+      margin-top: 15px;
+    }
+  }
+
+  .education__item {
+    display: flex;
+    flex-direction: column;
+
+  	padding: 15px 10px;
+  	margin: 0 10px 10px;
+
+  	box-shadow: 0 0 8px #e6e6e6;
+    border: 1px solid #e6e6e6;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    &:hover {
+      box-shadow: 0 0 8px black;
+    }
+  }
+  .education__picture {
+    text-align: center;
+    margin-top: 20px;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .education__thumb-items {
+    display: flex;
+    //flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 10px;
+    padding-top: 10px;
+
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+  }
+  .education__thumb-item {
+    width: 30%;
+    /*width: 40%;
+    margin: 5px 5%;*/
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+  .education__thumb-picture:hover {
+    & img {
+      box-shadow: 0 0 5px black;
+    }
+  }
+  .education__description {
+    width: 100%;
+
+  	font-size: 0.8em;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .education__title {
+    text-align: center;
+    color: @titleColor;
+
+    &:hover a {
+      background: linear-gradient(currentColor, currentColor) no-repeat;
+      background-size: 100% 1px;
+      background-position: 0 1.15em;
+      text-shadow: .12em 0 white, -.12em 0 white;
+    }
+    &-no-shadow:hover a {
+      text-shadow: none;
+    }
+  }
+  .education__features {
+    position: relative;
+    font-style: italic;
+    margin-bottom: 1.4em;    
+
+    .main__promo &::after {
+      position: absolute;
+      content: '';
+
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      height: 3.5em;
+
+      background: linear-gradient(to top, @shadow-color, transparent) no-repeat;
+    }
+  }
+  .education__docs-items {
+    position: relative;
+  }
+
+  .education__download {
+    position: relative;
+    margin-top: 8px;
+
+    display: block;
+    
+    & svg {
+      position: absolute;
+
+      top: -2px;
+      left: 0;
+
+      width: 20px;
+      height: 20px;
+      stroke: red;
+    }
+    &:hover svg {
+      stroke: blue;
+    }
+  }
+  .education__price {
+    margin-top: 10px;
+    text-align: right;
+  }
+  .education__price-content {
+    position: relative;
+    display: inline;
+
+    background-color: #e7e7f5;
+
+    font-weight: normal;
+    line-height: 18px;
+    color: black;
+
+    padding: 3px 20px 3px 8px;
+    border-radius: 5px;
+    & svg {
+      position: absolute;
+
+      width: 12px;
+      height: 12px;
+
+      right: 8px;
+      top: 6px;
+
+      fill: #7d7676;
+    }
+  }
+  .education__manual {
+    padding-left: 25px;    
+    margin-top: 20px;
+    color: blue;
+  }
+  .education__options {
+    padding-top: 10px;
+
+    &-title {
+      display: block;
+      padding-left: 15px;
+      position: relative;
+      cursor: pointer;
+      color: blue;
+    }
+  }
+  .education__full-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted #b7b7b7;
+    border-radius: 5px;
+    margin: 10px;    
+    //width: 100%;
+  }
+  .education__full-galery {
+    text-align: center;
+    padding: 10px;
+  }
+  .education__full-description {
+    padding: 10px;
+  }
+  .education__full-docs-block {
+    margin-bottom: 10px;
+  }
+  .education__full-docs-title {
+    margin: 0;
+    padding: 15px 0;
+
+    text-align: center;
+    font-size: 13px;
+
+    //color: white;
+    color: black;
+    //background-color: @titleColor;
+    background-color: #f5f5f5;
+    //border-radius: 0 5px 0 0;
+  }
+  .education__full-docs-items {
+    padding-left: 20px;
+    padding-top: 20px;
+
+    font-size: 13px;
+  }
+  .education__features-items-title {
+    color: @titleColor;
+    font-weight: bold;
+  }
+  .education__features-items {
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+  .education__options-items-title {
+    color: @titleColor;
+    font-weight: bold;
+  }
+  .education__options-items {
+    margin-bottom: 15px;
+  }
+  .education__full-docs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .education__full-price-block {
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 0 0 5px 5px;
+  }
+  .education__full-price-title {
+    //padding: 15px 0;
+
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+
+    color: black;
+
+    //background-color: #f5f5f5;
+  }
+  .education__full-price-content {
+    position: relative;
+    display: inline-block;
+
+    //background-color: #e7e7f5;
+
+    font-weight: bold;
+    line-height: 18px;
+    color: @titleColor;
+
+    //margin-top: 15px;
+    //margin-bottom: 15px;
+    padding: 3px 20px 3px 8px;
+
+    //border-radius: 5px;
+    & svg {
+      position: absolute;
+
+      width: 12px;
+      height: 12px;
+
+      right: 4px;
+      top: 6px;
+
+      fill: @titleColor;
+      stroke: red;
+    }
+  }
+  .education__link { 
+    padding: 8px 12px;
+
+    border-radius: 5px;
+    font-weight: bold;    
+
+    color: white;
+    background-color: @btnBgColor;
+    opacity: 0.8;
+    
+    align-self: flex-end;
+    border: 2px solid @btnBgColor;
+
+    transition: all 0.5s;
+
+    &:hover {
+      color: @btnBgColor;
+      background-color: white;
+      border: 2px solid @btnBgColor;      
+    }
+  }
+}  // end mobiles
+
+@media @middle-tablets {
+  .education {
+    align-items: center;
+    //justify-content: space-between;
+  }
+  .education__item {
+    flex-direction: row;
+    width: 75%;
+  }
+}  // end middle-tablets
+
+@media @tablets {
+  .education__item {
+    flex-direction: row;
+    width: 47%;
+  }
+  .education {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    //align-items: flex-start;
+  }
+
+  .education__picture {
+    width: 40%;
+    align-self: baseline;
+  }
+  .education__description {
+    width: 55%;
+  }
+  .education__full-item {
+    flex-direction: row;
+  }
+  .education__full-galery {
+    width: 25%;
+  }
+  .education__full-description {
+    width: 60%;
+  }
+  .education__full-docs {
+    width: 15%;
+  }
+  .education__full-docs-block {
+    border-radius: 0 5px 0 0;
+    overflow: hidden;
+  }
+  .education__full-price-block {
+    border-radius: 0 0 5px 0;
+    overflow: hidden;
+  }
+} // end tablets
+
+@media @desktops {
+  .education__item {
+    width: 31%;
+  }
+} // end desktop
