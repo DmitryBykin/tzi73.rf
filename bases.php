@@ -78,7 +78,7 @@
         </tr> -->
         <tr class="bases__table-row">
           <td class="bases__table-item">
-            10.0/11.0
+            10.0/11.X
           </td>
           <td class="bases__table-item" id="date">
            <?php echo date("d.m.Y", filemtime("data/Bases10.zip")); ?> 
@@ -96,7 +96,7 @@
 
         <tr class="bases__table-row">
           <td class="bases__table-item">
-            11.0 (Astra Linux)
+            11.X (Astra Linux)
           </td>
           <td class="bases__table-item">
             <?php echo date("d.m.Y", filemtime("data/bases.tar.gz")); ?>
