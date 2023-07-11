@@ -37,7 +37,7 @@
     "node": "6.7"
   },
   "dependencies": {
-    "cwebp-bin": "^4.0.0",
+    "cwebp-bin": "^8.0.0",
     "grunt-csso": "^2.2.0",
     "webp-bin": "^0.1.4"
   }
