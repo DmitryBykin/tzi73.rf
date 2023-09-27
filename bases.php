@@ -78,7 +78,7 @@
         </tr> -->
         <tr class="bases__table-row">
           <td class="bases__table-item">
-            10.0/11.X
+            10.0/11.X/12.X
           </td>
           <td class="bases__table-item" id="date">
            <?php echo date("d.m.Y", filemtime("data/Bases10.zip")); ?> 
