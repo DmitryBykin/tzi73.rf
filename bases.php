@@ -78,7 +78,7 @@
         </tr> -->
         <tr class="bases__table-row">
           <td class="bases__table-item">
-            10.0/11.X/12.X
+            10.0/11.X/12.X (Windows)
           </td>
           <td class="bases__table-item" id="date">
            <?php echo date("d.m.Y", filemtime("data/Bases10.zip")); ?> 
@@ -96,7 +96,7 @@
 
         <tr class="bases__table-row">
           <td class="bases__table-item">
-            11.X (Astra Linux)
+            11.1 (Astra Linux) (замена /var/opt/drweb.com/bases)
           </td>
           <td class="bases__table-item">
             <?php echo date("d.m.Y", filemtime("data/bases.tar.gz")); ?>
@@ -108,6 +108,24 @@
                 </use>
               </svg>
               <span class="bases__table-link-text">bases.tar.gz (<?php echo round(filesize("data/bases.tar.gz")/1024/1024,0)?> Мб)</span>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="bases__table-row">
+          <td class="bases__table-item">
+            11.1 (Astra Linux) (drweb-ctl update --From)
+          </td>
+          <td class="bases__table-item">
+            <?php echo date("d.m.Y", filemtime("data/update.tar.gz")); ?>
+          </td>
+          <td class="bases__table-item">
+            <a class="bases__table-item--link" href="data/update.tar.gz">
+              <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download--bases">
+                </use>
+              </svg>
+              <span class="bases__table-link-text">update.tar.gz (<?php echo round(filesize("data/update.tar.gz")/1024/1024,0)?> Мб)</span>
             </a>
           </td>
         </tr>
