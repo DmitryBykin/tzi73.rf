@@ -4,7 +4,7 @@
   "private": true,
   "description": "Сайт www.tzi73.ru",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "@htmlacademy/editorconfig-cli": "1.0.x",
     "autoprefixer": "6.5.3",
     "grunt": "^1.0.3",
     "grunt-autoprefixer": "~1.0.1",
