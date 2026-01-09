@@ -10,25 +10,10 @@
  <link rel="stylesheet" href="css/style.min.css?v=4">
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
- <!--[if lt IE 9]>
- <script src='js/html5shiv.js'></script>
- <![endif]-->
+ 
 </head>
 <body>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-     ym(74184172, "init", {
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true
-     });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/74184172" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
+ 
   <svg style="display: none;">
     <symbol viewBox="0 0 510 510" id="production-icon--ruble">
     		<g>
@@ -385,15 +370,31 @@
     </div>
     <button class="slider__btn--close"></button>
   </div>
+  
+  <div class="wrapper">
+    <div class="cookie-notification cookie-notification_hidden_yes">            
+      <div class="cookie-notification__body">
+        <p>
+          Мы используем файлы cookie и рекомендательные технологии. Пользуясь сайтом, вы соглашаетесь с 
+          <a class="cookie-notification__link" href="http://tzi73.ru/cookies_policy.pdf">Политикой использования файлов cookie</a>
+        </p>       
+      </div>
+      <div class="cookie-notification__buttons">
+          <button class="cookie-notification__button" id="yes">Я согласен</button>
+      </div>
+    </div>    
+  </div>
 
-	<!-- Yandex.Metrika counter -->
-		<script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
+	<!-- Yandex.Metrika counter подключается только с согласия посетителя сайта -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.js"></script>
+  <script type="text/javascript" src="js/cookies.js"></script>  
+  <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+  <!-- Yandex.Metrika counter -->
 
-      <script src="js/slider.js"></script>
-      <script>
-        var now = new Date();
-        document.querySelector(".curyear").innerHTML = now.getFullYear();
-      </script>
+  <script src="js/slider.js"></script>
+  <script>
+    var now = new Date();
+    document.querySelector(".curyear").innerHTML = now.getFullYear();
+  </script>
 </body>
 </html>
