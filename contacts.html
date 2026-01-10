@@ -10,8 +10,6 @@
  <link rel='stylesheet' href='css/style.min.css?v=3'>
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
- 
 </head>
 <body>
  
@@ -127,22 +125,6 @@
 	<footer class="footer">
 		<div class="wrapper">
 			<div class="flex-container">
-        <!--<div class="footer__logos-items">
-          <a class="footer__logos-item" href="http://www.fsb.ru" target="_blank">
-            <picture>
-              <source srcset="img/fsb.webp" type="image/webp">
-              <img src='img/fsb.png' width="55" height="110" alt="Логотип ФСБ России">
-            </picture>
-          </a>
-
-          <a class="footer__logos-item" href="http://www.fstec.ru" target="_blank">
-            <picture>
-              <source srcset="img/fstec.webp" type="image/webp">
-              <img src='img/fstec.png' width="75" height="110" alt="Логотип ФСТЭК России">
-            </picture>
-          </a>
-        </div>-->
-
 				<p class="company-address">
 					432018, г. Ульяновск, ул. Самарская, д. 175 <br>
 					ЗАО "Региональный аттестационный центр"
@@ -175,8 +157,8 @@
   </div>
 
 	<!-- Yandex.Metrika counter подключается только с согласия посетителя сайта -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.js"></script>
-  <script type="text/javascript" src="js/cookies.js"></script>  
+  <script src="js/js.cookie.js"></script>
+  <script src="js/cookies.js"></script>  
   <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt=""></div></noscript>
   <!-- Yandex.Metrika counter -->
 
@@ -193,7 +175,7 @@
             alert('Карта загружена');
         });
 
-function getTileContainer(layer) {
+  function getTileContainer(layer) {
         for (var k in layer) {
             if (layer.hasOwnProperty(k)) {
                 if (
@@ -228,10 +210,6 @@ function getTileContainer(layer) {
 	</script>
 
 	<!-- /Yandex Map-->
-
-	<!-- Yandex.Metrika counter -->
-		<script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37780900 = new Ya.Metrika({ id:37780900, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37780900" style="position:absolute; left:-9999px;" alt=""></div></noscript>
-	<!-- /Yandex.Metrika counter -->
   <script>
     var now = new Date();
     document.querySelector(".curyear").innerHTML = now.getFullYear();
