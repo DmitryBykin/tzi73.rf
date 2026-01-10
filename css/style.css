@@ -370,6 +370,7 @@ header .header__title {
 .footer {
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 2.5em;
 }
 @media (min-width: 320px) {
   .footer__logos-items {
@@ -377,6 +378,9 @@ header .header__title {
   }
 }
 @media (min-width: 800px) {
+  .footer {
+    padding-bottom: 2.5em;
+  }
   .footer__logos-items {
     display: block;
     margin-top: 1em;
@@ -1851,15 +1855,18 @@ header .email:before {
 @media (min-width: 320px) {
   .cookie-notification {
     position: fixed;
-    bottom: 2px;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     padding: 6px;
     font-size: 10px;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e6e6e6;
   }
   .cookie-notification__button {
     background-color: #26b8e2;
@@ -1878,33 +1885,29 @@ header .email:before {
   }
   .cookie-notification__link {
     color: #27338d;
+    font-weight: 700;
   }
 }
 @media (min-width: 800px) {
   .cookie-notification {
-    padding: 5px;
-    border-radius: 5px;
     flex-direction: row;
-    font-size: 11px;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    bottom: 5px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cookie-notification__button {
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (min-width: 1200px) {
   .cookie-notification {
-    padding: 10px;
-    bottom: 15px;
-    width: 1000px;
-    font-size: 13px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    font-size: 14px;
   }
   .cookie-notification__button {
-    padding: 3px 5px 3px 5px;
+    padding: 8px;
+    margin-left: 15px;
   }
 }
