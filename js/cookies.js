@@ -1,9 +1,9 @@
 var messageElement = document.querySelector('.cookie-notification');
 // Если нет cookies, то показываем плашку
 if (Cookies.get('agreement') == 0 || Cookies.get('agreement') == undefined) {
-    showMessage();         
+    showMessage();             
 } else {            
-    initCounter();            
+    initCounter();                
 }
 
 
@@ -36,7 +36,7 @@ function saveAnswer () {
     hideMessage();
 
     // Ставим cookies
-    Cookies.set('agreement', '1');
+    Cookies.set('agreement', '1', { expires: 365 });  // если expires не поставить - очищаются при закрытии браузера
 }
 function initCounter () {    
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
