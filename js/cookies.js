@@ -1,6 +1,6 @@
 var messageElement = document.querySelector('.cookie-notification');
 // Если нет cookies, то показываем плашку
-if (Cookies.get('agreement') == 0 || Cookies.get('agreement') == undefined) {
+if (Cookies.get('agreement') != '1') {
     showMessage();             
 } else {            
     initCounter();                
