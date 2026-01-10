@@ -1,7 +1,56 @@
-.cookie-notification {
-    position: fixed;
-    background-color: rgba(213, 206, 206, 0.8);
-    bottom: 15px;
+@media @mobiles {
+  .cookie-notification {     
+    position: fixed;    
+    bottom: 2px;     
+    
+    display: flex;
+    flex-direction: column;
+
+
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 6px;
+
+    font-size: 10px;
+    
+    background-color: rgba(255, 255, 255, 1);
+    
+    border: 1px solid rgba(0,0,0,0.1);    
+  }
+  .cookie-notification_hidden_yes {
+    display: none;
+  }
+  
+  .cookie-notification__body {
+    margin-bottom: 5px;
+    color: black;    
+  }
+  .cookie-notification__button {
+    background-color: #27338d;
+    color: white;
+    border: 1px solid #27338d;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 8px;
+    text-wrap: nowrap;
+  }
+
+  .cookie-notification__link {
+    color: #27338d;
+  }
+}
+
+@media @tablets {
+  .cookie-notification {     
+    padding: 5px;
+    
+    border-radius: 5px;
+    
+    flex-direction: row;
+    font-size: 11px;
+    
+    width: 800px;
     
     margin-left: auto;
     margin-right: auto;
@@ -9,39 +58,25 @@
     right: 0;
     text-align: center;
 
-    width: 600px;
-    color: white;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    
-    display: flex;
-    
-    align-items: center;
-    justify-content: space-around;
-
-}
-.cookie-notification_hidden_yes {
-    display: none;
-}
-.cookie-notification__header {
-    margin-bottom: 5px;
-    font-size: 23px;
-}
-.cookie-notification__body {
-    margin-bottom: 5px;
-    color: black;    
-}
-.cookie-notification__button {
-  background-color: #27338d;
-  color: white;
-  border: 1px solid #27338d;
-  border-radius: 5px;
-  font-weight: 700;
-  padding: 8px;
-  text-wrap: nowrap;
+    bottom: 5px;
+  }
 }
 
-.cookie-notification__link {
-  color: #27338d;
+@media @desktops {
+  .cookie-notification {    
+    padding: 7px;
+    bottom: 10px;
+
+    width: 1000px;
+    
+    font-size: 13px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border: 1px solid rgba(0,0,0,0.2);    
+    
+    &__button {
+    padding: 3px 5px 3px 5px;
+    }
+  }
 }
