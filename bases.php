@@ -101,7 +101,7 @@
 
         <tr class="bases__table-row">
           <td class="bases__table-item">
-            11.1 (Astra Linux) (drweb-ctl update --From)
+            11.1 (Astra Linux) (drweb-ctl update --from /tmp/update)
           </td>
           <td class="bases__table-item">
             <?php echo date("d.m.Y", filemtime("data/update.tar.gz")); ?>
