@@ -1602,21 +1602,34 @@ header .email:before {
   .social__item:not(:last-child) {
     margin-right: 10px;
   }
-  .social__item svg {
+  .social__item svg,
+  .social__item--max img {
     position: absolute;
     top: 0;
     left: 0;
     width: 27px;
     height: 27px;
   }
-  .social__item svg:hover {
+  .social__item svg:hover,
+  .social__item--max img:hover {
     opacity: 0.7;
   }
-  .social__item:active svg {
+  .social__item:active svg,
+  .social__item--max:active img {
     top: 1px;
   }
   .social__item--vk svg {
     fill: #27338d;
+  }
+  .social__item--max a {
+    display: block;
+    width: 27px;
+    height: 27px;
+  }
+  .social__item--max a:focus-visible {
+    outline: 2px solid #27338d;
+    outline-offset: 3px;
+    border-radius: 6px;
   }
   #social__item--fb {
     fill: blue;
