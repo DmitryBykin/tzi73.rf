@@ -1,0 +1,1097 @@
+{
+  "checked_at": "2026-10-15T20:07:23.043825+04:00",
+  "validator": "https://validator.w3.org/nu/?out=json",
+  "validator_versions": [
+    "26.10.12"
+  ],
+  "scope": "29 local HTML files and the rendered HTML response of https://tzi73.ru/bases.php",
+  "total_files": 30,
+  "totals": {
+    "errors": 19,
+    "warnings": 39,
+    "info": 16
+  },
+  "results": [
+    {
+      "file": "astra.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 171,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Astra ",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "33c806fc082dbbe41d442b90e678cf697527da9fb0f99303e184a49a2601fa5b"
+    },
+    {
+      "file": "astra_adition.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 19,
+            "lastColumn": 32,
+            "firstColumn": 1,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "unter -->\n<script type=\"text/javascript\" >\n   (f",
+            "hiliteStart": 10,
+            "hiliteLength": 32
+          },
+          {
+            "type": "info",
+            "lastLine": 30,
+            "lastColumn": 112,
+            "firstColumn": 16,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ript><div><img src=\"https://mc.yandex.ru/watch/74184172\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div>",
+            "hiliteStart": 10,
+            "hiliteLength": 97
+          },
+          {
+            "type": "info",
+            "lastLine": 107,
+            "lastColumn": 56,
+            "subType": "warning",
+            "message": "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.",
+            "extract": " social__item--inst\">\n        ",
+            "hiliteStart": 15,
+            "hiliteLength": 1
+          },
+          {
+            "type": "info",
+            "lastLine": 415,
+            "lastColumn": 107,
+            "firstColumn": 3,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "йта -->\n  <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.js\"></scri",
+            "hiliteStart": 10,
+            "hiliteLength": 105
+          },
+          {
+            "type": "info",
+            "lastLine": 416,
+            "lastColumn": 53,
+            "firstColumn": 3,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "script>\n  <script type=\"text/javascript\" src=\"js/cookies.js\"></scri",
+            "hiliteStart": 10,
+            "hiliteLength": 51
+          },
+          {
+            "type": "info",
+            "lastLine": 226,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Astra ",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "519847f83178c55bd12d7d355331f76f826c50272c2a38a0af90ec805fbb7b79"
+    },
+    {
+      "file": "astra_ce.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 19,
+            "lastColumn": 32,
+            "firstColumn": 1,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "unter -->\n<script type=\"text/javascript\" >\n   (f",
+            "hiliteStart": 10,
+            "hiliteLength": 32
+          },
+          {
+            "type": "info",
+            "lastLine": 30,
+            "lastColumn": 112,
+            "firstColumn": 16,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ript><div><img src=\"https://mc.yandex.ru/watch/74184172\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div>",
+            "hiliteStart": 10,
+            "hiliteLength": 97
+          },
+          {
+            "type": "info",
+            "lastLine": 105,
+            "lastColumn": 56,
+            "subType": "warning",
+            "message": "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.",
+            "extract": " social__item--inst\">\n        ",
+            "hiliteStart": 15,
+            "hiliteLength": 1
+          },
+          {
+            "type": "info",
+            "lastLine": 307,
+            "lastColumn": 705,
+            "firstColumn": 609,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ript><div><img src=\"https://mc.yandex.ru/watch/37780900\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div>",
+            "hiliteStart": 10,
+            "hiliteLength": 97
+          },
+          {
+            "type": "info",
+            "lastLine": 194,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Astra ",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "3656152369bc119b3c6e6d8c66308b3087d8049f9f93a26cf1922bb9571c895f"
+    },
+    {
+      "file": "bases.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 13,
+            "lastColumn": 44,
+            "firstColumn": 2,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "x-icon\">\n <link rel=\"canonical\" href=\"www.tzi73.ru\"/>\n <!--",
+            "hiliteStart": 10,
+            "hiliteLength": 43
+          },
+          {
+            "type": "info",
+            "lastLine": 20,
+            "lastColumn": 32,
+            "firstColumn": 1,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "unter -->\n<script type=\"text/javascript\" >\n   (f",
+            "hiliteStart": 10,
+            "hiliteLength": 32
+          },
+          {
+            "type": "info",
+            "lastLine": 31,
+            "lastColumn": 112,
+            "firstColumn": 16,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ript><div><img src=\"https://mc.yandex.ru/watch/74184172\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div>",
+            "hiliteStart": 10,
+            "hiliteLength": 97
+          },
+          {
+            "type": "info",
+            "lastLine": 120,
+            "lastColumn": 33,
+            "firstColumn": 3,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "ter -->\n\t\t<script type=\"text/javascript\"> (func",
+            "hiliteStart": 10,
+            "hiliteLength": 31
+          },
+          {
+            "type": "info",
+            "lastLine": 120,
+            "lastColumn": 728,
+            "firstColumn": 632,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ript><div><img src=\"https://mc.yandex.ru/watch/37780900\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div>",
+            "hiliteStart": 10,
+            "hiliteLength": 97
+          },
+          {
+            "type": "info",
+            "lastLine": 45,
+            "lastColumn": 29,
+            "firstColumn": 5,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "main>\n    <h2 class=\"bases__title\">Обновл",
+            "hiliteStart": 10,
+            "hiliteLength": 25
+          }
+        ]
+      },
+      "sha256": "a836f4dc305981ab44f1a3507308dbb83bd0827264b076f20189a0a5c5d64828"
+    },
+    {
+      "file": "catalog.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 119,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\"><a hre",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ],
+        "language": "ru"
+      },
+      "sha256": "1a912d1e0c70fe52f96cbce7a3d536c40588d01447380901c9232bd1f46cb076"
+    },
+    {
+      "file": "contacts.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 82,
+            "lastColumn": 27,
+            "firstColumn": 6,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "ap\">\n\t\t\t\t\t<h2 class=\"map-title\">Схема ",
+            "hiliteStart": 10,
+            "hiliteLength": 22
+          }
+        ]
+      },
+      "sha256": "9ae2378908a8522b470af662500098b5752718d275145dcab6831df3eb075a04"
+    },
+    {
+      "file": "cover_depo.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 171,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Металл",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "7c7493d09d61d8268ae355f05ee86a6ed4f6ec22a7fdfa141fc3abb0b0909c1b"
+    },
+    {
+      "file": "cover_hp.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 171,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Металл",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "954a8d9bb757fa48758dade261b5fca36a11722b60a52a72d9710064c6943124"
+    },
+    {
+      "file": "cover_midi.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 201,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Металл",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "05abf63c6a998f9da924fe33ee39ac37c7080dde8ef23a02b10db8101afb512e"
+    },
+    {
+      "file": "cover_mini.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 201,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Металл",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "7fd9eb2ec80ce7d0f228ba7996fa8973b0a99f61725bdeada8c78dfe7fad5d62"
+    },
+    {
+      "file": "covers.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 201,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Экрани",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "588651383328f310979d0c0a8fad28d9c4042f665e883c5fb20de219d1f44ba9"
+    },
+    {
+      "file": "dallaslock.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 189,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Dallas",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "5bc22dfe907304ee36ca1f4c0fd392aa642dff3f9fcf5900189e561569b50269"
+    },
+    {
+      "file": "education.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 95,
+            "lastColumn": 9,
+            "firstColumn": 6,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "ut\">\n\t\t\t\t\t<h2>\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 4
+          }
+        ],
+        "language": "ru"
+      },
+      "sha256": "917d0246df077dba8ab9ddc9c07c7e8f5cfc24d4885b3722cdffea3599d60cf2"
+    },
+    {
+      "file": "ekbsp.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 179,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">ЭКБ СП",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "463469c96657ea7c581d443be7d172f89458d977b1dc5dc3c11982789615118b"
+    },
+    {
+      "file": "google7ca3ad021b9a3a16.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "error",
+            "lastLine": 1,
+            "lastColumn": 52,
+            "firstColumn": 1,
+            "message": "Non-space characters found without seeing a doctype first. Expected “<!DOCTYPE html>”.",
+            "extract": "google-site-verification: google7ca3ad021b9a3a16.html",
+            "hiliteStart": 0,
+            "hiliteLength": 52
+          },
+          {
+            "type": "error",
+            "lastLine": 1,
+            "lastColumn": 52,
+            "firstColumn": 1,
+            "message": "Element “head” is missing a required instance of child element “title”.",
+            "extract": "google-site-verification: google7ca3ad021b9a3a16.html",
+            "hiliteStart": 0,
+            "hiliteLength": 52
+          },
+          {
+            "type": "info",
+            "lastLine": 1,
+            "lastColumn": 52,
+            "firstColumn": 1,
+            "subType": "warning",
+            "message": "Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.",
+            "extract": "google-site-verification: google7ca3ad021b9a3a16.html",
+            "hiliteStart": 0,
+            "hiliteLength": 52
+          }
+        ]
+      },
+      "sha256": "be5956f9d2927ba2118352c08c68b4912d5df87d2b2c008ab5e27493a482fad5"
+    },
+    {
+      "file": "index.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": []
+      },
+      "sha256": "4b77d749c3a7755fdcf6b90c57d29195cedf69227a7ba3ad49f117dafc375be9"
+    },
+    {
+      "file": "map.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 15,
+            "lastColumn": 31,
+            "firstColumn": 1,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "</script>\n<script type=\"text/javascript\">\nvar m",
+            "hiliteStart": 10,
+            "hiliteLength": 31
+          }
+        ]
+      },
+      "sha256": "6f74aa72b42f53ea5a63074dfa5bd0d7332dbb2b2e61214bb315933b021e65a8"
+    },
+    {
+      "file": "mirage.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 19,
+            "lastColumn": 34,
+            "firstColumn": 3,
+            "subType": "warning",
+            "message": "The “type” attribute is unnecessary for JavaScript resources.",
+            "extract": "ter -->\n  <script type=\"text/javascript\" >\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 32
+          },
+          {
+            "type": "info",
+            "lastLine": 30,
+            "lastColumn": 114,
+            "firstColumn": 18,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ript><div><img src=\"https://mc.yandex.ru/watch/74184172\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div>",
+            "hiliteStart": 10,
+            "hiliteLength": 97
+          },
+          {
+            "type": "info",
+            "lastLine": 367,
+            "lastColumn": 705,
+            "firstColumn": 609,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ript><div><img src=\"https://mc.yandex.ru/watch/37780900\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div>",
+            "hiliteStart": 10,
+            "hiliteLength": 97
+          },
+          {
+            "type": "info",
+            "lastLine": 195,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Имитат",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "2e5321eadcf007bf69cefe1e490891e51860f0cf2ad1566f1df6435280dc030e"
+    },
+    {
+      "file": "partners.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 76,
+            "lastColumn": 48,
+            "firstColumn": 9,
+            "subType": "warning",
+            "message": "The “list” role is unnecessary for element “ol”.",
+            "extract": ">\n        <ol class=\"partners__items\" role=\"list\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 40
+          }
+        ]
+      },
+      "sha256": "5bdb2597672010434bd41416ed7f7528bdd453a9fe1439219aa932778959fdd7"
+    },
+    {
+      "file": "pokrov.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 210,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Генера",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "42e3755b25cdfb4c462742d7b573cc44679dbc13db9cd4a39aa3293ef1103ca6"
+    },
+    {
+      "file": "pokrov_2.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 201,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">Генера",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "bad4f8bc195c8c9f14db1254ddcb77e96d1a5f474e85ee751571dfe426fa6a51"
+    },
+    {
+      "file": "projects.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 117,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\"><a hre",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ],
+        "language": "ru"
+      },
+      "sha256": "7a1263ce1fdcb23fd1198a2df02717a526fbee4b5f98c74770b970f9d3b34c44"
+    },
+    {
+      "file": "sdzdallaslock.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 201,
+            "lastColumn": 44,
+            "firstColumn": 15,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "          <h2 class=\"production__title\">СДЗ УБ",
+            "hiliteStart": 10,
+            "hiliteLength": 30
+          }
+        ]
+      },
+      "sha256": "21f47051b04de02650d3105a49364ad7d543faf5e1b0b115789bb1d3579d2a31"
+    },
+    {
+      "file": "services.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 81,
+            "lastColumn": 23,
+            "firstColumn": 6,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "ce\">\n\t\t\t\t\t<h2 class=\"brief\">\n\t\t\t\t\t",
+            "hiliteStart": 10,
+            "hiliteLength": 18
+          }
+        ],
+        "language": "ru"
+      },
+      "sha256": "dac52855c0f19dde4795493da2fe4bfc9792e25c31a00a0b282b7fa94b6d2780"
+    },
+    {
+      "file": "testform.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 2,
+            "firstLine": 1,
+            "lastColumn": 6,
+            "firstColumn": 16,
+            "subType": "warning",
+            "message": "Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.",
+            "extract": "TYPE html>\n<html>\n<head",
+            "hiliteStart": 10,
+            "hiliteLength": 7
+          }
+        ]
+      },
+      "sha256": "553150e45f99fc374307e01e3975199d0b9e46b9440cff23b3f70ba7eca0bc5e"
+    },
+    {
+      "file": "testpython.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "error",
+            "lastLine": 9,
+            "lastColumn": 7,
+            "firstColumn": 1,
+            "message": "Element “head” is missing a required instance of child element “title”.",
+            "extract": " </style>\n</head>\n\n<bod",
+            "hiliteStart": 10,
+            "hiliteLength": 7
+          },
+          {
+            "type": "info",
+            "lastLine": 13,
+            "lastColumn": 54,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "ata\">\n    <input type=\"text\" name=\"item\" value=\"Черемшан\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 50
+          },
+          {
+            "type": "info",
+            "lastLine": 14,
+            "lastColumn": 70,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "н\" />\n    <input type=\"text\" name=\"desc\" value=\"Имитатор базовой станции\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 66
+          },
+          {
+            "type": "info",
+            "lastLine": 16,
+            "lastColumn": 68,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "area>\n    <input type=\"checkbox\" name=\"Опция 1\" value=\"Выбрана опция 1\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 64
+          },
+          {
+            "type": "error",
+            "lastLine": 17,
+            "lastColumn": 83,
+            "firstColumn": 5,
+            "message": "Bad value “true” for attribute “checked” on element “input”.",
+            "extract": "1\" />\n    <input type=\"checkbox\" name=\"Опция 2\" value=\"Выбрана опция 2\" checked=\"true\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 79
+          },
+          {
+            "type": "info",
+            "lastLine": 17,
+            "lastColumn": 83,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "1\" />\n    <input type=\"checkbox\" name=\"Опция 2\" value=\"Выбрана опция 2\" checked=\"true\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 79
+          },
+          {
+            "type": "info",
+            "lastLine": 18,
+            "lastColumn": 68,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "e\" />\n    <input type=\"checkbox\" name=\"Опция 3\" value=\"Выбрана опция 3\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 64
+          },
+          {
+            "type": "info",
+            "lastLine": 21,
+            "lastColumn": 41,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "al2\">\n    <input type=\"file\" name=\"filename\" />\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 37
+          },
+          {
+            "type": "info",
+            "lastLine": 22,
+            "lastColumn": 42,
+            "firstColumn": 5,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "e\" />\n    <input type=\"submit\" value=\"Submit\" />\n  </f",
+            "hiliteStart": 10,
+            "hiliteLength": 38
+          },
+          {
+            "type": "info",
+            "lastLine": 2,
+            "firstLine": 1,
+            "lastColumn": 6,
+            "firstColumn": 16,
+            "subType": "warning",
+            "message": "Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.",
+            "extract": "TYPE html>\n<html>\n\n<hea",
+            "hiliteStart": 10,
+            "hiliteLength": 7
+          }
+        ]
+      },
+      "sha256": "d6e21e0b7c2dc69185f294aeb166b83be044270074d85bd46beb7bffe136146f"
+    },
+    {
+      "file": "thumbnail.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "error",
+            "lastLine": 19,
+            "lastColumn": 64,
+            "firstColumn": 33,
+            "message": "Attribute “:src” not allowed on element “img” at this point.",
+            "extract": "          <img :src=\"currentImage\" alt=\"\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 32
+          },
+          {
+            "type": "error",
+            "lastLine": 19,
+            "lastColumn": 64,
+            "firstColumn": 33,
+            "message": "Element “img” is missing one or more of the following attributes: “src”, “srcset”.",
+            "extract": "          <img :src=\"currentImage\" alt=\"\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 32
+          },
+          {
+            "type": "error",
+            "lastLine": 21,
+            "lastColumn": 74,
+            "firstColumn": 37,
+            "message": "Attribute “@click” not allowed on element “span” at this point.",
+            "extract": "          <span @click=\"prevImage\" class=\"prev\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 38
+          },
+          {
+            "type": "error",
+            "lastLine": 24,
+            "lastColumn": 74,
+            "firstColumn": 37,
+            "message": "Attribute “@click” not allowed on element “span” at this point.",
+            "extract": "          <span @click=\"nextImage\" class=\"next\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 38
+          },
+          {
+            "type": "error",
+            "lastLine": 35,
+            "firstLine": 30,
+            "lastColumn": 33,
+            "message": "Attribute “v-for” not allowed on element “div” at this point.",
+            "extract": "          <div\n                                    v-for=\"(image, index) in  images\"\n                                    :key=\"image.id\"\n                                    :class=\"['thumbnail-image', (activeImage == index) ? 'active' : '']\"\n                                    @click=\"activateImage(index)\"\n                                >\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 331
+          },
+          {
+            "type": "error",
+            "lastLine": 35,
+            "firstLine": 30,
+            "lastColumn": 33,
+            "message": "Attribute “:key” not allowed on element “div” at this point.",
+            "extract": "          <div\n                                    v-for=\"(image, index) in  images\"\n                                    :key=\"image.id\"\n                                    :class=\"['thumbnail-image', (activeImage == index) ? 'active' : '']\"\n                                    @click=\"activateImage(index)\"\n                                >\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 331
+          },
+          {
+            "type": "error",
+            "lastLine": 35,
+            "firstLine": 30,
+            "lastColumn": 33,
+            "message": "Attribute “:class” not allowed on element “div” at this point.",
+            "extract": "          <div\n                                    v-for=\"(image, index) in  images\"\n                                    :key=\"image.id\"\n                                    :class=\"['thumbnail-image', (activeImage == index) ? 'active' : '']\"\n                                    @click=\"activateImage(index)\"\n                                >\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 331
+          },
+          {
+            "type": "error",
+            "lastLine": 35,
+            "firstLine": 30,
+            "lastColumn": 33,
+            "message": "Attribute “@click” not allowed on element “div” at this point.",
+            "extract": "          <div\n                                    v-for=\"(image, index) in  images\"\n                                    :key=\"image.id\"\n                                    :class=\"['thumbnail-image', (activeImage == index) ? 'active' : '']\"\n                                    @click=\"activateImage(index)\"\n                                >\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 331
+          },
+          {
+            "type": "error",
+            "lastLine": 36,
+            "lastColumn": 60,
+            "firstColumn": 37,
+            "message": "Attribute “:src” not allowed on element “img” at this point.",
+            "extract": "          <img :src=\"image.thumb\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 24
+          },
+          {
+            "type": "error",
+            "lastLine": 36,
+            "lastColumn": 60,
+            "firstColumn": 37,
+            "message": "Element “img” is missing one or more of the following attributes: “src”, “srcset”.",
+            "extract": "          <img :src=\"image.thumb\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 24
+          },
+          {
+            "type": "error",
+            "lastLine": 36,
+            "lastColumn": 60,
+            "firstColumn": 37,
+            "message": "An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.",
+            "extract": "          <img :src=\"image.thumb\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 24
+          },
+          {
+            "type": "info",
+            "lastLine": 12,
+            "lastColumn": 38,
+            "firstColumn": 5,
+            "subType": "warning",
+            "message": "Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections, or else use a “div” element instead for any cases where no heading is needed.",
+            "extract": "body>\n    <section class=\"section\" id=\"app\">\n     ",
+            "hiliteStart": 10,
+            "hiliteLength": 34
+          }
+        ]
+      },
+      "sha256": "e150e4b09afbdabd5b2418a426fb31409d2205ca6175912a76ef23096a3366a4"
+    },
+    {
+      "file": "yandex_522bbfb37531deab.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "error",
+            "lastLine": 1,
+            "lastColumn": 6,
+            "firstColumn": 1,
+            "message": "Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.",
+            "extract": "<html>\n<head",
+            "hiliteStart": 0,
+            "hiliteLength": 6
+          },
+          {
+            "type": "error",
+            "lastLine": 2,
+            "lastColumn": 80,
+            "firstColumn": 74,
+            "message": "Element “head” is missing a required instance of child element “title”.",
+            "extract": "et=UTF-8\"></head>\n<body",
+            "hiliteStart": 10,
+            "hiliteLength": 7
+          },
+          {
+            "type": "info",
+            "lastLine": 1,
+            "lastColumn": 6,
+            "firstColumn": 1,
+            "subType": "warning",
+            "message": "Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.",
+            "extract": "<html>\n<head",
+            "hiliteStart": 0,
+            "hiliteLength": 6
+          }
+        ]
+      },
+      "sha256": "1b1045508c94784ae501a6b1facfd0d53dfb1850472acc241066209d880a1006"
+    },
+    {
+      "file": "yandex_ad4451e7d8e1ceca.html",
+      "source": "local",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "error",
+            "lastLine": 1,
+            "lastColumn": 6,
+            "firstColumn": 1,
+            "message": "Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.",
+            "extract": "<html>\n    <",
+            "hiliteStart": 0,
+            "hiliteLength": 6
+          },
+          {
+            "type": "error",
+            "lastLine": 4,
+            "lastColumn": 11,
+            "firstColumn": 5,
+            "message": "Element “head” is missing a required instance of child element “title”.",
+            "extract": "F-8\">\n    </head>\n    <",
+            "hiliteStart": 10,
+            "hiliteLength": 7
+          },
+          {
+            "type": "info",
+            "lastLine": 1,
+            "lastColumn": 6,
+            "firstColumn": 1,
+            "subType": "warning",
+            "message": "Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.",
+            "extract": "<html>\n    <",
+            "hiliteStart": 0,
+            "hiliteLength": 6
+          }
+        ]
+      },
+      "sha256": "904fe313e3ecb61fd428a8ceae164f6c57b1e817293ad5f0ccecb34587b330fc"
+    },
+    {
+      "file": "bases.php",
+      "source": "https://tzi73.ru/bases.php",
+      "result": {
+        "version": "26.10.12",
+        "messages": [
+          {
+            "type": "info",
+            "lastLine": 13,
+            "lastColumn": 44,
+            "firstColumn": 2,
+            "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+            "extract": "x-icon\">\n <link rel=\"canonical\" href=\"www.tzi73.ru\"/>\n <!--",
+            "hiliteStart": 10,
+            "hiliteLength": 43
+          },
+          {
+            "type": "info",
+            "lastLine": 57,
+            "lastColumn": 42,
+            "subType": "warning",
+            "message": "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.",
+            "extract": "s__table-item--link\" href=\"dat",
+            "hiliteStart": 15,
+            "hiliteLength": 1
+          },
+          {
+            "type": "info",
+            "lastLine": 32,
+            "lastColumn": 29,
+            "firstColumn": 5,
+            "subType": "warning",
+            "message": "This document has heading elements but none of them has a computed heading level of 1.",
+            "extract": "main>\n    <h2 class=\"bases__title\">Обновл",
+            "hiliteStart": 10,
+            "hiliteLength": 25
+          }
+        ]
+      },
+      "sha256": "1d9403914f4b610fa7db27187681796af815183153193064ba9570fc37fb2692"
+    }
+  ]
+}
